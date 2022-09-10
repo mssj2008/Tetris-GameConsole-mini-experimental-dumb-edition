@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="Tetcode.elf">                 
+    <memory name="program">              
+      <units>bytes</units>                 
+      <length>16384</length>                 
+      <used>7250</used>                     
+      <free>9134</free>                     
+    </memory>                              
+    <memory name="data">                 
+      <units>bytes</units>                 
+      <length>1024</length>                 
+      <used>631</used>                     
+      <free>393</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

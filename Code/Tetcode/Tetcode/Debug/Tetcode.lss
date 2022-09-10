@@ -1,0 +1,4399 @@
+
+Tetcode.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000c6  00000000  00000000  00000174  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  000000c6  000004e8  2**0
+                  ALLOC
+  2 .bss          00000267  00800060  00800060  00001dc6  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  00001dc6  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 00000054  00000000  00000000  00001df5  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000168  00000000  00000000  00001e49  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000032db  00000000  00000000  00001fb1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000868  00000000  00000000  0000528c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000013e0  00000000  00000000  00005af4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000005a8  00000000  00000000  00006ed4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000001d5  00000000  00000000  0000747c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00001f5e  00000000  00000000  00007651  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000308  00000000  00000000  000095af  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text         00000004  00001c3e  00001c3e  00001db2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000098b8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .text.Point   00000004  00001c42  00001c42  00001db6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.Add_Point 0000000e  00001c0e  00001c0e  00001d82  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.Rotate_Point 0000000c  00001c1c  00001c1c  00001d90  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.digit_counter 00000026  00001b18  00001b18  00001c8c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.itoa    000000e0  00000ec8  00000ec8  0000103c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.PB_ClearBit 00000018  00001ba0  00001ba0  00001d14  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.PB_SetBit 00000016  00001bb8  00001bb8  00001d2c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.SPI_MasterInit 0000000c  00001c28  00001c28  00001d9c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.SPI_MasterTransmit 0000000a  00001c34  00001c34  00001da8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.GLCD_SEND 00000024  00001b3e  00001b3e  00001cb2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.GLCD_Init 00000062  0000164e  0000164e  000017c2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.GLCD_Update 00000066  00001582  00001582  000016f6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.GLCD_SetPixel 000000b8  00001202  00001202  00001376  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.GLCD_ClearPixel 000000ba  00001148  00001148  000012bc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.GLCD_SetPixel2 0000004a  000018e8  000018e8  00001a5c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.GLCD_ClearPixel2 0000004c  00001850  00001850  000019c4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.GLCD_Clear 00000036  00001a40  00001a40  00001bb4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.GLCD_putchar 000000de  00000fa8  00000fa8  0000111c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.GLCD_Puts 0000007a  000014a0  000014a0  00001614  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.Gdisplay_ClearTile 00000040  000019c2  000019c2  00001b36  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.Gdisplay_SetTile 00000052  00001762  00001762  000018d6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text.Gdisplay_GetTile 0000004c  0000189c  0000189c  00001a10  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.TTs_init 000000fe  00000cd6  00000cd6  00000e4a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.Clear_Tile 0000004e  000017b4  000017b4  00001928  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text.Draw_Tile 000000b8  000012ba  000012ba  0000142e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 40 .text.Fill_Tile 0000004a  00001932  00001932  00001aa6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 41 .text.Show_Game_Image 00000092  0000140e  0000140e  00001582  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 42 .text.Update_Tiles 0000005c  000016b0  000016b0  00001824  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 43 .text.Clear_Row 00000056  0000170c  0000170c  00001880  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 44 .text.Clear_TTile 00000046  0000197c  0000197c  00001af0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 45 .text.Draw_TTile 0000004e  00001802  00001802  00001976  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 46 .text.Rotate_TTile 000000f4  00000dd4  00000dd4  00000f48  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 47 .text.Move_TTile 0000002a  00001a76  00001a76  00001bea  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 48 .text.Is_LegitMove 00000122  00000a9e  00000a9e  00000c12  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 49 .text.row_check 00000028  00001aa0  00001aa0  00001c14  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 50 .text.Full_Row_Check 000000c2  00001086  00001086  000011fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 51 .text.Lose_Check 00000068  0000151a  0000151a  0000168e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 52 .text.PlaceT  00000116  00000bc0  00000bc0  00000d34  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 53 .progmemx.data 00000053  00000374  00000374  000004e8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 54 .text.GameLoop 000003f0  0000041c  0000041c  00000590  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 55 .text.G_Init  00000066  000015e8  000015e8  0000175c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 56 .text.main    00000292  0000080c  0000080c  00000980  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 57 .text.__vector_9 0000009c  00001372  00001372  000014e6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 58 .data.Game    00000001  008002d3  0000041b  0000058f  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 59 .bss.inputFlag 00000001  008002d4  008002d4  00001dc6  2**0
+                  ALLOC
+ 60 .bss.g        00000001  008002d5  008002d5  00001dc6  2**0
+                  ALLOC
+ 61 .bss.j        00000001  008002d6  008002d6  00001dc6  2**0
+                  ALLOC
+ 62 .bss.Tetrominoes_Placed 00000002  008002cb  008002cb  00001dc6  2**0
+                  ALLOC
+ 63 .data.iithresh 00000002  008002cd  00001c50  00001dc4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 64 .bss.ii       00000002  008002cf  008002cf  00001dc6  2**0
+                  ALLOC
+ 65 .bss.Score    00000002  008002d1  008002d1  00001dc6  2**0
+                  ALLOC
+ 66 .progmemx.data.MM_img 0000002a  000003c7  000003c7  0000053b  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 67 .progmemx.data.Game_Over_img 0000002a  000003f1  000003f1  00000565  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 68 .progmemx.data.font_7x8 000002ae  000000c6  000000c6  0000023a  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 69 .text.libgcc.div 00000028  00001ac8  00001ac8  00001c3c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 70 .text.libgcc.div 00000028  00001af0  00001af0  00001c64  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 71 .text.__dummy_fini 00000002  00001c4a  00001c4a  00001dbe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 72 .text.__dummy_funcs_on_exit 00000002  00001c4c  00001c4c  00001dc0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 73 .text.__dummy_simulator_exit 00000002  00001c4e  00001c4e  00001dc2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 74 .text.exit    00000016  00001bce  00001bce  00001d42  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 75 .text.srand   00000014  00001bfa  00001bfa  00001d6e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 76 .text.rand    0000003e  00001a02  00001a02  00001b76  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 77 .bss.seed     00000004  008002c7  008002c7  00001dc6  2**0
+                  ALLOC
+ 78 .text._Exit   00000004  00001c46  00001c46  00001dba  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 79 .text.libgcc.mul 00000020  00001b62  00001b62  00001cd6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 80 .text.libgcc.mul 00000016  00001be4  00001be4  00001d58  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 81 .text.libgcc.mul 0000001e  00001b82  00001b82  00001cf6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 39 00 	jmp	0x72	; 0x72 <__ctors_end>
+   4:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+   8:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+   c:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  10:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  14:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  18:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  1c:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  20:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  24:	0c 94 b9 09 	jmp	0x1372	; 0x1372 <__vector_9>
+  28:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  2c:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  30:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  34:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  38:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  3c:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  40:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  44:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  48:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  4c:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+  50:	0c 94 1f 0e 	jmp	0x1c3e	; 0x1c3e <__bad_interrupt>
+
+00000054 <.dinit>:
+  54:	00 60       	ori	r16, 0x00	; 0
+  56:	02 cd       	rjmp	.-1532   	; 0xfffffa5c <__eeprom_end+0xff7efa5c>
+  58:	80 02       	muls	r24, r16
+  5a:	cd 02       	muls	r28, r29
+  5c:	cf 00       	.word	0x00cf	; ????
+  5e:	1c 50       	subi	r17, 0x0C	; 12
+  60:	02 cf       	rjmp	.-508    	; 0xfffffe66 <__eeprom_end+0xff7efe66>
+  62:	02 d3       	rcall	.+1540   	; 0x668 <__stack+0x209>
+  64:	80 02       	muls	r24, r16
+  66:	d3 02       	muls	r29, r19
+  68:	d4 00       	.word	0x00d4	; ????
+  6a:	04 1b       	sub	r16, r20
+  6c:	02 d4       	rcall	.+2052   	; 0x872 <main+0x66>
+  6e:	02 d7       	rcall	.+3588   	; 0xe74 <Rotate_TTile+0xa0>
+  70:	80 00       	.word	0x0080	; ????
+
+00000072 <__ctors_end>:
+  72:	11 24       	eor	r1, r1
+  74:	1f be       	out	0x3f, r1	; 63
+  76:	cf e5       	ldi	r28, 0x5F	; 95
+  78:	d4 e0       	ldi	r29, 0x04	; 4
+  7a:	de bf       	out	0x3e, r29	; 62
+  7c:	cd bf       	out	0x3d, r28	; 61
+
+0000007e <__do_copy_data>:
+  7e:	e4 e5       	ldi	r30, 0x54	; 84
+  80:	f0 e0       	ldi	r31, 0x00	; 0
+  82:	40 e0       	ldi	r20, 0x00	; 0
+  84:	17 c0       	rjmp	.+46     	; 0xb4 <__do_clear_bss+0x8>
+  86:	b5 91       	lpm	r27, Z+
+  88:	a5 91       	lpm	r26, Z+
+  8a:	35 91       	lpm	r19, Z+
+  8c:	25 91       	lpm	r18, Z+
+  8e:	05 91       	lpm	r16, Z+
+  90:	07 fd       	sbrc	r16, 7
+  92:	0c c0       	rjmp	.+24     	; 0xac <__do_clear_bss>
+  94:	95 91       	lpm	r25, Z+
+  96:	85 91       	lpm	r24, Z+
+  98:	ef 01       	movw	r28, r30
+  9a:	f9 2f       	mov	r31, r25
+  9c:	e8 2f       	mov	r30, r24
+  9e:	05 90       	lpm	r0, Z+
+  a0:	0d 92       	st	X+, r0
+  a2:	a2 17       	cp	r26, r18
+  a4:	b3 07       	cpc	r27, r19
+  a6:	d9 f7       	brne	.-10     	; 0x9e <__do_copy_data+0x20>
+  a8:	fe 01       	movw	r30, r28
+  aa:	04 c0       	rjmp	.+8      	; 0xb4 <__do_clear_bss+0x8>
+
+000000ac <__do_clear_bss>:
+  ac:	1d 92       	st	X+, r1
+  ae:	a2 17       	cp	r26, r18
+  b0:	b3 07       	cpc	r27, r19
+  b2:	e1 f7       	brne	.-8      	; 0xac <__do_clear_bss>
+  b4:	e1 37       	cpi	r30, 0x71	; 113
+  b6:	f4 07       	cpc	r31, r20
+  b8:	31 f7       	brne	.-52     	; 0x86 <__do_copy_data+0x8>
+  ba:	0e 94 06 04 	call	0x80c	; 0x80c <main>
+  be:	0c 94 e7 0d 	jmp	0x1bce	; 0x1bce <exit>
+
+000000c2 <_exit>:
+  c2:	f8 94       	cli
+
+000000c4 <__stop_program>:
+  c4:	ff cf       	rjmp	.-2      	; 0xc4 <__stop_program>
+
+Disassembly of section .text:
+
+00001c3e <__bad_interrupt>:
+    1c3e:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.Point:
+
+00001c42 <Point>:
+
+struct Tet_tile tets[5];
+struct Tet_tile curTTile;
+
+struct point Point(char x, char y)
+{
+    1c42:	96 2f       	mov	r25, r22
+	struct point result;
+	result.x = x;
+	result.y = y;
+	return result;
+}
+    1c44:	08 95       	ret
+
+Disassembly of section .text.Add_Point:
+
+00001c0e <Add_Point>:
+struct point Add_Point(struct point p1,struct point p2)
+{
+    1c0e:	26 2f       	mov	r18, r22
+	return Point(p1.x+p2.x,p1.y+p2.y);
+    1c10:	69 2f       	mov	r22, r25
+    1c12:	67 0f       	add	r22, r23
+    1c14:	82 0f       	add	r24, r18
+    1c16:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+}
+    1c1a:	08 95       	ret
+
+Disassembly of section .text.Rotate_Point:
+
+00001c1c <Rotate_Point>:
+struct point Rotate_Point(struct point p) // *90 degree rotation   dir ---- 1 -> clockwise 2-> anti-clockwise
+{
+	return Point(p.y,-p.x);
+    1c1c:	68 2f       	mov	r22, r24
+    1c1e:	61 95       	neg	r22
+    1c20:	89 2f       	mov	r24, r25
+    1c22:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+}
+    1c26:	08 95       	ret
+
+Disassembly of section .text.digit_counter:
+
+00001b18 <digit_counter>:
+
+char digit_counter(int num)
+{
+	char len = 0;
+	if(num == 0)
+    1b18:	00 97       	sbiw	r24, 0x00	; 0
+    1b1a:	79 f0       	breq	.+30     	; 0x1b3a <digit_counter+0x22>
+    1b1c:	20 e0       	ldi	r18, 0x00	; 0
+    1b1e:	08 c0       	rjmp	.+16     	; 0x1b30 <digit_counter+0x18>
+		return 1;
+	while (num > 0)
+	{
+		num /= 10;
+    1b20:	6a e0       	ldi	r22, 0x0A	; 10
+    1b22:	70 e0       	ldi	r23, 0x00	; 0
+    1b24:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+    1b28:	86 2f       	mov	r24, r22
+    1b2a:	97 2f       	mov	r25, r23
+		PORTA = num;
+    1b2c:	6b bb       	out	0x1b, r22	; 27
+		len++;
+    1b2e:	2f 5f       	subi	r18, 0xFF	; 255
+char digit_counter(int num)
+{
+	char len = 0;
+	if(num == 0)
+		return 1;
+	while (num > 0)
+    1b30:	18 16       	cp	r1, r24
+    1b32:	19 06       	cpc	r1, r25
+    1b34:	ac f3       	brlt	.-22     	; 0x1b20 <digit_counter+0x8>
+	{
+		num /= 10;
+		PORTA = num;
+		len++;
+	}
+	return len;
+    1b36:	82 2f       	mov	r24, r18
+    1b38:	08 95       	ret
+
+char digit_counter(int num)
+{
+	char len = 0;
+	if(num == 0)
+		return 1;
+    1b3a:	81 e0       	ldi	r24, 0x01	; 1
+		num /= 10;
+		PORTA = num;
+		len++;
+	}
+	return len;
+}
+    1b3c:	08 95       	ret
+
+Disassembly of section .text.itoa:
+
+00000ec8 <itoa>:
+
+void itoa(int num,char *out)
+{
+ ec8:	8f 92       	push	r8
+ eca:	9f 92       	push	r9
+ ecc:	af 92       	push	r10
+ ece:	bf 92       	push	r11
+ ed0:	cf 92       	push	r12
+ ed2:	df 92       	push	r13
+ ed4:	ef 92       	push	r14
+ ed6:	ff 92       	push	r15
+ ed8:	0f 93       	push	r16
+ eda:	1f 93       	push	r17
+ edc:	cf 93       	push	r28
+ ede:	df 93       	push	r29
+ ee0:	cd b7       	in	r28, 0x3d	; 61
+ ee2:	de b7       	in	r29, 0x3e	; 62
+ ee4:	4c 01       	movw	r8, r24
+ ee6:	7b 01       	movw	r14, r22
+	}
+	for(int i = 0; i < curindex; i++)
+	{
+		out[curindex-i-1] = tmpp[i];
+	}
+}
+ ee8:	cd b6       	in	r12, 0x3d	; 61
+ eea:	de b6       	in	r13, 0x3e	; 62
+	}
+	return len;
+}
+
+void itoa(int num,char *out)
+{
+ eec:	ad b6       	in	r10, 0x3d	; 61
+ eee:	be b6       	in	r11, 0x3e	; 62
+	char tmpp[digit_counter(num)];
+ ef0:	0e 94 8c 0d 	call	0x1b18	; 0x1b18 <digit_counter>
+ ef4:	2d b7       	in	r18, 0x3d	; 61
+ ef6:	3e b7       	in	r19, 0x3e	; 62
+ ef8:	28 1b       	sub	r18, r24
+ efa:	31 09       	sbc	r19, r1
+ efc:	0f b6       	in	r0, 0x3f	; 63
+ efe:	f8 94       	cli
+ f00:	3e bf       	out	0x3e, r19	; 62
+ f02:	0f be       	out	0x3f, r0	; 63
+ f04:	2d bf       	out	0x3d, r18	; 61
+ f06:	0d b7       	in	r16, 0x3d	; 61
+ f08:	1e b7       	in	r17, 0x3e	; 62
+ f0a:	0f 5f       	subi	r16, 0xFF	; 255
+ f0c:	1f 4f       	sbci	r17, 0xFF	; 255
+	char resultt[digit_counter(num)];
+ f0e:	c4 01       	movw	r24, r8
+ f10:	0e 94 8c 0d 	call	0x1b18	; 0x1b18 <digit_counter>
+	char tmp;
+	char curindex = 0;
+	if(num == 0)
+ f14:	81 14       	cp	r8, r1
+ f16:	91 04       	cpc	r9, r1
+ f18:	b9 f4       	brne	.+46     	; 0xf48 <itoa+0x80>
+	{
+		out[0] = '0';
+ f1a:	80 e3       	ldi	r24, 0x30	; 48
+ f1c:	f7 01       	movw	r30, r14
+ f1e:	80 83       	st	Z, r24
+		return;
+ f20:	0f b6       	in	r0, 0x3f	; 63
+ f22:	f8 94       	cli
+ f24:	de be       	out	0x3e, r13	; 62
+ f26:	0f be       	out	0x3f, r0	; 63
+ f28:	cd be       	out	0x3d, r12	; 61
+ f2a:	2c c0       	rjmp	.+88     	; 0xf84 <itoa+0xbc>
+	}
+	while(num > 0)
+	{
+		tmp = (num%10)+48;
+ f2c:	c4 01       	movw	r24, r8
+ f2e:	6a e0       	ldi	r22, 0x0A	; 10
+ f30:	70 e0       	ldi	r23, 0x00	; 0
+ f32:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ f36:	80 5d       	subi	r24, 0xD0	; 208
+		tmpp[curindex] = tmp;
+ f38:	f8 01       	movw	r30, r16
+ f3a:	e4 0f       	add	r30, r20
+ f3c:	f1 1d       	adc	r31, r1
+ f3e:	80 83       	st	Z, r24
+		num /= 10;
+ f40:	86 2e       	mov	r8, r22
+ f42:	97 2e       	mov	r9, r23
+		curindex++;
+ f44:	4f 5f       	subi	r20, 0xFF	; 255
+ f46:	01 c0       	rjmp	.+2      	; 0xf4a <itoa+0x82>
+ f48:	40 e0       	ldi	r20, 0x00	; 0
+	if(num == 0)
+	{
+		out[0] = '0';
+		return;
+	}
+	while(num > 0)
+ f4a:	18 14       	cp	r1, r8
+ f4c:	19 04       	cpc	r1, r9
+ f4e:	74 f3       	brlt	.-36     	; 0xf2c <itoa+0x64>
+ f50:	20 e0       	ldi	r18, 0x00	; 0
+ f52:	30 e0       	ldi	r19, 0x00	; 0
+ f54:	0d c0       	rjmp	.+26     	; 0xf70 <itoa+0xa8>
+		num /= 10;
+		curindex++;
+	}
+	for(int i = 0; i < curindex; i++)
+	{
+		out[curindex-i-1] = tmpp[i];
+ f56:	fc 01       	movw	r30, r24
+ f58:	e2 1b       	sub	r30, r18
+ f5a:	f3 0b       	sbc	r31, r19
+ f5c:	31 97       	sbiw	r30, 0x01	; 1
+ f5e:	ee 0d       	add	r30, r14
+ f60:	ff 1d       	adc	r31, r15
+ f62:	d8 01       	movw	r26, r16
+ f64:	a2 0f       	add	r26, r18
+ f66:	b3 1f       	adc	r27, r19
+ f68:	8c 91       	ld	r24, X
+ f6a:	80 83       	st	Z, r24
+		tmp = (num%10)+48;
+		tmpp[curindex] = tmp;
+		num /= 10;
+		curindex++;
+	}
+	for(int i = 0; i < curindex; i++)
+ f6c:	2f 5f       	subi	r18, 0xFF	; 255
+ f6e:	3f 4f       	sbci	r19, 0xFF	; 255
+ f70:	84 2f       	mov	r24, r20
+ f72:	90 e0       	ldi	r25, 0x00	; 0
+ f74:	28 17       	cp	r18, r24
+ f76:	39 07       	cpc	r19, r25
+ f78:	74 f3       	brlt	.-36     	; 0xf56 <itoa+0x8e>
+ f7a:	0f b6       	in	r0, 0x3f	; 63
+ f7c:	f8 94       	cli
+ f7e:	be be       	out	0x3e, r11	; 62
+ f80:	0f be       	out	0x3f, r0	; 63
+ f82:	ad be       	out	0x3d, r10	; 61
+	{
+		out[curindex-i-1] = tmpp[i];
+	}
+}
+ f84:	0f b6       	in	r0, 0x3f	; 63
+ f86:	f8 94       	cli
+ f88:	de be       	out	0x3e, r13	; 62
+ f8a:	0f be       	out	0x3f, r0	; 63
+ f8c:	cd be       	out	0x3d, r12	; 61
+ f8e:	df 91       	pop	r29
+ f90:	cf 91       	pop	r28
+ f92:	1f 91       	pop	r17
+ f94:	0f 91       	pop	r16
+ f96:	ff 90       	pop	r15
+ f98:	ef 90       	pop	r14
+ f9a:	df 90       	pop	r13
+ f9c:	cf 90       	pop	r12
+ f9e:	bf 90       	pop	r11
+ fa0:	af 90       	pop	r10
+ fa2:	9f 90       	pop	r9
+ fa4:	8f 90       	pop	r8
+ fa6:	08 95       	ret
+
+Disassembly of section .text.PB_ClearBit:
+
+00001ba0 <PB_ClearBit>:
+
+// PB stuff
+
+void PB_ClearBit(int bi)
+{
+	PORTB &= (0xFF - (1<<bi));
+    1ba0:	98 b3       	in	r25, 0x18	; 24
+    1ba2:	21 e0       	ldi	r18, 0x01	; 1
+    1ba4:	30 e0       	ldi	r19, 0x00	; 0
+    1ba6:	02 c0       	rjmp	.+4      	; 0x1bac <PB_ClearBit+0xc>
+    1ba8:	22 0f       	add	r18, r18
+    1baa:	33 1f       	adc	r19, r19
+    1bac:	8a 95       	dec	r24
+    1bae:	e2 f7       	brpl	.-8      	; 0x1ba8 <PB_ClearBit+0x8>
+    1bb0:	20 95       	com	r18
+    1bb2:	29 23       	and	r18, r25
+    1bb4:	28 bb       	out	0x18, r18	; 24
+    1bb6:	08 95       	ret
+
+Disassembly of section .text.PB_SetBit:
+
+00001bb8 <PB_SetBit>:
+}
+void PB_SetBit(int bi)
+{
+	PORTB |= (1<<bi);
+    1bb8:	98 b3       	in	r25, 0x18	; 24
+    1bba:	21 e0       	ldi	r18, 0x01	; 1
+    1bbc:	30 e0       	ldi	r19, 0x00	; 0
+    1bbe:	02 c0       	rjmp	.+4      	; 0x1bc4 <PB_SetBit+0xc>
+    1bc0:	22 0f       	add	r18, r18
+    1bc2:	33 1f       	adc	r19, r19
+    1bc4:	8a 95       	dec	r24
+    1bc6:	e2 f7       	brpl	.-8      	; 0x1bc0 <PB_SetBit+0x8>
+    1bc8:	29 2b       	or	r18, r25
+    1bca:	28 bb       	out	0x18, r18	; 24
+    1bcc:	08 95       	ret
+
+Disassembly of section .text.SPI_MasterInit:
+
+00001c28 <SPI_MasterInit>:
+// SPI stuff
+
+void SPI_MasterInit(void)
+{
+	/* Set MOSI and SCK output, all others input */
+	DDRB |= (1<<PB5)|(1<<PB7)|(1<<PB4);
+    1c28:	87 b3       	in	r24, 0x17	; 23
+    1c2a:	80 6b       	ori	r24, 0xB0	; 176
+    1c2c:	87 bb       	out	0x17, r24	; 23
+	//PORTB |= (1<<PB4);
+	/* Enable SPI, Master, set clock rate fck/16 */
+	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR0);
+    1c2e:	81 e5       	ldi	r24, 0x51	; 81
+    1c30:	8d b9       	out	0x0d, r24	; 13
+    1c32:	08 95       	ret
+
+Disassembly of section .text.SPI_MasterTransmit:
+
+00001c34 <SPI_MasterTransmit>:
+}
+void SPI_MasterTransmit(unsigned char cData)
+{
+	unsigned char c;
+	/* Start transmission */
+	SPDR = cData;
+    1c34:	8f b9       	out	0x0f, r24	; 15
+	/* Wait for transmission complete */
+	while(!(SPSR & (1<<SPIF)));
+    1c36:	77 9b       	sbis	0x0e, 7	; 14
+    1c38:	fe cf       	rjmp	.-4      	; 0x1c36 <SPI_MasterTransmit+0x2>
+	c = SPDR;
+    1c3a:	8f b1       	in	r24, 0x0f	; 15
+    1c3c:	08 95       	ret
+
+Disassembly of section .text.GLCD_SEND:
+
+00001b3e <GLCD_SEND>:
+}
+
+// PCD8544 stuff
+
+void GLCD_SEND(unsigned char data,int dc)
+{
+    1b3e:	cf 93       	push	r28
+    1b40:	c8 2f       	mov	r28, r24
+	if(dc)
+    1b42:	67 2b       	or	r22, r23
+    1b44:	29 f0       	breq	.+10     	; 0x1b50 <GLCD_SEND+0x12>
+		PB_SetBit(DC);
+    1b46:	81 e0       	ldi	r24, 0x01	; 1
+    1b48:	90 e0       	ldi	r25, 0x00	; 0
+    1b4a:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+    1b4e:	04 c0       	rjmp	.+8      	; 0x1b58 <GLCD_SEND+0x1a>
+	else
+		PB_ClearBit(DC);
+    1b50:	81 e0       	ldi	r24, 0x01	; 1
+    1b52:	90 e0       	ldi	r25, 0x00	; 0
+    1b54:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+	SPI_MasterTransmit(data);
+    1b58:	8c 2f       	mov	r24, r28
+    1b5a:	0e 94 1a 0e 	call	0x1c34	; 0x1c34 <SPI_MasterTransmit>
+	//_delay_us(1);
+}
+    1b5e:	cf 91       	pop	r28
+    1b60:	08 95       	ret
+
+Disassembly of section .text.GLCD_Init:
+
+0000164e <GLCD_Init>:
+
+void GLCD_Init()
+{
+		PB_SetBit(CS);
+    164e:	80 e0       	ldi	r24, 0x00	; 0
+    1650:	90 e0       	ldi	r25, 0x00	; 0
+    1652:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+		PB_ClearBit(RST);
+    1656:	82 e0       	ldi	r24, 0x02	; 2
+    1658:	90 e0       	ldi	r25, 0x00	; 0
+    165a:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+		SPI_MasterInit();
+    165e:	0e 94 14 0e 	call	0x1c28	; 0x1c28 <SPI_MasterInit>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+    1662:	8f ec       	ldi	r24, 0xCF	; 207
+    1664:	97 e0       	ldi	r25, 0x07	; 7
+    1666:	01 97       	sbiw	r24, 0x01	; 1
+    1668:	f1 f7       	brne	.-4      	; 0x1666 <GLCD_Init+0x18>
+    166a:	00 c0       	rjmp	.+0      	; 0x166c <GLCD_Init+0x1e>
+    166c:	00 00       	nop
+		_delay_ms(1);
+		PB_SetBit(RST);
+    166e:	82 e0       	ldi	r24, 0x02	; 2
+    1670:	90 e0       	ldi	r25, 0x00	; 0
+    1672:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+		PB_ClearBit(CS);
+    1676:	80 e0       	ldi	r24, 0x00	; 0
+    1678:	90 e0       	ldi	r25, 0x00	; 0
+    167a:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+		GLCD_SEND(0x21,0);
+    167e:	60 e0       	ldi	r22, 0x00	; 0
+    1680:	70 e0       	ldi	r23, 0x00	; 0
+    1682:	81 e2       	ldi	r24, 0x21	; 33
+    1684:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+		GLCD_SEND(0x90,0);
+    1688:	60 e0       	ldi	r22, 0x00	; 0
+    168a:	70 e0       	ldi	r23, 0x00	; 0
+    168c:	80 e9       	ldi	r24, 0x90	; 144
+    168e:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+		GLCD_SEND(0x20,0);
+    1692:	60 e0       	ldi	r22, 0x00	; 0
+    1694:	70 e0       	ldi	r23, 0x00	; 0
+    1696:	80 e2       	ldi	r24, 0x20	; 32
+    1698:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+		GLCD_SEND(0x0C,0);
+    169c:	60 e0       	ldi	r22, 0x00	; 0
+    169e:	70 e0       	ldi	r23, 0x00	; 0
+    16a0:	8c e0       	ldi	r24, 0x0C	; 12
+    16a2:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+		PB_SetBit(CS);
+    16a6:	80 e0       	ldi	r24, 0x00	; 0
+    16a8:	90 e0       	ldi	r25, 0x00	; 0
+    16aa:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+    16ae:	08 95       	ret
+
+Disassembly of section .text.GLCD_Update:
+
+00001582 <GLCD_Update>:
+}
+
+void GLCD_Update()
+{
+    1582:	cf 93       	push	r28
+    1584:	df 93       	push	r29
+	PB_ClearBit(CS);
+    1586:	80 e0       	ldi	r24, 0x00	; 0
+    1588:	90 e0       	ldi	r25, 0x00	; 0
+    158a:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+	GLCD_SEND(0x80,0);
+    158e:	60 e0       	ldi	r22, 0x00	; 0
+    1590:	70 e0       	ldi	r23, 0x00	; 0
+    1592:	80 e8       	ldi	r24, 0x80	; 128
+    1594:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	GLCD_SEND(0x40,0);
+    1598:	60 e0       	ldi	r22, 0x00	; 0
+    159a:	70 e0       	ldi	r23, 0x00	; 0
+    159c:	80 e4       	ldi	r24, 0x40	; 64
+    159e:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	for(char i = 0; i < 6; i++)
+    15a2:	d0 e0       	ldi	r29, 0x00	; 0
+    15a4:	18 c0       	rjmp	.+48     	; 0x15d6 <GLCD_Update+0x54>
+		for(char j = 0; j < 84; j++)
+		{
+			GLCD_SEND(display[j][i],1);
+    15a6:	8c 2f       	mov	r24, r28
+    15a8:	90 e0       	ldi	r25, 0x00	; 0
+    15aa:	fc 01       	movw	r30, r24
+    15ac:	ee 0f       	add	r30, r30
+    15ae:	ff 1f       	adc	r31, r31
+    15b0:	e8 0f       	add	r30, r24
+    15b2:	f9 1f       	adc	r31, r25
+    15b4:	ee 0f       	add	r30, r30
+    15b6:	ff 1f       	adc	r31, r31
+    15b8:	e8 57       	subi	r30, 0x78	; 120
+    15ba:	ff 4f       	sbci	r31, 0xFF	; 255
+    15bc:	ed 0f       	add	r30, r29
+    15be:	f1 1d       	adc	r31, r1
+    15c0:	61 e0       	ldi	r22, 0x01	; 1
+    15c2:	70 e0       	ldi	r23, 0x00	; 0
+    15c4:	80 81       	ld	r24, Z
+    15c6:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+{
+	PB_ClearBit(CS);
+	GLCD_SEND(0x80,0);
+	GLCD_SEND(0x40,0);
+	for(char i = 0; i < 6; i++)
+		for(char j = 0; j < 84; j++)
+    15ca:	cf 5f       	subi	r28, 0xFF	; 255
+    15cc:	01 c0       	rjmp	.+2      	; 0x15d0 <GLCD_Update+0x4e>
+    15ce:	c0 e0       	ldi	r28, 0x00	; 0
+    15d0:	c4 35       	cpi	r28, 0x54	; 84
+    15d2:	48 f3       	brcs	.-46     	; 0x15a6 <GLCD_Update+0x24>
+void GLCD_Update()
+{
+	PB_ClearBit(CS);
+	GLCD_SEND(0x80,0);
+	GLCD_SEND(0x40,0);
+	for(char i = 0; i < 6; i++)
+    15d4:	df 5f       	subi	r29, 0xFF	; 255
+    15d6:	d6 30       	cpi	r29, 0x06	; 6
+    15d8:	d0 f3       	brcs	.-12     	; 0x15ce <GLCD_Update+0x4c>
+		for(char j = 0; j < 84; j++)
+		{
+			GLCD_SEND(display[j][i],1);
+		}
+	PB_SetBit(CS);
+    15da:	80 e0       	ldi	r24, 0x00	; 0
+    15dc:	90 e0       	ldi	r25, 0x00	; 0
+    15de:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+}
+    15e2:	df 91       	pop	r29
+    15e4:	cf 91       	pop	r28
+    15e6:	08 95       	ret
+
+Disassembly of section .text.GLCD_SetPixel:
+
+00001202 <GLCD_SetPixel>:
+
+void GLCD_SetPixel(struct point p)
+{
+    1202:	cf 92       	push	r12
+    1204:	df 92       	push	r13
+    1206:	ef 92       	push	r14
+    1208:	ff 92       	push	r15
+    120a:	0f 93       	push	r16
+    120c:	1f 93       	push	r17
+    120e:	cf 93       	push	r28
+    1210:	df 93       	push	r29
+	if(p.x > 83 || p.x < 0 || p.y > 47 || p.y < 0)
+    1212:	84 35       	cpi	r24, 0x54	; 84
+    1214:	08 f0       	brcs	.+2      	; 0x1218 <GLCD_SetPixel+0x16>
+    1216:	48 c0       	rjmp	.+144    	; 0x12a8 <GLCD_SetPixel+0xa6>
+    1218:	90 33       	cpi	r25, 0x30	; 48
+    121a:	08 f0       	brcs	.+2      	; 0x121e <GLCD_SetPixel+0x1c>
+    121c:	45 c0       	rjmp	.+138    	; 0x12a8 <GLCD_SetPixel+0xa6>
+    121e:	c8 2f       	mov	r28, r24
+		return;
+	display[p.x][p.y/8] |= (1<<(p.y%8));
+    1220:	d9 2f       	mov	r29, r25
+    1222:	d6 95       	lsr	r29
+    1224:	d6 95       	lsr	r29
+    1226:	d6 95       	lsr	r29
+    1228:	e8 2e       	mov	r14, r24
+    122a:	f1 2c       	mov	r15, r1
+    122c:	0d 2f       	mov	r16, r29
+    122e:	10 e0       	ldi	r17, 0x00	; 0
+    1230:	97 70       	andi	r25, 0x07	; 7
+    1232:	21 e0       	ldi	r18, 0x01	; 1
+    1234:	30 e0       	ldi	r19, 0x00	; 0
+    1236:	a9 01       	movw	r20, r18
+    1238:	02 c0       	rjmp	.+4      	; 0x123e <GLCD_SetPixel+0x3c>
+    123a:	44 0f       	add	r20, r20
+    123c:	55 1f       	adc	r21, r21
+    123e:	9a 95       	dec	r25
+    1240:	e2 f7       	brpl	.-8      	; 0x123a <GLCD_SetPixel+0x38>
+    1242:	ca 01       	movw	r24, r20
+    1244:	67 01       	movw	r12, r14
+    1246:	cc 0c       	add	r12, r12
+    1248:	dd 1c       	adc	r13, r13
+    124a:	f6 01       	movw	r30, r12
+    124c:	ee 0d       	add	r30, r14
+    124e:	ff 1d       	adc	r31, r15
+    1250:	ee 0f       	add	r30, r30
+    1252:	ff 1f       	adc	r31, r31
+    1254:	e8 57       	subi	r30, 0x78	; 120
+    1256:	ff 4f       	sbci	r31, 0xFF	; 255
+    1258:	e0 0f       	add	r30, r16
+    125a:	f1 1f       	adc	r31, r17
+    125c:	90 81       	ld	r25, Z
+    125e:	89 2b       	or	r24, r25
+    1260:	80 83       	st	Z, r24
+	
+	PB_ClearBit(CS);
+    1262:	80 e0       	ldi	r24, 0x00	; 0
+    1264:	90 e0       	ldi	r25, 0x00	; 0
+    1266:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+	GLCD_SEND(0x80 + p.x,0);
+    126a:	60 e0       	ldi	r22, 0x00	; 0
+    126c:	70 e0       	ldi	r23, 0x00	; 0
+    126e:	80 e8       	ldi	r24, 0x80	; 128
+    1270:	8c 0f       	add	r24, r28
+    1272:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	GLCD_SEND(0x40 + (p.y/8),0);
+    1276:	60 e0       	ldi	r22, 0x00	; 0
+    1278:	70 e0       	ldi	r23, 0x00	; 0
+    127a:	80 e4       	ldi	r24, 0x40	; 64
+    127c:	8d 0f       	add	r24, r29
+    127e:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	GLCD_SEND(display[p.x][p.y/8],1);
+    1282:	c6 01       	movw	r24, r12
+    1284:	8e 0d       	add	r24, r14
+    1286:	9f 1d       	adc	r25, r15
+    1288:	88 0f       	add	r24, r24
+    128a:	99 1f       	adc	r25, r25
+    128c:	88 57       	subi	r24, 0x78	; 120
+    128e:	9f 4f       	sbci	r25, 0xFF	; 255
+    1290:	fc 01       	movw	r30, r24
+    1292:	e0 0f       	add	r30, r16
+    1294:	f1 1f       	adc	r31, r17
+    1296:	61 e0       	ldi	r22, 0x01	; 1
+    1298:	70 e0       	ldi	r23, 0x00	; 0
+    129a:	80 81       	ld	r24, Z
+    129c:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	PB_SetBit(CS);
+    12a0:	80 e0       	ldi	r24, 0x00	; 0
+    12a2:	90 e0       	ldi	r25, 0x00	; 0
+    12a4:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+	
+	//GLCD_Update();
+}
+    12a8:	df 91       	pop	r29
+    12aa:	cf 91       	pop	r28
+    12ac:	1f 91       	pop	r17
+    12ae:	0f 91       	pop	r16
+    12b0:	ff 90       	pop	r15
+    12b2:	ef 90       	pop	r14
+    12b4:	df 90       	pop	r13
+    12b6:	cf 90       	pop	r12
+    12b8:	08 95       	ret
+
+Disassembly of section .text.GLCD_ClearPixel:
+
+00001148 <GLCD_ClearPixel>:
+void GLCD_ClearPixel(struct point p)
+{
+    1148:	cf 92       	push	r12
+    114a:	df 92       	push	r13
+    114c:	ef 92       	push	r14
+    114e:	ff 92       	push	r15
+    1150:	0f 93       	push	r16
+    1152:	1f 93       	push	r17
+    1154:	cf 93       	push	r28
+    1156:	df 93       	push	r29
+	if(p.x > 83 || p.x < 0 || p.y > 47 || p.y < 0)
+    1158:	84 35       	cpi	r24, 0x54	; 84
+    115a:	08 f0       	brcs	.+2      	; 0x115e <GLCD_ClearPixel+0x16>
+    115c:	49 c0       	rjmp	.+146    	; 0x11f0 <GLCD_ClearPixel+0xa8>
+    115e:	90 33       	cpi	r25, 0x30	; 48
+    1160:	08 f0       	brcs	.+2      	; 0x1164 <GLCD_ClearPixel+0x1c>
+    1162:	46 c0       	rjmp	.+140    	; 0x11f0 <GLCD_ClearPixel+0xa8>
+    1164:	c8 2f       	mov	r28, r24
+	return;
+	display[p.x][p.y/8] &= ~(1<<(p.y%8));
+    1166:	d9 2f       	mov	r29, r25
+    1168:	d6 95       	lsr	r29
+    116a:	d6 95       	lsr	r29
+    116c:	d6 95       	lsr	r29
+    116e:	e8 2e       	mov	r14, r24
+    1170:	f1 2c       	mov	r15, r1
+    1172:	0d 2f       	mov	r16, r29
+    1174:	10 e0       	ldi	r17, 0x00	; 0
+    1176:	97 70       	andi	r25, 0x07	; 7
+    1178:	21 e0       	ldi	r18, 0x01	; 1
+    117a:	30 e0       	ldi	r19, 0x00	; 0
+    117c:	a9 01       	movw	r20, r18
+    117e:	02 c0       	rjmp	.+4      	; 0x1184 <GLCD_ClearPixel+0x3c>
+    1180:	44 0f       	add	r20, r20
+    1182:	55 1f       	adc	r21, r21
+    1184:	9a 95       	dec	r25
+    1186:	e2 f7       	brpl	.-8      	; 0x1180 <GLCD_ClearPixel+0x38>
+    1188:	ca 01       	movw	r24, r20
+    118a:	67 01       	movw	r12, r14
+    118c:	cc 0c       	add	r12, r12
+    118e:	dd 1c       	adc	r13, r13
+    1190:	f6 01       	movw	r30, r12
+    1192:	ee 0d       	add	r30, r14
+    1194:	ff 1d       	adc	r31, r15
+    1196:	ee 0f       	add	r30, r30
+    1198:	ff 1f       	adc	r31, r31
+    119a:	e8 57       	subi	r30, 0x78	; 120
+    119c:	ff 4f       	sbci	r31, 0xFF	; 255
+    119e:	e0 0f       	add	r30, r16
+    11a0:	f1 1f       	adc	r31, r17
+    11a2:	80 95       	com	r24
+    11a4:	90 81       	ld	r25, Z
+    11a6:	89 23       	and	r24, r25
+    11a8:	80 83       	st	Z, r24
+	PB_ClearBit(CS);
+    11aa:	80 e0       	ldi	r24, 0x00	; 0
+    11ac:	90 e0       	ldi	r25, 0x00	; 0
+    11ae:	0e 94 d0 0d 	call	0x1ba0	; 0x1ba0 <PB_ClearBit>
+	GLCD_SEND(0x80 + p.x,0);
+    11b2:	60 e0       	ldi	r22, 0x00	; 0
+    11b4:	70 e0       	ldi	r23, 0x00	; 0
+    11b6:	80 e8       	ldi	r24, 0x80	; 128
+    11b8:	8c 0f       	add	r24, r28
+    11ba:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	GLCD_SEND(0x40 + (p.y/8),0);
+    11be:	60 e0       	ldi	r22, 0x00	; 0
+    11c0:	70 e0       	ldi	r23, 0x00	; 0
+    11c2:	80 e4       	ldi	r24, 0x40	; 64
+    11c4:	8d 0f       	add	r24, r29
+    11c6:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	GLCD_SEND(display[p.x][p.y/8],1);
+    11ca:	c6 01       	movw	r24, r12
+    11cc:	8e 0d       	add	r24, r14
+    11ce:	9f 1d       	adc	r25, r15
+    11d0:	88 0f       	add	r24, r24
+    11d2:	99 1f       	adc	r25, r25
+    11d4:	88 57       	subi	r24, 0x78	; 120
+    11d6:	9f 4f       	sbci	r25, 0xFF	; 255
+    11d8:	fc 01       	movw	r30, r24
+    11da:	e0 0f       	add	r30, r16
+    11dc:	f1 1f       	adc	r31, r17
+    11de:	61 e0       	ldi	r22, 0x01	; 1
+    11e0:	70 e0       	ldi	r23, 0x00	; 0
+    11e2:	80 81       	ld	r24, Z
+    11e4:	0e 94 9f 0d 	call	0x1b3e	; 0x1b3e <GLCD_SEND>
+	PB_SetBit(CS);
+    11e8:	80 e0       	ldi	r24, 0x00	; 0
+    11ea:	90 e0       	ldi	r25, 0x00	; 0
+    11ec:	0e 94 dc 0d 	call	0x1bb8	; 0x1bb8 <PB_SetBit>
+}
+    11f0:	df 91       	pop	r29
+    11f2:	cf 91       	pop	r28
+    11f4:	1f 91       	pop	r17
+    11f6:	0f 91       	pop	r16
+    11f8:	ff 90       	pop	r15
+    11fa:	ef 90       	pop	r14
+    11fc:	df 90       	pop	r13
+    11fe:	cf 90       	pop	r12
+    1200:	08 95       	ret
+
+Disassembly of section .text.GLCD_SetPixel2:
+
+000018e8 <GLCD_SetPixel2>:
+void GLCD_SetPixel2(struct point p)
+{
+    18e8:	29 2f       	mov	r18, r25
+	if(p.x > 83 || p.x < 0 || p.y > 47 || p.y < 0)
+    18ea:	84 35       	cpi	r24, 0x54	; 84
+    18ec:	08 f5       	brcc	.+66     	; 0x1930 <GLCD_SetPixel2+0x48>
+    18ee:	90 33       	cpi	r25, 0x30	; 48
+    18f0:	f8 f4       	brcc	.+62     	; 0x1930 <GLCD_SetPixel2+0x48>
+	return;
+	display[p.x][p.y/8] |= (1<<(p.y%8));
+    18f2:	90 e0       	ldi	r25, 0x00	; 0
+    18f4:	42 2f       	mov	r20, r18
+    18f6:	46 95       	lsr	r20
+    18f8:	46 95       	lsr	r20
+    18fa:	46 95       	lsr	r20
+    18fc:	50 e0       	ldi	r21, 0x00	; 0
+    18fe:	27 70       	andi	r18, 0x07	; 7
+    1900:	61 e0       	ldi	r22, 0x01	; 1
+    1902:	70 e0       	ldi	r23, 0x00	; 0
+    1904:	fb 01       	movw	r30, r22
+    1906:	02 c0       	rjmp	.+4      	; 0x190c <GLCD_SetPixel2+0x24>
+    1908:	ee 0f       	add	r30, r30
+    190a:	ff 1f       	adc	r31, r31
+    190c:	2a 95       	dec	r18
+    190e:	e2 f7       	brpl	.-8      	; 0x1908 <GLCD_SetPixel2+0x20>
+    1910:	9f 01       	movw	r18, r30
+    1912:	bc 01       	movw	r22, r24
+    1914:	66 0f       	add	r22, r22
+    1916:	77 1f       	adc	r23, r23
+    1918:	fb 01       	movw	r30, r22
+    191a:	e8 0f       	add	r30, r24
+    191c:	f9 1f       	adc	r31, r25
+    191e:	ee 0f       	add	r30, r30
+    1920:	ff 1f       	adc	r31, r31
+    1922:	e8 57       	subi	r30, 0x78	; 120
+    1924:	ff 4f       	sbci	r31, 0xFF	; 255
+    1926:	e4 0f       	add	r30, r20
+    1928:	f5 1f       	adc	r31, r21
+    192a:	80 81       	ld	r24, Z
+    192c:	28 2b       	or	r18, r24
+    192e:	20 83       	st	Z, r18
+    1930:	08 95       	ret
+
+Disassembly of section .text.GLCD_ClearPixel2:
+
+00001850 <GLCD_ClearPixel2>:
+}
+void GLCD_ClearPixel2(struct point p)
+{
+    1850:	29 2f       	mov	r18, r25
+	if(p.x > 83 || p.x < 0 || p.y > 47 || p.y < 0)
+    1852:	84 35       	cpi	r24, 0x54	; 84
+    1854:	10 f5       	brcc	.+68     	; 0x189a <GLCD_ClearPixel2+0x4a>
+    1856:	90 33       	cpi	r25, 0x30	; 48
+    1858:	00 f5       	brcc	.+64     	; 0x189a <GLCD_ClearPixel2+0x4a>
+	return;
+	display[p.x][p.y/8] &= ~(1<<(p.y%8));
+    185a:	90 e0       	ldi	r25, 0x00	; 0
+    185c:	62 2f       	mov	r22, r18
+    185e:	66 95       	lsr	r22
+    1860:	66 95       	lsr	r22
+    1862:	66 95       	lsr	r22
+    1864:	70 e0       	ldi	r23, 0x00	; 0
+    1866:	27 70       	andi	r18, 0x07	; 7
+    1868:	41 e0       	ldi	r20, 0x01	; 1
+    186a:	50 e0       	ldi	r21, 0x00	; 0
+    186c:	fa 01       	movw	r30, r20
+    186e:	02 c0       	rjmp	.+4      	; 0x1874 <GLCD_ClearPixel2+0x24>
+    1870:	ee 0f       	add	r30, r30
+    1872:	ff 1f       	adc	r31, r31
+    1874:	2a 95       	dec	r18
+    1876:	e2 f7       	brpl	.-8      	; 0x1870 <GLCD_ClearPixel2+0x20>
+    1878:	9f 01       	movw	r18, r30
+    187a:	ac 01       	movw	r20, r24
+    187c:	44 0f       	add	r20, r20
+    187e:	55 1f       	adc	r21, r21
+    1880:	fa 01       	movw	r30, r20
+    1882:	e8 0f       	add	r30, r24
+    1884:	f9 1f       	adc	r31, r25
+    1886:	ee 0f       	add	r30, r30
+    1888:	ff 1f       	adc	r31, r31
+    188a:	e8 57       	subi	r30, 0x78	; 120
+    188c:	ff 4f       	sbci	r31, 0xFF	; 255
+    188e:	e6 0f       	add	r30, r22
+    1890:	f7 1f       	adc	r31, r23
+    1892:	20 95       	com	r18
+    1894:	80 81       	ld	r24, Z
+    1896:	28 23       	and	r18, r24
+    1898:	20 83       	st	Z, r18
+    189a:	08 95       	ret
+
+Disassembly of section .text.GLCD_Clear:
+
+00001a40 <GLCD_Clear>:
+}
+
+void GLCD_Clear()
+{
+	for(char i = 0; i < 6; i++)
+    1a40:	30 e0       	ldi	r19, 0x00	; 0
+    1a42:	14 c0       	rjmp	.+40     	; 0x1a6c <GLCD_Clear+0x2c>
+		for(char j = 0; j < 84; j++)
+		{
+			display[j][i] = 0x00;
+    1a44:	82 2f       	mov	r24, r18
+    1a46:	90 e0       	ldi	r25, 0x00	; 0
+    1a48:	fc 01       	movw	r30, r24
+    1a4a:	ee 0f       	add	r30, r30
+    1a4c:	ff 1f       	adc	r31, r31
+    1a4e:	e8 0f       	add	r30, r24
+    1a50:	f9 1f       	adc	r31, r25
+    1a52:	ee 0f       	add	r30, r30
+    1a54:	ff 1f       	adc	r31, r31
+    1a56:	e8 57       	subi	r30, 0x78	; 120
+    1a58:	ff 4f       	sbci	r31, 0xFF	; 255
+    1a5a:	e3 0f       	add	r30, r19
+    1a5c:	f1 1d       	adc	r31, r1
+    1a5e:	10 82       	st	Z, r1
+}
+
+void GLCD_Clear()
+{
+	for(char i = 0; i < 6; i++)
+		for(char j = 0; j < 84; j++)
+    1a60:	2f 5f       	subi	r18, 0xFF	; 255
+    1a62:	01 c0       	rjmp	.+2      	; 0x1a66 <GLCD_Clear+0x26>
+    1a64:	20 e0       	ldi	r18, 0x00	; 0
+    1a66:	24 35       	cpi	r18, 0x54	; 84
+    1a68:	68 f3       	brcs	.-38     	; 0x1a44 <GLCD_Clear+0x4>
+	display[p.x][p.y/8] &= ~(1<<(p.y%8));
+}
+
+void GLCD_Clear()
+{
+	for(char i = 0; i < 6; i++)
+    1a6a:	3f 5f       	subi	r19, 0xFF	; 255
+    1a6c:	36 30       	cpi	r19, 0x06	; 6
+    1a6e:	d0 f3       	brcs	.-12     	; 0x1a64 <GLCD_Clear+0x24>
+		for(char j = 0; j < 84; j++)
+		{
+			display[j][i] = 0x00;
+		}
+	GLCD_Update();
+    1a70:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+    1a74:	08 95       	ret
+
+Disassembly of section .text.GLCD_putchar:
+
+00000fa8 <GLCD_putchar>:
+}
+
+void GLCD_putchar(struct point p,char c)
+{
+     fa8:	df 92       	push	r13
+     faa:	ef 92       	push	r14
+     fac:	ff 92       	push	r15
+     fae:	0f 93       	push	r16
+     fb0:	1f 93       	push	r17
+     fb2:	cf 93       	push	r28
+     fb4:	df 93       	push	r29
+	if(p.x > 77 || p.x < 0 || p.y > 39 || p.y < 0)
+     fb6:	8e 34       	cpi	r24, 0x4E	; 78
+     fb8:	08 f0       	brcs	.+2      	; 0xfbc <GLCD_putchar+0x14>
+     fba:	5d c0       	rjmp	.+186    	; 0x1076 <GLCD_putchar+0xce>
+     fbc:	98 32       	cpi	r25, 0x28	; 40
+     fbe:	08 f0       	brcs	.+2      	; 0xfc2 <GLCD_putchar+0x1a>
+     fc0:	5a c0       	rjmp	.+180    	; 0x1076 <GLCD_putchar+0xce>
+     fc2:	f6 2e       	mov	r15, r22
+     fc4:	d9 2e       	mov	r13, r25
+     fc6:	e8 2e       	mov	r14, r24
+     fc8:	00 e0       	ldi	r16, 0x00	; 0
+     fca:	10 e0       	ldi	r17, 0x00	; 0
+     fcc:	51 c0       	rjmp	.+162    	; 0x1070 <GLCD_putchar+0xc8>
+		return;
+	for(int i = 0; i < 7; i++)
+	{
+		for(int j = 0; j < 8; j++)
+		if(c != ' ')
+     fce:	20 e2       	ldi	r18, 0x20	; 32
+     fd0:	f2 16       	cp	r15, r18
+     fd2:	c9 f1       	breq	.+114    	; 0x1046 <GLCD_putchar+0x9e>
+		{
+			if(font_7x8[((c-33)*7)+i] & (1<<j))
+     fd4:	8f 2d       	mov	r24, r15
+     fd6:	90 e0       	ldi	r25, 0x00	; 0
+     fd8:	81 97       	sbiw	r24, 0x21	; 33
+     fda:	9c 01       	movw	r18, r24
+     fdc:	22 0f       	add	r18, r18
+     fde:	33 1f       	adc	r19, r19
+     fe0:	22 0f       	add	r18, r18
+     fe2:	33 1f       	adc	r19, r19
+     fe4:	22 0f       	add	r18, r18
+     fe6:	33 1f       	adc	r19, r19
+     fe8:	28 1b       	sub	r18, r24
+     fea:	39 0b       	sbc	r19, r25
+     fec:	20 0f       	add	r18, r16
+     fee:	31 1f       	adc	r19, r17
+     ff0:	03 2e       	mov	r0, r19
+     ff2:	00 0c       	add	r0, r0
+     ff4:	44 0b       	sbc	r20, r20
+     ff6:	2a 53       	subi	r18, 0x3A	; 58
+     ff8:	3f 4f       	sbci	r19, 0xFF	; 255
+     ffa:	4f 4f       	sbci	r20, 0xFF	; 255
+     ffc:	f9 01       	movw	r30, r18
+     ffe:	84 91       	lpm	r24, Z
+    1000:	47 fd       	sbrc	r20, 7
+    1002:	80 81       	ld	r24, Z
+    1004:	90 e0       	ldi	r25, 0x00	; 0
+    1006:	0c 2e       	mov	r0, r28
+    1008:	02 c0       	rjmp	.+4      	; 0x100e <GLCD_putchar+0x66>
+    100a:	95 95       	asr	r25
+    100c:	87 95       	ror	r24
+    100e:	0a 94       	dec	r0
+    1010:	e2 f7       	brpl	.-8      	; 0x100a <GLCD_putchar+0x62>
+    1012:	80 ff       	sbrs	r24, 0
+    1014:	0c c0       	rjmp	.+24     	; 0x102e <GLCD_putchar+0x86>
+				GLCD_SetPixel(Add_Point(p,Point(i,j)));
+    1016:	6c 2f       	mov	r22, r28
+    1018:	80 2f       	mov	r24, r16
+    101a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    101e:	bc 01       	movw	r22, r24
+    1020:	8e 2d       	mov	r24, r14
+    1022:	9d 2d       	mov	r25, r13
+    1024:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1028:	0e 94 01 09 	call	0x1202	; 0x1202 <GLCD_SetPixel>
+    102c:	17 c0       	rjmp	.+46     	; 0x105c <GLCD_putchar+0xb4>
+			else
+				GLCD_ClearPixel(Add_Point(p,Point(i,j)));
+    102e:	6c 2f       	mov	r22, r28
+    1030:	80 2f       	mov	r24, r16
+    1032:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1036:	bc 01       	movw	r22, r24
+    1038:	8e 2d       	mov	r24, r14
+    103a:	9d 2d       	mov	r25, r13
+    103c:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1040:	0e 94 a4 08 	call	0x1148	; 0x1148 <GLCD_ClearPixel>
+    1044:	0b c0       	rjmp	.+22     	; 0x105c <GLCD_putchar+0xb4>
+		}
+		else
+		{
+			GLCD_ClearPixel(Add_Point(p,Point(i,j)));
+    1046:	6c 2f       	mov	r22, r28
+    1048:	80 2f       	mov	r24, r16
+    104a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    104e:	bc 01       	movw	r22, r24
+    1050:	8e 2d       	mov	r24, r14
+    1052:	9d 2d       	mov	r25, r13
+    1054:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1058:	0e 94 a4 08 	call	0x1148	; 0x1148 <GLCD_ClearPixel>
+{
+	if(p.x > 77 || p.x < 0 || p.y > 39 || p.y < 0)
+		return;
+	for(int i = 0; i < 7; i++)
+	{
+		for(int j = 0; j < 8; j++)
+    105c:	21 96       	adiw	r28, 0x01	; 1
+    105e:	02 c0       	rjmp	.+4      	; 0x1064 <GLCD_putchar+0xbc>
+    1060:	c0 e0       	ldi	r28, 0x00	; 0
+    1062:	d0 e0       	ldi	r29, 0x00	; 0
+    1064:	c8 30       	cpi	r28, 0x08	; 8
+    1066:	d1 05       	cpc	r29, r1
+    1068:	0c f4       	brge	.+2      	; 0x106c <GLCD_putchar+0xc4>
+    106a:	b1 cf       	rjmp	.-158    	; 0xfce <GLCD_putchar+0x26>
+
+void GLCD_putchar(struct point p,char c)
+{
+	if(p.x > 77 || p.x < 0 || p.y > 39 || p.y < 0)
+		return;
+	for(int i = 0; i < 7; i++)
+    106c:	0f 5f       	subi	r16, 0xFF	; 255
+    106e:	1f 4f       	sbci	r17, 0xFF	; 255
+    1070:	07 30       	cpi	r16, 0x07	; 7
+    1072:	11 05       	cpc	r17, r1
+    1074:	ac f3       	brlt	.-22     	; 0x1060 <GLCD_putchar+0xb8>
+		else
+		{
+			GLCD_ClearPixel(Add_Point(p,Point(i,j)));
+		}
+	}
+}
+    1076:	df 91       	pop	r29
+    1078:	cf 91       	pop	r28
+    107a:	1f 91       	pop	r17
+    107c:	0f 91       	pop	r16
+    107e:	ff 90       	pop	r15
+    1080:	ef 90       	pop	r14
+    1082:	df 90       	pop	r13
+    1084:	08 95       	ret
+
+Disassembly of section .text.GLCD_Puts:
+
+000014a0 <GLCD_Puts>:
+void GLCD_Puts(struct point p,const char *c)
+{
+    14a0:	cf 92       	push	r12
+    14a2:	df 92       	push	r13
+    14a4:	ef 92       	push	r14
+    14a6:	0f 93       	push	r16
+    14a8:	1f 93       	push	r17
+    14aa:	cf 93       	push	r28
+    14ac:	df 93       	push	r29
+	struct point curp = p;
+    14ae:	c8 2f       	mov	r28, r24
+    14b0:	d9 2f       	mov	r29, r25
+	int i = 0;
+	if(curp.y > 39)
+    14b2:	98 32       	cpi	r25, 0x28	; 40
+    14b4:	50 f5       	brcc	.+84     	; 0x150a <GLCD_Puts+0x6a>
+		return;
+	if(curp.y < 0)
+		curp.y = 0;
+	if(curp.x < 0)
+		curp.x = 0;
+	if(curp.x > 77)
+    14b6:	8e 34       	cpi	r24, 0x4E	; 78
+    14b8:	28 f0       	brcs	.+10     	; 0x14c4 <GLCD_Puts+0x24>
+	{
+		curp.x = 0;
+    14ba:	c0 e0       	ldi	r28, 0x00	; 0
+		curp.y += 8;
+    14bc:	d8 e0       	ldi	r29, 0x08	; 8
+    14be:	d9 0f       	add	r29, r25
+		if(curp.y > 39)
+    14c0:	d8 32       	cpi	r29, 0x28	; 40
+    14c2:	18 f5       	brcc	.+70     	; 0x150a <GLCD_Puts+0x6a>
+    14c4:	6a 01       	movw	r12, r20
+    14c6:	e6 2e       	mov	r14, r22
+			GLCD_ClearPixel(Add_Point(p,Point(i,j)));
+		}
+	}
+}
+void GLCD_Puts(struct point p,const char *c)
+{
+    14c8:	00 e0       	ldi	r16, 0x00	; 0
+    14ca:	10 e0       	ldi	r17, 0x00	; 0
+    14cc:	11 c0       	rjmp	.+34     	; 0x14f0 <GLCD_Puts+0x50>
+		if(curp.y > 39)
+			return;
+	}
+	while(c[i] != NULL)
+	{
+		if(curp.y > 39)
+    14ce:	8d 2f       	mov	r24, r29
+    14d0:	d8 32       	cpi	r29, 0x28	; 40
+    14d2:	d8 f4       	brcc	.+54     	; 0x150a <GLCD_Puts+0x6a>
+		return;
+		if(curp.y < 0)
+		curp.y = 0;
+		if(curp.x < 0)
+		curp.x = 0;
+		if(curp.x > 77)
+    14d4:	ce 34       	cpi	r28, 0x4E	; 78
+    14d6:	28 f0       	brcs	.+10     	; 0x14e2 <GLCD_Puts+0x42>
+		{
+			curp.x = 0;
+    14d8:	c0 e0       	ldi	r28, 0x00	; 0
+			curp.y += 8;
+    14da:	d8 e0       	ldi	r29, 0x08	; 8
+    14dc:	d8 0f       	add	r29, r24
+			if(curp.y > 39)
+    14de:	d8 32       	cpi	r29, 0x28	; 40
+    14e0:	a0 f4       	brcc	.+40     	; 0x150a <GLCD_Puts+0x6a>
+			return;
+		}
+		GLCD_putchar(curp,c[i]);
+    14e2:	8c 2f       	mov	r24, r28
+    14e4:	9d 2f       	mov	r25, r29
+    14e6:	0e 94 d4 07 	call	0xfa8	; 0xfa8 <GLCD_putchar>
+		curp.x += 7;
+    14ea:	c9 5f       	subi	r28, 0xF9	; 249
+		i++;
+    14ec:	0f 5f       	subi	r16, 0xFF	; 255
+    14ee:	1f 4f       	sbci	r17, 0xFF	; 255
+		curp.x = 0;
+		curp.y += 8;
+		if(curp.y > 39)
+			return;
+	}
+	while(c[i] != NULL)
+    14f0:	ae 2d       	mov	r26, r14
+    14f2:	c6 01       	movw	r24, r12
+    14f4:	80 0f       	add	r24, r16
+    14f6:	91 1f       	adc	r25, r17
+    14f8:	a1 1d       	adc	r26, r1
+    14fa:	17 fd       	sbrc	r17, 7
+    14fc:	aa 95       	dec	r26
+    14fe:	fc 01       	movw	r30, r24
+    1500:	64 91       	lpm	r22, Z
+    1502:	a7 fd       	sbrc	r26, 7
+    1504:	60 81       	ld	r22, Z
+    1506:	61 11       	cpse	r22, r1
+    1508:	e2 cf       	rjmp	.-60     	; 0x14ce <GLCD_Puts+0x2e>
+		}
+		GLCD_putchar(curp,c[i]);
+		curp.x += 7;
+		i++;
+	}
+}
+    150a:	df 91       	pop	r29
+    150c:	cf 91       	pop	r28
+    150e:	1f 91       	pop	r17
+    1510:	0f 91       	pop	r16
+    1512:	ef 90       	pop	r14
+    1514:	df 90       	pop	r13
+    1516:	cf 90       	pop	r12
+    1518:	08 95       	ret
+
+Disassembly of section .text.Gdisplay_ClearTile:
+
+000019c2 <Gdisplay_ClearTile>:
+
+// GameStuff
+
+void Gdisplay_ClearTile(struct point p)
+{
+    19c2:	29 2f       	mov	r18, r25
+	gdisplay[p.x][p.y/4] &= ~(0x03<<((p.y%4)*2));
+    19c4:	90 e0       	ldi	r25, 0x00	; 0
+    19c6:	62 2f       	mov	r22, r18
+    19c8:	66 95       	lsr	r22
+    19ca:	66 95       	lsr	r22
+    19cc:	23 70       	andi	r18, 0x03	; 3
+    19ce:	30 e0       	ldi	r19, 0x00	; 0
+    19d0:	22 0f       	add	r18, r18
+    19d2:	33 1f       	adc	r19, r19
+    19d4:	43 e0       	ldi	r20, 0x03	; 3
+    19d6:	50 e0       	ldi	r21, 0x00	; 0
+    19d8:	fa 01       	movw	r30, r20
+    19da:	02 c0       	rjmp	.+4      	; 0x19e0 <Gdisplay_ClearTile+0x1e>
+    19dc:	ee 0f       	add	r30, r30
+    19de:	ff 1f       	adc	r31, r31
+    19e0:	2a 95       	dec	r18
+    19e2:	e2 f7       	brpl	.-8      	; 0x19dc <Gdisplay_ClearTile+0x1a>
+    19e4:	9f 01       	movw	r18, r30
+    19e6:	fc 01       	movw	r30, r24
+    19e8:	ee 0f       	add	r30, r30
+    19ea:	ff 1f       	adc	r31, r31
+    19ec:	e8 0f       	add	r30, r24
+    19ee:	f9 1f       	adc	r31, r25
+    19f0:	e0 58       	subi	r30, 0x80	; 128
+    19f2:	fd 4f       	sbci	r31, 0xFD	; 253
+    19f4:	e6 0f       	add	r30, r22
+    19f6:	f1 1d       	adc	r31, r1
+    19f8:	20 95       	com	r18
+    19fa:	80 81       	ld	r24, Z
+    19fc:	28 23       	and	r18, r24
+    19fe:	20 83       	st	Z, r18
+    1a00:	08 95       	ret
+
+Disassembly of section .text.Gdisplay_SetTile:
+
+00001762 <Gdisplay_SetTile>:
+}
+void Gdisplay_SetTile(struct point p,char TM)
+{
+    1762:	1f 93       	push	r17
+    1764:	cf 93       	push	r28
+    1766:	df 93       	push	r29
+    1768:	c8 2f       	mov	r28, r24
+    176a:	d9 2f       	mov	r29, r25
+    176c:	16 2f       	mov	r17, r22
+	Gdisplay_ClearTile(p); // I putted this because we are using OR to set tile in the next line, so the previous Tile Data Could be still sitting there after setting the tile 
+    176e:	0e 94 e1 0c 	call	0x19c2	; 0x19c2 <Gdisplay_ClearTile>
+	gdisplay[p.x][p.y/4] |= (TM<<((p.y%4)*2));
+    1772:	8c 2f       	mov	r24, r28
+    1774:	90 e0       	ldi	r25, 0x00	; 0
+    1776:	4d 2f       	mov	r20, r29
+    1778:	46 95       	lsr	r20
+    177a:	46 95       	lsr	r20
+    177c:	d3 70       	andi	r29, 0x03	; 3
+    177e:	2d 2f       	mov	r18, r29
+    1780:	30 e0       	ldi	r19, 0x00	; 0
+    1782:	22 0f       	add	r18, r18
+    1784:	33 1f       	adc	r19, r19
+    1786:	61 2f       	mov	r22, r17
+    1788:	70 e0       	ldi	r23, 0x00	; 0
+    178a:	02 c0       	rjmp	.+4      	; 0x1790 <Gdisplay_SetTile+0x2e>
+    178c:	66 0f       	add	r22, r22
+    178e:	77 1f       	adc	r23, r23
+    1790:	2a 95       	dec	r18
+    1792:	e2 f7       	brpl	.-8      	; 0x178c <Gdisplay_SetTile+0x2a>
+    1794:	fc 01       	movw	r30, r24
+    1796:	ee 0f       	add	r30, r30
+    1798:	ff 1f       	adc	r31, r31
+    179a:	e8 0f       	add	r30, r24
+    179c:	f9 1f       	adc	r31, r25
+    179e:	e0 58       	subi	r30, 0x80	; 128
+    17a0:	fd 4f       	sbci	r31, 0xFD	; 253
+    17a2:	e4 0f       	add	r30, r20
+    17a4:	f1 1d       	adc	r31, r1
+    17a6:	80 81       	ld	r24, Z
+    17a8:	68 2b       	or	r22, r24
+    17aa:	60 83       	st	Z, r22
+}
+    17ac:	df 91       	pop	r29
+    17ae:	cf 91       	pop	r28
+    17b0:	1f 91       	pop	r17
+    17b2:	08 95       	ret
+
+Disassembly of section .text.Gdisplay_GetTile:
+
+0000189c <Gdisplay_GetTile>:
+char Gdisplay_GetTile(struct point p)
+{
+    189c:	29 2f       	mov	r18, r25
+	return ((gdisplay[p.x][p.y/4] & (0x03<<((p.y%4)*2)))>>((p.y%4)*2));
+    189e:	39 2f       	mov	r19, r25
+    18a0:	36 95       	lsr	r19
+    18a2:	36 95       	lsr	r19
+    18a4:	90 e0       	ldi	r25, 0x00	; 0
+    18a6:	fc 01       	movw	r30, r24
+    18a8:	ee 0f       	add	r30, r30
+    18aa:	ff 1f       	adc	r31, r31
+    18ac:	e8 0f       	add	r30, r24
+    18ae:	f9 1f       	adc	r31, r25
+    18b0:	e0 58       	subi	r30, 0x80	; 128
+    18b2:	fd 4f       	sbci	r31, 0xFD	; 253
+    18b4:	e3 0f       	add	r30, r19
+    18b6:	f1 1d       	adc	r31, r1
+    18b8:	60 81       	ld	r22, Z
+    18ba:	23 70       	andi	r18, 0x03	; 3
+    18bc:	30 e0       	ldi	r19, 0x00	; 0
+    18be:	22 0f       	add	r18, r18
+    18c0:	33 1f       	adc	r19, r19
+    18c2:	83 e0       	ldi	r24, 0x03	; 3
+    18c4:	90 e0       	ldi	r25, 0x00	; 0
+    18c6:	ac 01       	movw	r20, r24
+    18c8:	02 2e       	mov	r0, r18
+    18ca:	02 c0       	rjmp	.+4      	; 0x18d0 <Gdisplay_GetTile+0x34>
+    18cc:	44 0f       	add	r20, r20
+    18ce:	55 1f       	adc	r21, r21
+    18d0:	0a 94       	dec	r0
+    18d2:	e2 f7       	brpl	.-8      	; 0x18cc <Gdisplay_GetTile+0x30>
+    18d4:	86 2f       	mov	r24, r22
+    18d6:	90 e0       	ldi	r25, 0x00	; 0
+    18d8:	84 23       	and	r24, r20
+    18da:	95 23       	and	r25, r21
+    18dc:	02 c0       	rjmp	.+4      	; 0x18e2 <Gdisplay_GetTile+0x46>
+    18de:	95 95       	asr	r25
+    18e0:	87 95       	ror	r24
+    18e2:	2a 95       	dec	r18
+    18e4:	e2 f7       	brpl	.-8      	; 0x18de <Gdisplay_GetTile+0x42>
+}
+    18e6:	08 95       	ret
+
+Disassembly of section .text.TTs_init:
+
+00000cd6 <TTs_init>:
+
+void TTs_init() // the tetrominoes in the game
+{
+ cd6:	cf 93       	push	r28
+ cd8:	df 93       	push	r29
+	tets[0].gpos = Point(11,2);
+ cda:	c0 e6       	ldi	r28, 0x60	; 96
+ cdc:	d0 e0       	ldi	r29, 0x00	; 0
+ cde:	62 e0       	ldi	r22, 0x02	; 2
+ ce0:	8b e0       	ldi	r24, 0x0B	; 11
+ ce2:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ ce6:	99 83       	std	Y+1, r25	; 0x01
+ ce8:	88 83       	st	Y, r24
+	tets[0].t2lpos = Point(-1,0);
+ cea:	60 e0       	ldi	r22, 0x00	; 0
+ cec:	8f ef       	ldi	r24, 0xFF	; 255
+ cee:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ cf2:	9b 83       	std	Y+3, r25	; 0x03
+ cf4:	8a 83       	std	Y+2, r24	; 0x02
+	tets[0].t3lpos = Point(1,0);
+ cf6:	60 e0       	ldi	r22, 0x00	; 0
+ cf8:	81 e0       	ldi	r24, 0x01	; 1
+ cfa:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ cfe:	9d 83       	std	Y+5, r25	; 0x05
+ d00:	8c 83       	std	Y+4, r24	; 0x04
+	tets[0].t4lpos = Point(0,-1);
+ d02:	6f ef       	ldi	r22, 0xFF	; 255
+ d04:	80 e0       	ldi	r24, 0x00	; 0
+ d06:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d0a:	9f 83       	std	Y+7, r25	; 0x07
+ d0c:	8e 83       	std	Y+6, r24	; 0x06
+	tets[1].gpos = Point(11,2);
+ d0e:	62 e0       	ldi	r22, 0x02	; 2
+ d10:	8b e0       	ldi	r24, 0x0B	; 11
+ d12:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d16:	99 87       	std	Y+9, r25	; 0x09
+ d18:	88 87       	std	Y+8, r24	; 0x08
+	tets[1].t2lpos = Point(0,-1);
+ d1a:	6f ef       	ldi	r22, 0xFF	; 255
+ d1c:	80 e0       	ldi	r24, 0x00	; 0
+ d1e:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d22:	9b 87       	std	Y+11, r25	; 0x0b
+ d24:	8a 87       	std	Y+10, r24	; 0x0a
+	tets[1].t3lpos = Point(1,0);
+ d26:	60 e0       	ldi	r22, 0x00	; 0
+ d28:	81 e0       	ldi	r24, 0x01	; 1
+ d2a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d2e:	9d 87       	std	Y+13, r25	; 0x0d
+ d30:	8c 87       	std	Y+12, r24	; 0x0c
+	tets[1].t4lpos = Point(2,0);
+ d32:	60 e0       	ldi	r22, 0x00	; 0
+ d34:	82 e0       	ldi	r24, 0x02	; 2
+ d36:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d3a:	9f 87       	std	Y+15, r25	; 0x0f
+ d3c:	8e 87       	std	Y+14, r24	; 0x0e
+	tets[2].gpos = Point(11,2);
+ d3e:	62 e0       	ldi	r22, 0x02	; 2
+ d40:	8b e0       	ldi	r24, 0x0B	; 11
+ d42:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d46:	99 8b       	std	Y+17, r25	; 0x11
+ d48:	88 8b       	std	Y+16, r24	; 0x10
+	tets[2].t2lpos = Point(-1,0);
+ d4a:	60 e0       	ldi	r22, 0x00	; 0
+ d4c:	8f ef       	ldi	r24, 0xFF	; 255
+ d4e:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d52:	9b 8b       	std	Y+19, r25	; 0x13
+ d54:	8a 8b       	std	Y+18, r24	; 0x12
+	tets[2].t3lpos = Point(0,-1);
+ d56:	6f ef       	ldi	r22, 0xFF	; 255
+ d58:	80 e0       	ldi	r24, 0x00	; 0
+ d5a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d5e:	9d 8b       	std	Y+21, r25	; 0x15
+ d60:	8c 8b       	std	Y+20, r24	; 0x14
+	tets[2].t4lpos = Point(1,-1);
+ d62:	6f ef       	ldi	r22, 0xFF	; 255
+ d64:	81 e0       	ldi	r24, 0x01	; 1
+ d66:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d6a:	9f 8b       	std	Y+23, r25	; 0x17
+ d6c:	8e 8b       	std	Y+22, r24	; 0x16
+	tets[3].gpos = Point(11,2);
+ d6e:	62 e0       	ldi	r22, 0x02	; 2
+ d70:	8b e0       	ldi	r24, 0x0B	; 11
+ d72:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d76:	99 8f       	std	Y+25, r25	; 0x19
+ d78:	88 8f       	std	Y+24, r24	; 0x18
+	tets[3].t2lpos = Point(1,0);
+ d7a:	60 e0       	ldi	r22, 0x00	; 0
+ d7c:	81 e0       	ldi	r24, 0x01	; 1
+ d7e:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d82:	9b 8f       	std	Y+27, r25	; 0x1b
+ d84:	8a 8f       	std	Y+26, r24	; 0x1a
+	tets[3].t3lpos = Point(0,-1);
+ d86:	6f ef       	ldi	r22, 0xFF	; 255
+ d88:	80 e0       	ldi	r24, 0x00	; 0
+ d8a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d8e:	9d 8f       	std	Y+29, r25	; 0x1d
+ d90:	8c 8f       	std	Y+28, r24	; 0x1c
+	tets[3].t4lpos = Point(1,-1);
+ d92:	6f ef       	ldi	r22, 0xFF	; 255
+ d94:	81 e0       	ldi	r24, 0x01	; 1
+ d96:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ d9a:	9f 8f       	std	Y+31, r25	; 0x1f
+ d9c:	8e 8f       	std	Y+30, r24	; 0x1e
+	tets[4].gpos = Point(11,2);
+ d9e:	62 e0       	ldi	r22, 0x02	; 2
+ da0:	8b e0       	ldi	r24, 0x0B	; 11
+ da2:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ da6:	99 a3       	std	Y+33, r25	; 0x21
+ da8:	88 a3       	std	Y+32, r24	; 0x20
+	tets[4].t2lpos = Point(-1,0);
+ daa:	60 e0       	ldi	r22, 0x00	; 0
+ dac:	8f ef       	ldi	r24, 0xFF	; 255
+ dae:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ db2:	9b a3       	std	Y+35, r25	; 0x23
+ db4:	8a a3       	std	Y+34, r24	; 0x22
+	tets[4].t3lpos = Point(1,0);
+ db6:	60 e0       	ldi	r22, 0x00	; 0
+ db8:	81 e0       	ldi	r24, 0x01	; 1
+ dba:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ dbe:	9d a3       	std	Y+37, r25	; 0x25
+ dc0:	8c a3       	std	Y+36, r24	; 0x24
+	tets[4].t4lpos = Point(2,0);
+ dc2:	60 e0       	ldi	r22, 0x00	; 0
+ dc4:	82 e0       	ldi	r24, 0x02	; 2
+ dc6:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ dca:	9f a3       	std	Y+39, r25	; 0x27
+ dcc:	8e a3       	std	Y+38, r24	; 0x26
+}
+ dce:	df 91       	pop	r29
+ dd0:	cf 91       	pop	r28
+ dd2:	08 95       	ret
+
+Disassembly of section .text.Clear_Tile:
+
+000017b4 <Clear_Tile>:
+
+void Clear_Tile(struct point p)
+{
+    17b4:	0f 93       	push	r16
+    17b6:	1f 93       	push	r17
+    17b8:	cf 93       	push	r28
+    17ba:	df 93       	push	r29
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+    17bc:	18 2f       	mov	r17, r24
+    17be:	85 31       	cpi	r24, 0x15	; 21
+    17c0:	d8 f4       	brcc	.+54     	; 0x17f8 <Clear_Tile+0x44>
+    17c2:	09 2f       	mov	r16, r25
+    17c4:	9c 30       	cpi	r25, 0x0C	; 12
+    17c6:	c0 f4       	brcc	.+48     	; 0x17f8 <Clear_Tile+0x44>
+		return;
+	Gdisplay_ClearTile(p);
+    17c8:	0e 94 e1 0c 	call	0x19c2	; 0x19c2 <Gdisplay_ClearTile>
+	for(char i = 0; i < 4; i++)
+    17cc:	d0 e0       	ldi	r29, 0x00	; 0
+    17ce:	12 c0       	rjmp	.+36     	; 0x17f4 <Clear_Tile+0x40>
+		for(char j = 0; j < 4; j++)
+			GLCD_ClearPixel2(Point(p.x*4+i,p.y*4+j));
+    17d0:	60 2f       	mov	r22, r16
+    17d2:	66 0f       	add	r22, r22
+    17d4:	66 0f       	add	r22, r22
+    17d6:	6c 0f       	add	r22, r28
+    17d8:	81 2f       	mov	r24, r17
+    17da:	88 0f       	add	r24, r24
+    17dc:	88 0f       	add	r24, r24
+    17de:	8d 0f       	add	r24, r29
+    17e0:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    17e4:	0e 94 28 0c 	call	0x1850	; 0x1850 <GLCD_ClearPixel2>
+{
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+		return;
+	Gdisplay_ClearTile(p);
+	for(char i = 0; i < 4; i++)
+		for(char j = 0; j < 4; j++)
+    17e8:	cf 5f       	subi	r28, 0xFF	; 255
+    17ea:	01 c0       	rjmp	.+2      	; 0x17ee <Clear_Tile+0x3a>
+    17ec:	c0 e0       	ldi	r28, 0x00	; 0
+    17ee:	c4 30       	cpi	r28, 0x04	; 4
+    17f0:	78 f3       	brcs	.-34     	; 0x17d0 <Clear_Tile+0x1c>
+void Clear_Tile(struct point p)
+{
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+		return;
+	Gdisplay_ClearTile(p);
+	for(char i = 0; i < 4; i++)
+    17f2:	df 5f       	subi	r29, 0xFF	; 255
+    17f4:	d4 30       	cpi	r29, 0x04	; 4
+    17f6:	d0 f3       	brcs	.-12     	; 0x17ec <Clear_Tile+0x38>
+		for(char j = 0; j < 4; j++)
+			GLCD_ClearPixel2(Point(p.x*4+i,p.y*4+j));
+}
+    17f8:	df 91       	pop	r29
+    17fa:	cf 91       	pop	r28
+    17fc:	1f 91       	pop	r17
+    17fe:	0f 91       	pop	r16
+    1800:	08 95       	ret
+
+Disassembly of section .text.Draw_Tile:
+
+000012ba <Draw_Tile>:
+void Draw_Tile(struct point p,char TM) // 4x4 tiles  0 <= x < 21 --> 84/4 = 21       0 <= y < 12 -->  48/4 = 12   TM(TileMode/Type) is either 1 or 2(Normal Tile or Tetromino tile)
+{
+    12ba:	df 92       	push	r13
+    12bc:	ef 92       	push	r14
+    12be:	ff 92       	push	r15
+    12c0:	0f 93       	push	r16
+    12c2:	1f 93       	push	r17
+    12c4:	cf 93       	push	r28
+    12c6:	df 93       	push	r29
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+    12c8:	e8 2e       	mov	r14, r24
+    12ca:	85 31       	cpi	r24, 0x15	; 21
+    12cc:	08 f0       	brcs	.+2      	; 0x12d0 <Draw_Tile+0x16>
+    12ce:	49 c0       	rjmp	.+146    	; 0x1362 <Draw_Tile+0xa8>
+    12d0:	d9 2e       	mov	r13, r25
+    12d2:	9c 30       	cpi	r25, 0x0C	; 12
+    12d4:	08 f0       	brcs	.+2      	; 0x12d8 <Draw_Tile+0x1e>
+    12d6:	45 c0       	rjmp	.+138    	; 0x1362 <Draw_Tile+0xa8>
+    12d8:	16 2f       	mov	r17, r22
+    12da:	d9 2f       	mov	r29, r25
+    12dc:	f8 2e       	mov	r15, r24
+	return;
+	Clear_Tile(p);
+    12de:	8e 2d       	mov	r24, r14
+    12e0:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+	Gdisplay_SetTile(p,TM);
+    12e4:	61 2f       	mov	r22, r17
+    12e6:	8e 2d       	mov	r24, r14
+    12e8:	9d 2d       	mov	r25, r13
+    12ea:	0e 94 b1 0b 	call	0x1762	; 0x1762 <Gdisplay_SetTile>
+	for(char i = 0; i < 4; i++)
+    12ee:	c0 e0       	ldi	r28, 0x00	; 0
+    12f0:	15 c0       	rjmp	.+42     	; 0x131c <Draw_Tile+0x62>
+	{
+		GLCD_SetPixel2(Point(p.x*4,p.y*4+i));
+    12f2:	0d 2d       	mov	r16, r13
+    12f4:	00 0f       	add	r16, r16
+    12f6:	00 0f       	add	r16, r16
+    12f8:	0c 0f       	add	r16, r28
+    12fa:	60 2f       	mov	r22, r16
+    12fc:	1e 2d       	mov	r17, r14
+    12fe:	11 0f       	add	r17, r17
+    1300:	11 0f       	add	r17, r17
+    1302:	81 2f       	mov	r24, r17
+    1304:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1308:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+		GLCD_SetPixel2(Point(p.x*4+3,p.y*4+i));
+    130c:	60 2f       	mov	r22, r16
+    130e:	83 e0       	ldi	r24, 0x03	; 3
+    1310:	81 0f       	add	r24, r17
+    1312:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1316:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+{
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+	return;
+	Clear_Tile(p);
+	Gdisplay_SetTile(p,TM);
+	for(char i = 0; i < 4; i++)
+    131a:	cf 5f       	subi	r28, 0xFF	; 255
+    131c:	c4 30       	cpi	r28, 0x04	; 4
+    131e:	48 f3       	brcs	.-46     	; 0x12f2 <Draw_Tile+0x38>
+	{
+		GLCD_SetPixel2(Point(p.x*4,p.y*4+i));
+		GLCD_SetPixel2(Point(p.x*4+3,p.y*4+i));
+	}
+	GLCD_SetPixel2(Point(p.x*4+1,p.y*4));
+    1320:	dd 0f       	add	r29, r29
+    1322:	dd 0f       	add	r29, r29
+    1324:	cf 2d       	mov	r28, r15
+    1326:	cc 0f       	add	r28, r28
+    1328:	cc 0f       	add	r28, r28
+    132a:	11 e0       	ldi	r17, 0x01	; 1
+    132c:	1c 0f       	add	r17, r28
+    132e:	6d 2f       	mov	r22, r29
+    1330:	81 2f       	mov	r24, r17
+    1332:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1336:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+	GLCD_SetPixel2(Point(p.x*4+2,p.y*4));
+    133a:	ce 5f       	subi	r28, 0xFE	; 254
+    133c:	6d 2f       	mov	r22, r29
+    133e:	8c 2f       	mov	r24, r28
+    1340:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1344:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+	GLCD_SetPixel2(Point(p.x*4+1,p.y*4+3));
+    1348:	dd 5f       	subi	r29, 0xFD	; 253
+    134a:	6d 2f       	mov	r22, r29
+    134c:	81 2f       	mov	r24, r17
+    134e:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1352:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+	GLCD_SetPixel2(Point(p.x*4+2,p.y*4+3));
+    1356:	6d 2f       	mov	r22, r29
+    1358:	8c 2f       	mov	r24, r28
+    135a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    135e:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+}
+    1362:	df 91       	pop	r29
+    1364:	cf 91       	pop	r28
+    1366:	1f 91       	pop	r17
+    1368:	0f 91       	pop	r16
+    136a:	ff 90       	pop	r15
+    136c:	ef 90       	pop	r14
+    136e:	df 90       	pop	r13
+    1370:	08 95       	ret
+
+Disassembly of section .text.Fill_Tile:
+
+00001932 <Fill_Tile>:
+void Fill_Tile(struct point p)
+{
+    1932:	0f 93       	push	r16
+    1934:	1f 93       	push	r17
+    1936:	cf 93       	push	r28
+    1938:	df 93       	push	r29
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+    193a:	85 31       	cpi	r24, 0x15	; 21
+    193c:	d0 f4       	brcc	.+52     	; 0x1972 <Fill_Tile+0x40>
+    193e:	19 2f       	mov	r17, r25
+    1940:	9c 30       	cpi	r25, 0x0C	; 12
+    1942:	b8 f4       	brcc	.+46     	; 0x1972 <Fill_Tile+0x40>
+    1944:	08 2f       	mov	r16, r24
+    1946:	d0 e0       	ldi	r29, 0x00	; 0
+    1948:	12 c0       	rjmp	.+36     	; 0x196e <Fill_Tile+0x3c>
+		return;
+	for(char i = 0; i < 4; i++)
+		for(char j = 0; j < 4; j++)
+			GLCD_SetPixel2(Point(p.x*4+i,p.y*4+j));
+    194a:	61 2f       	mov	r22, r17
+    194c:	66 0f       	add	r22, r22
+    194e:	66 0f       	add	r22, r22
+    1950:	6c 0f       	add	r22, r28
+    1952:	80 2f       	mov	r24, r16
+    1954:	88 0f       	add	r24, r24
+    1956:	88 0f       	add	r24, r24
+    1958:	8d 0f       	add	r24, r29
+    195a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    195e:	0e 94 74 0c 	call	0x18e8	; 0x18e8 <GLCD_SetPixel2>
+void Fill_Tile(struct point p)
+{
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+		return;
+	for(char i = 0; i < 4; i++)
+		for(char j = 0; j < 4; j++)
+    1962:	cf 5f       	subi	r28, 0xFF	; 255
+    1964:	01 c0       	rjmp	.+2      	; 0x1968 <Fill_Tile+0x36>
+    1966:	c0 e0       	ldi	r28, 0x00	; 0
+    1968:	c4 30       	cpi	r28, 0x04	; 4
+    196a:	78 f3       	brcs	.-34     	; 0x194a <Fill_Tile+0x18>
+}
+void Fill_Tile(struct point p)
+{
+	if(p.x > 20 || p.x < 0 || p.y < 0 || p.y > 11)
+		return;
+	for(char i = 0; i < 4; i++)
+    196c:	df 5f       	subi	r29, 0xFF	; 255
+    196e:	d4 30       	cpi	r29, 0x04	; 4
+    1970:	d0 f3       	brcs	.-12     	; 0x1966 <Fill_Tile+0x34>
+		for(char j = 0; j < 4; j++)
+			GLCD_SetPixel2(Point(p.x*4+i,p.y*4+j));
+}
+    1972:	df 91       	pop	r29
+    1974:	cf 91       	pop	r28
+    1976:	1f 91       	pop	r17
+    1978:	0f 91       	pop	r16
+    197a:	08 95       	ret
+
+Disassembly of section .text.Show_Game_Image:
+
+0000140e <Show_Game_Image>:
+
+void Show_Game_Image(const char *img) // 'F' -> Fill 'T' -> Tile
+{
+    140e:	cf 92       	push	r12
+    1410:	df 92       	push	r13
+    1412:	ef 92       	push	r14
+    1414:	cf 93       	push	r28
+    1416:	df 93       	push	r29
+    1418:	6b 01       	movw	r12, r22
+    141a:	e8 2e       	mov	r14, r24
+	GLCD_Clear();
+    141c:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <GLCD_Clear>
+	for(char i = 0; i < 21; i++)
+    1420:	d0 e0       	ldi	r29, 0x00	; 0
+    1422:	36 c0       	rjmp	.+108    	; 0x1490 <Show_Game_Image+0x82>
+	{
+		for(char j = 0; j < 12; j++)
+		{
+			if((img[i+((j/8)*21)] & (1<<(j%8))) != 0)
+    1424:	8d 2f       	mov	r24, r29
+    1426:	90 e0       	ldi	r25, 0x00	; 0
+    1428:	2c 2f       	mov	r18, r28
+    142a:	26 95       	lsr	r18
+    142c:	26 95       	lsr	r18
+    142e:	26 95       	lsr	r18
+    1430:	35 e1       	ldi	r19, 0x15	; 21
+    1432:	23 9f       	mul	r18, r19
+    1434:	80 0d       	add	r24, r0
+    1436:	91 1d       	adc	r25, r1
+    1438:	11 24       	eor	r1, r1
+    143a:	4e 2d       	mov	r20, r14
+    143c:	96 01       	movw	r18, r12
+    143e:	28 0f       	add	r18, r24
+    1440:	39 1f       	adc	r19, r25
+    1442:	41 1d       	adc	r20, r1
+    1444:	97 fd       	sbrc	r25, 7
+    1446:	4a 95       	dec	r20
+    1448:	a4 2f       	mov	r26, r20
+    144a:	c9 01       	movw	r24, r18
+    144c:	f9 01       	movw	r30, r18
+    144e:	84 91       	lpm	r24, Z
+    1450:	a7 fd       	sbrc	r26, 7
+    1452:	80 81       	ld	r24, Z
+    1454:	90 e0       	ldi	r25, 0x00	; 0
+    1456:	2c 2f       	mov	r18, r28
+    1458:	27 70       	andi	r18, 0x07	; 7
+    145a:	02 c0       	rjmp	.+4      	; 0x1460 <Show_Game_Image+0x52>
+    145c:	95 95       	asr	r25
+    145e:	87 95       	ror	r24
+    1460:	2a 95       	dec	r18
+    1462:	e2 f7       	brpl	.-8      	; 0x145c <Show_Game_Image+0x4e>
+    1464:	80 ff       	sbrs	r24, 0
+    1466:	06 c0       	rjmp	.+12     	; 0x1474 <Show_Game_Image+0x66>
+			{
+				Fill_Tile(Point(i,j));
+    1468:	6c 2f       	mov	r22, r28
+    146a:	8d 2f       	mov	r24, r29
+    146c:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1470:	0e 94 99 0c 	call	0x1932	; 0x1932 <Fill_Tile>
+void Show_Game_Image(const char *img) // 'F' -> Fill 'T' -> Tile
+{
+	GLCD_Clear();
+	for(char i = 0; i < 21; i++)
+	{
+		for(char j = 0; j < 12; j++)
+    1474:	cf 5f       	subi	r28, 0xFF	; 255
+    1476:	01 c0       	rjmp	.+2      	; 0x147a <Show_Game_Image+0x6c>
+    1478:	c0 e0       	ldi	r28, 0x00	; 0
+    147a:	cc 30       	cpi	r28, 0x0C	; 12
+    147c:	98 f2       	brcs	.-90     	; 0x1424 <Show_Game_Image+0x16>
+			if((img[i+((j/8)*21)] & (1<<(j%8))) != 0)
+			{
+				Fill_Tile(Point(i,j));
+			}
+		}
+		GLCD_Update();
+    147e:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+    1482:	8f e3       	ldi	r24, 0x3F	; 63
+    1484:	9c e9       	ldi	r25, 0x9C	; 156
+    1486:	01 97       	sbiw	r24, 0x01	; 1
+    1488:	f1 f7       	brne	.-4      	; 0x1486 <Show_Game_Image+0x78>
+    148a:	00 c0       	rjmp	.+0      	; 0x148c <Show_Game_Image+0x7e>
+    148c:	00 00       	nop
+}
+
+void Show_Game_Image(const char *img) // 'F' -> Fill 'T' -> Tile
+{
+	GLCD_Clear();
+	for(char i = 0; i < 21; i++)
+    148e:	df 5f       	subi	r29, 0xFF	; 255
+    1490:	d5 31       	cpi	r29, 0x15	; 21
+    1492:	90 f3       	brcs	.-28     	; 0x1478 <Show_Game_Image+0x6a>
+			}
+		}
+		GLCD_Update();
+		_delay_ms(20);
+	}
+}
+    1494:	df 91       	pop	r29
+    1496:	cf 91       	pop	r28
+    1498:	ef 90       	pop	r14
+    149a:	df 90       	pop	r13
+    149c:	cf 90       	pop	r12
+    149e:	08 95       	ret
+
+Disassembly of section .text.Update_Tiles:
+
+000016b0 <Update_Tiles>:
+
+void Update_Tiles()
+{
+    16b0:	1f 93       	push	r17
+    16b2:	cf 93       	push	r28
+    16b4:	df 93       	push	r29
+	for(char i = 0; i < 21; i++)
+    16b6:	d0 e0       	ldi	r29, 0x00	; 0
+    16b8:	23 c0       	rjmp	.+70     	; 0x1700 <Update_Tiles+0x50>
+		for(char j = 0; j < 12; j++)
+		{
+			if(!Gdisplay_GetTile(Point(i,j)))
+    16ba:	6c 2f       	mov	r22, r28
+    16bc:	8d 2f       	mov	r24, r29
+    16be:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    16c2:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    16c6:	81 11       	cpse	r24, r1
+    16c8:	07 c0       	rjmp	.+14     	; 0x16d8 <Update_Tiles+0x28>
+				Clear_Tile(Point(i,j));
+    16ca:	6c 2f       	mov	r22, r28
+    16cc:	8d 2f       	mov	r24, r29
+    16ce:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    16d2:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+    16d6:	0e c0       	rjmp	.+28     	; 0x16f4 <Update_Tiles+0x44>
+			else
+				Draw_Tile(Point(i,j),Gdisplay_GetTile(Point(i,j)));
+    16d8:	6c 2f       	mov	r22, r28
+    16da:	8d 2f       	mov	r24, r29
+    16dc:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    16e0:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    16e4:	18 2f       	mov	r17, r24
+    16e6:	6c 2f       	mov	r22, r28
+    16e8:	8d 2f       	mov	r24, r29
+    16ea:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    16ee:	61 2f       	mov	r22, r17
+    16f0:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+}
+
+void Update_Tiles()
+{
+	for(char i = 0; i < 21; i++)
+		for(char j = 0; j < 12; j++)
+    16f4:	cf 5f       	subi	r28, 0xFF	; 255
+    16f6:	01 c0       	rjmp	.+2      	; 0x16fa <Update_Tiles+0x4a>
+    16f8:	c0 e0       	ldi	r28, 0x00	; 0
+    16fa:	cc 30       	cpi	r28, 0x0C	; 12
+    16fc:	f0 f2       	brcs	.-68     	; 0x16ba <Update_Tiles+0xa>
+	}
+}
+
+void Update_Tiles()
+{
+	for(char i = 0; i < 21; i++)
+    16fe:	df 5f       	subi	r29, 0xFF	; 255
+    1700:	d5 31       	cpi	r29, 0x15	; 21
+    1702:	d0 f3       	brcs	.-12     	; 0x16f8 <Update_Tiles+0x48>
+			if(!Gdisplay_GetTile(Point(i,j)))
+				Clear_Tile(Point(i,j));
+			else
+				Draw_Tile(Point(i,j),Gdisplay_GetTile(Point(i,j)));
+		}
+}
+    1704:	df 91       	pop	r29
+    1706:	cf 91       	pop	r28
+    1708:	1f 91       	pop	r17
+    170a:	08 95       	ret
+
+Disassembly of section .text.Clear_Row:
+
+0000170c <Clear_Row>:
+
+void Clear_Row(char row,int fast)
+{
+    170c:	0f 93       	push	r16
+    170e:	1f 93       	push	r17
+    1710:	cf 93       	push	r28
+    1712:	df 93       	push	r29
+    1714:	d8 2f       	mov	r29, r24
+    1716:	8b 01       	movw	r16, r22
+	for(char i = 0; i < 21; i++)
+    1718:	c0 e0       	ldi	r28, 0x00	; 0
+    171a:	1c c0       	rjmp	.+56     	; 0x1754 <Clear_Row+0x48>
+	{
+		Clear_Tile(Point(i,row));
+    171c:	6d 2f       	mov	r22, r29
+    171e:	8c 2f       	mov	r24, r28
+    1720:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1724:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+		GLCD_Update();
+    1728:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+		if(fast)
+    172c:	01 15       	cp	r16, r1
+    172e:	11 05       	cpc	r17, r1
+    1730:	39 f0       	breq	.+14     	; 0x1740 <Clear_Row+0x34>
+    1732:	8f e9       	ldi	r24, 0x9F	; 159
+    1734:	9f e0       	ldi	r25, 0x0F	; 15
+    1736:	01 97       	sbiw	r24, 0x01	; 1
+    1738:	f1 f7       	brne	.-4      	; 0x1736 <Clear_Row+0x2a>
+    173a:	00 c0       	rjmp	.+0      	; 0x173c <Clear_Row+0x30>
+    173c:	00 00       	nop
+    173e:	09 c0       	rjmp	.+18     	; 0x1752 <Clear_Row+0x46>
+    1740:	9f e7       	ldi	r25, 0x7F	; 127
+    1742:	28 e3       	ldi	r18, 0x38	; 56
+    1744:	81 e0       	ldi	r24, 0x01	; 1
+    1746:	91 50       	subi	r25, 0x01	; 1
+    1748:	20 40       	sbci	r18, 0x00	; 0
+    174a:	80 40       	sbci	r24, 0x00	; 0
+    174c:	e1 f7       	brne	.-8      	; 0x1746 <Clear_Row+0x3a>
+    174e:	00 c0       	rjmp	.+0      	; 0x1750 <Clear_Row+0x44>
+    1750:	00 00       	nop
+		}
+}
+
+void Clear_Row(char row,int fast)
+{
+	for(char i = 0; i < 21; i++)
+    1752:	cf 5f       	subi	r28, 0xFF	; 255
+    1754:	c5 31       	cpi	r28, 0x15	; 21
+    1756:	10 f3       	brcs	.-60     	; 0x171c <Clear_Row+0x10>
+		if(fast)
+		_delay_ms(2);
+		else
+		_delay_ms(50);
+	}
+}
+    1758:	df 91       	pop	r29
+    175a:	cf 91       	pop	r28
+    175c:	1f 91       	pop	r17
+    175e:	0f 91       	pop	r16
+    1760:	08 95       	ret
+
+Disassembly of section .text.Clear_TTile:
+
+0000197c <Clear_TTile>:
+
+void Clear_TTile()
+{
+    197c:	cf 93       	push	r28
+    197e:	df 93       	push	r29
+	Clear_Tile(curTTile.gpos);
+    1980:	cf eb       	ldi	r28, 0xBF	; 191
+    1982:	d2 e0       	ldi	r29, 0x02	; 2
+    1984:	88 81       	ld	r24, Y
+    1986:	99 81       	ldd	r25, Y+1	; 0x01
+    1988:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+	Clear_Tile(Add_Point(curTTile.gpos,curTTile.t2lpos));
+    198c:	6a 81       	ldd	r22, Y+2	; 0x02
+    198e:	7b 81       	ldd	r23, Y+3	; 0x03
+    1990:	88 81       	ld	r24, Y
+    1992:	99 81       	ldd	r25, Y+1	; 0x01
+    1994:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1998:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+	Clear_Tile(Add_Point(curTTile.gpos,curTTile.t3lpos));
+    199c:	6c 81       	ldd	r22, Y+4	; 0x04
+    199e:	7d 81       	ldd	r23, Y+5	; 0x05
+    19a0:	88 81       	ld	r24, Y
+    19a2:	99 81       	ldd	r25, Y+1	; 0x01
+    19a4:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    19a8:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+	Clear_Tile(Add_Point(curTTile.gpos,curTTile.t4lpos));
+    19ac:	6e 81       	ldd	r22, Y+6	; 0x06
+    19ae:	7f 81       	ldd	r23, Y+7	; 0x07
+    19b0:	88 81       	ld	r24, Y
+    19b2:	99 81       	ldd	r25, Y+1	; 0x01
+    19b4:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    19b8:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+}
+    19bc:	df 91       	pop	r29
+    19be:	cf 91       	pop	r28
+    19c0:	08 95       	ret
+
+Disassembly of section .text.Draw_TTile:
+
+00001802 <Draw_TTile>:
+void Draw_TTile()
+{
+    1802:	cf 93       	push	r28
+    1804:	df 93       	push	r29
+	Draw_Tile(curTTile.gpos,Tetromino_Tile);
+    1806:	cf eb       	ldi	r28, 0xBF	; 191
+    1808:	d2 e0       	ldi	r29, 0x02	; 2
+    180a:	62 e0       	ldi	r22, 0x02	; 2
+    180c:	88 81       	ld	r24, Y
+    180e:	99 81       	ldd	r25, Y+1	; 0x01
+    1810:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.gpos,curTTile.t2lpos),Tetromino_Tile);
+    1814:	6a 81       	ldd	r22, Y+2	; 0x02
+    1816:	7b 81       	ldd	r23, Y+3	; 0x03
+    1818:	88 81       	ld	r24, Y
+    181a:	99 81       	ldd	r25, Y+1	; 0x01
+    181c:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1820:	62 e0       	ldi	r22, 0x02	; 2
+    1822:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.gpos,curTTile.t3lpos),Tetromino_Tile);
+    1826:	6c 81       	ldd	r22, Y+4	; 0x04
+    1828:	7d 81       	ldd	r23, Y+5	; 0x05
+    182a:	88 81       	ld	r24, Y
+    182c:	99 81       	ldd	r25, Y+1	; 0x01
+    182e:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1832:	62 e0       	ldi	r22, 0x02	; 2
+    1834:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.gpos,curTTile.t4lpos),Tetromino_Tile);
+    1838:	6e 81       	ldd	r22, Y+6	; 0x06
+    183a:	7f 81       	ldd	r23, Y+7	; 0x07
+    183c:	88 81       	ld	r24, Y
+    183e:	99 81       	ldd	r25, Y+1	; 0x01
+    1840:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1844:	62 e0       	ldi	r22, 0x02	; 2
+    1846:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+}
+    184a:	df 91       	pop	r29
+    184c:	cf 91       	pop	r28
+    184e:	08 95       	ret
+
+Disassembly of section .text.Rotate_TTile:
+
+00000dd4 <Rotate_TTile>:
+void Rotate_TTile()
+{
+ dd4:	8f 92       	push	r8
+ dd6:	9f 92       	push	r9
+ dd8:	af 92       	push	r10
+ dda:	bf 92       	push	r11
+ ddc:	cf 92       	push	r12
+ dde:	df 92       	push	r13
+ de0:	ef 92       	push	r14
+ de2:	ff 92       	push	r15
+ de4:	0f 93       	push	r16
+ de6:	1f 93       	push	r17
+ de8:	cf 93       	push	r28
+ dea:	df 93       	push	r29
+	
+	struct point np1 = Rotate_Point(curTTile.t2lpos);
+ dec:	cf eb       	ldi	r28, 0xBF	; 191
+ dee:	d2 e0       	ldi	r29, 0x02	; 2
+ df0:	8a 81       	ldd	r24, Y+2	; 0x02
+ df2:	9b 81       	ldd	r25, Y+3	; 0x03
+ df4:	0e 94 0e 0e 	call	0x1c1c	; 0x1c1c <Rotate_Point>
+ df8:	8c 01       	movw	r16, r24
+	struct point np2 = Rotate_Point(curTTile.t3lpos);
+ dfa:	8c 81       	ldd	r24, Y+4	; 0x04
+ dfc:	9d 81       	ldd	r25, Y+5	; 0x05
+ dfe:	0e 94 0e 0e 	call	0x1c1c	; 0x1c1c <Rotate_Point>
+ e02:	7c 01       	movw	r14, r24
+	struct point np3 = Rotate_Point(curTTile.t4lpos);
+ e04:	8e 81       	ldd	r24, Y+6	; 0x06
+ e06:	9f 81       	ldd	r25, Y+7	; 0x07
+ e08:	0e 94 0e 0e 	call	0x1c1c	; 0x1c1c <Rotate_Point>
+ e0c:	6c 01       	movw	r12, r24
+	struct point np11 = Add_Point(np1,curTTile.gpos);
+ e0e:	09 90       	ld	r0, Y+
+ e10:	d8 81       	ld	r29, Y
+ e12:	c0 2d       	mov	r28, r0
+ e14:	be 01       	movw	r22, r28
+ e16:	c8 01       	movw	r24, r16
+ e18:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e1c:	b8 2e       	mov	r11, r24
+ e1e:	a9 2e       	mov	r10, r25
+	struct point np22 = Add_Point(np2,curTTile.gpos);
+ e20:	be 01       	movw	r22, r28
+ e22:	c7 01       	movw	r24, r14
+ e24:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e28:	98 2e       	mov	r9, r24
+ e2a:	89 2e       	mov	r8, r25
+	struct point np33 = Add_Point(np3,curTTile.gpos);
+ e2c:	be 01       	movw	r22, r28
+ e2e:	c6 01       	movw	r24, r12
+ e30:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e34:	c8 2f       	mov	r28, r24
+ e36:	d9 2f       	mov	r29, r25
+	if(np11.x > 20 || np11.x < 0 || np11.y > 11 || Gdisplay_GetTile(Add_Point(np1,curTTile.gpos)) == Normal_Tile)
+ e38:	84 e1       	ldi	r24, 0x14	; 20
+ e3a:	8b 15       	cp	r24, r11
+ e3c:	c0 f1       	brcs	.+112    	; 0xeae <Rotate_TTile+0xda>
+ e3e:	8b e0       	ldi	r24, 0x0B	; 11
+ e40:	8a 15       	cp	r24, r10
+ e42:	a8 f1       	brcs	.+106    	; 0xeae <Rotate_TTile+0xda>
+ e44:	60 91 bf 02 	lds	r22, 0x02BF	; 0x8002bf <curTTile>
+ e48:	70 91 c0 02 	lds	r23, 0x02C0	; 0x8002c0 <curTTile+0x1>
+ e4c:	c8 01       	movw	r24, r16
+ e4e:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e52:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ e56:	81 30       	cpi	r24, 0x01	; 1
+ e58:	51 f1       	breq	.+84     	; 0xeae <Rotate_TTile+0xda>
+		return;
+	if(np22.x > 20 || np22.x < 0 || np22.y > 11 || Gdisplay_GetTile(Add_Point(np2,curTTile.gpos)) == Normal_Tile)
+ e5a:	84 e1       	ldi	r24, 0x14	; 20
+ e5c:	89 15       	cp	r24, r9
+ e5e:	38 f1       	brcs	.+78     	; 0xeae <Rotate_TTile+0xda>
+ e60:	8b e0       	ldi	r24, 0x0B	; 11
+ e62:	88 15       	cp	r24, r8
+ e64:	20 f1       	brcs	.+72     	; 0xeae <Rotate_TTile+0xda>
+ e66:	60 91 bf 02 	lds	r22, 0x02BF	; 0x8002bf <curTTile>
+ e6a:	70 91 c0 02 	lds	r23, 0x02C0	; 0x8002c0 <curTTile+0x1>
+ e6e:	c7 01       	movw	r24, r14
+ e70:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e74:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ e78:	81 30       	cpi	r24, 0x01	; 1
+ e7a:	c9 f0       	breq	.+50     	; 0xeae <Rotate_TTile+0xda>
+		return;
+	if(np33.x > 20 || np33.x < 0 || np33.y > 11 || Gdisplay_GetTile(Add_Point(np3,curTTile.gpos)) == Normal_Tile)
+ e7c:	c5 31       	cpi	r28, 0x15	; 21
+ e7e:	b8 f4       	brcc	.+46     	; 0xeae <Rotate_TTile+0xda>
+ e80:	dc 30       	cpi	r29, 0x0C	; 12
+ e82:	a8 f4       	brcc	.+42     	; 0xeae <Rotate_TTile+0xda>
+ e84:	60 91 bf 02 	lds	r22, 0x02BF	; 0x8002bf <curTTile>
+ e88:	70 91 c0 02 	lds	r23, 0x02C0	; 0x8002c0 <curTTile+0x1>
+ e8c:	c6 01       	movw	r24, r12
+ e8e:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ e92:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ e96:	81 30       	cpi	r24, 0x01	; 1
+ e98:	51 f0       	breq	.+20     	; 0xeae <Rotate_TTile+0xda>
+		return;
+	Clear_TTile();
+ e9a:	0e 94 be 0c 	call	0x197c	; 0x197c <Clear_TTile>
+	curTTile.t2lpos = np1;
+ e9e:	ef eb       	ldi	r30, 0xBF	; 191
+ ea0:	f2 e0       	ldi	r31, 0x02	; 2
+ ea2:	13 83       	std	Z+3, r17	; 0x03
+ ea4:	02 83       	std	Z+2, r16	; 0x02
+	curTTile.t3lpos = np2;
+ ea6:	f5 82       	std	Z+5, r15	; 0x05
+ ea8:	e4 82       	std	Z+4, r14	; 0x04
+	curTTile.t4lpos = np3;
+ eaa:	d7 82       	std	Z+7, r13	; 0x07
+ eac:	c6 82       	std	Z+6, r12	; 0x06
+}
+ eae:	df 91       	pop	r29
+ eb0:	cf 91       	pop	r28
+ eb2:	1f 91       	pop	r17
+ eb4:	0f 91       	pop	r16
+ eb6:	ff 90       	pop	r15
+ eb8:	ef 90       	pop	r14
+ eba:	df 90       	pop	r13
+ ebc:	cf 90       	pop	r12
+ ebe:	bf 90       	pop	r11
+ ec0:	af 90       	pop	r10
+ ec2:	9f 90       	pop	r9
+ ec4:	8f 90       	pop	r8
+ ec6:	08 95       	ret
+
+Disassembly of section .text.Move_TTile:
+
+00001a76 <Move_TTile>:
+void Move_TTile(struct point mv)
+{
+    1a76:	0f 93       	push	r16
+    1a78:	1f 93       	push	r17
+    1a7a:	cf 93       	push	r28
+    1a7c:	df 93       	push	r29
+    1a7e:	8c 01       	movw	r16, r24
+	Clear_TTile();
+    1a80:	0e 94 be 0c 	call	0x197c	; 0x197c <Clear_TTile>
+	curTTile.gpos = Add_Point(curTTile.gpos,mv);
+    1a84:	cf eb       	ldi	r28, 0xBF	; 191
+    1a86:	d2 e0       	ldi	r29, 0x02	; 2
+    1a88:	b8 01       	movw	r22, r16
+    1a8a:	88 81       	ld	r24, Y
+    1a8c:	99 81       	ldd	r25, Y+1	; 0x01
+    1a8e:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1a92:	99 83       	std	Y+1, r25	; 0x01
+    1a94:	88 83       	st	Y, r24
+}
+    1a96:	df 91       	pop	r29
+    1a98:	cf 91       	pop	r28
+    1a9a:	1f 91       	pop	r17
+    1a9c:	0f 91       	pop	r16
+    1a9e:	08 95       	ret
+
+Disassembly of section .text.Is_LegitMove:
+
+00000a9e <Is_LegitMove>:
+
+char Is_LegitMove(struct point mv)
+{
+ a9e:	8f 92       	push	r8
+ aa0:	9f 92       	push	r9
+ aa2:	af 92       	push	r10
+ aa4:	bf 92       	push	r11
+ aa6:	cf 92       	push	r12
+ aa8:	df 92       	push	r13
+ aaa:	ef 92       	push	r14
+ aac:	ff 92       	push	r15
+ aae:	0f 93       	push	r16
+ ab0:	1f 93       	push	r17
+ ab2:	cf 93       	push	r28
+ ab4:	df 93       	push	r29
+ ab6:	8c 01       	movw	r16, r24
+	struct point np1,np2,np3,np4;
+	np1 = Add_Point(curTTile.gpos,mv);
+ ab8:	cf eb       	ldi	r28, 0xBF	; 191
+ aba:	d2 e0       	ldi	r29, 0x02	; 2
+ abc:	e8 80       	ld	r14, Y
+ abe:	f9 80       	ldd	r15, Y+1	; 0x01
+ ac0:	bc 01       	movw	r22, r24
+ ac2:	c7 01       	movw	r24, r14
+ ac4:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ ac8:	d8 2e       	mov	r13, r24
+ aca:	c9 2e       	mov	r12, r25
+	np2 = Add_Point(Add_Point(curTTile.t2lpos,curTTile.gpos),mv);
+ acc:	b7 01       	movw	r22, r14
+ ace:	8a 81       	ldd	r24, Y+2	; 0x02
+ ad0:	9b 81       	ldd	r25, Y+3	; 0x03
+ ad2:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ ad6:	b8 01       	movw	r22, r16
+ ad8:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ adc:	b8 2e       	mov	r11, r24
+ ade:	a9 2e       	mov	r10, r25
+	np3 = Add_Point(Add_Point(curTTile.t3lpos,curTTile.gpos),mv);
+ ae0:	b7 01       	movw	r22, r14
+ ae2:	8c 81       	ldd	r24, Y+4	; 0x04
+ ae4:	9d 81       	ldd	r25, Y+5	; 0x05
+ ae6:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ aea:	b8 01       	movw	r22, r16
+ aec:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ af0:	98 2e       	mov	r9, r24
+ af2:	89 2e       	mov	r8, r25
+	np4 = Add_Point(Add_Point(curTTile.t4lpos,curTTile.gpos),mv);
+ af4:	b7 01       	movw	r22, r14
+ af6:	8e 81       	ldd	r24, Y+6	; 0x06
+ af8:	9f 81       	ldd	r25, Y+7	; 0x07
+ afa:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ afe:	b8 01       	movw	r22, r16
+ b00:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ b04:	c8 2f       	mov	r28, r24
+ b06:	d9 2f       	mov	r29, r25
+	if(np1.x > 20 || np1.x < 0 || np1.y > 11 || Gdisplay_GetTile(Point(np1.x,np1.y)) == Normal_Tile)
+ b08:	84 e1       	ldi	r24, 0x14	; 20
+ b0a:	8d 15       	cp	r24, r13
+ b0c:	a8 f1       	brcs	.+106    	; 0xb78 <Is_LegitMove+0xda>
+ b0e:	8b e0       	ldi	r24, 0x0B	; 11
+ b10:	8c 15       	cp	r24, r12
+ b12:	a0 f1       	brcs	.+104    	; 0xb7c <Is_LegitMove+0xde>
+ b14:	6c 2d       	mov	r22, r12
+ b16:	8d 2d       	mov	r24, r13
+ b18:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ b1c:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ b20:	81 30       	cpi	r24, 0x01	; 1
+ b22:	71 f1       	breq	.+92     	; 0xb80 <Is_LegitMove+0xe2>
+	{
+		return 0;
+	}
+	else if(np2.x > 20 || np2.x < 0 || np2.y > 11 || Gdisplay_GetTile(Point(np2.x,np2.y)) == Normal_Tile)
+ b24:	84 e1       	ldi	r24, 0x14	; 20
+ b26:	8b 15       	cp	r24, r11
+ b28:	68 f1       	brcs	.+90     	; 0xb84 <Is_LegitMove+0xe6>
+ b2a:	8b e0       	ldi	r24, 0x0B	; 11
+ b2c:	8a 15       	cp	r24, r10
+ b2e:	60 f1       	brcs	.+88     	; 0xb88 <Is_LegitMove+0xea>
+ b30:	6a 2d       	mov	r22, r10
+ b32:	8b 2d       	mov	r24, r11
+ b34:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ b38:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ b3c:	81 30       	cpi	r24, 0x01	; 1
+ b3e:	31 f1       	breq	.+76     	; 0xb8c <Is_LegitMove+0xee>
+	{
+		return 0;
+	}
+	else if(np3.x > 20 || np3.x < 0 || np3.y > 11 || Gdisplay_GetTile(Point(np3.x,np3.y)) == Normal_Tile)
+ b40:	84 e1       	ldi	r24, 0x14	; 20
+ b42:	89 15       	cp	r24, r9
+ b44:	28 f1       	brcs	.+74     	; 0xb90 <Is_LegitMove+0xf2>
+ b46:	8b e0       	ldi	r24, 0x0B	; 11
+ b48:	88 15       	cp	r24, r8
+ b4a:	20 f1       	brcs	.+72     	; 0xb94 <Is_LegitMove+0xf6>
+ b4c:	68 2d       	mov	r22, r8
+ b4e:	89 2d       	mov	r24, r9
+ b50:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ b54:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ b58:	81 30       	cpi	r24, 0x01	; 1
+ b5a:	f1 f0       	breq	.+60     	; 0xb98 <Is_LegitMove+0xfa>
+	{
+		return 0;
+	}
+	else if(np4.x > 20 || np4.x < 0 || np4.y > 11 || Gdisplay_GetTile(Point(np4.x,np4.y)) == Normal_Tile)
+ b5c:	c5 31       	cpi	r28, 0x15	; 21
+ b5e:	f0 f4       	brcc	.+60     	; 0xb9c <Is_LegitMove+0xfe>
+ b60:	dc 30       	cpi	r29, 0x0C	; 12
+ b62:	f0 f4       	brcc	.+60     	; 0xba0 <Is_LegitMove+0x102>
+ b64:	6d 2f       	mov	r22, r29
+ b66:	8c 2f       	mov	r24, r28
+ b68:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ b6c:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+ b70:	81 30       	cpi	r24, 0x01	; 1
+ b72:	c1 f0       	breq	.+48     	; 0xba4 <Is_LegitMove+0x106>
+	{
+		return 0;
+	}
+	return 1;
+ b74:	81 e0       	ldi	r24, 0x01	; 1
+ b76:	17 c0       	rjmp	.+46     	; 0xba6 <Is_LegitMove+0x108>
+	np2 = Add_Point(Add_Point(curTTile.t2lpos,curTTile.gpos),mv);
+	np3 = Add_Point(Add_Point(curTTile.t3lpos,curTTile.gpos),mv);
+	np4 = Add_Point(Add_Point(curTTile.t4lpos,curTTile.gpos),mv);
+	if(np1.x > 20 || np1.x < 0 || np1.y > 11 || Gdisplay_GetTile(Point(np1.x,np1.y)) == Normal_Tile)
+	{
+		return 0;
+ b78:	80 e0       	ldi	r24, 0x00	; 0
+ b7a:	15 c0       	rjmp	.+42     	; 0xba6 <Is_LegitMove+0x108>
+ b7c:	80 e0       	ldi	r24, 0x00	; 0
+ b7e:	13 c0       	rjmp	.+38     	; 0xba6 <Is_LegitMove+0x108>
+ b80:	80 e0       	ldi	r24, 0x00	; 0
+ b82:	11 c0       	rjmp	.+34     	; 0xba6 <Is_LegitMove+0x108>
+	}
+	else if(np2.x > 20 || np2.x < 0 || np2.y > 11 || Gdisplay_GetTile(Point(np2.x,np2.y)) == Normal_Tile)
+	{
+		return 0;
+ b84:	80 e0       	ldi	r24, 0x00	; 0
+ b86:	0f c0       	rjmp	.+30     	; 0xba6 <Is_LegitMove+0x108>
+ b88:	80 e0       	ldi	r24, 0x00	; 0
+ b8a:	0d c0       	rjmp	.+26     	; 0xba6 <Is_LegitMove+0x108>
+ b8c:	80 e0       	ldi	r24, 0x00	; 0
+ b8e:	0b c0       	rjmp	.+22     	; 0xba6 <Is_LegitMove+0x108>
+	}
+	else if(np3.x > 20 || np3.x < 0 || np3.y > 11 || Gdisplay_GetTile(Point(np3.x,np3.y)) == Normal_Tile)
+	{
+		return 0;
+ b90:	80 e0       	ldi	r24, 0x00	; 0
+ b92:	09 c0       	rjmp	.+18     	; 0xba6 <Is_LegitMove+0x108>
+ b94:	80 e0       	ldi	r24, 0x00	; 0
+ b96:	07 c0       	rjmp	.+14     	; 0xba6 <Is_LegitMove+0x108>
+ b98:	80 e0       	ldi	r24, 0x00	; 0
+ b9a:	05 c0       	rjmp	.+10     	; 0xba6 <Is_LegitMove+0x108>
+	}
+	else if(np4.x > 20 || np4.x < 0 || np4.y > 11 || Gdisplay_GetTile(Point(np4.x,np4.y)) == Normal_Tile)
+	{
+		return 0;
+ b9c:	80 e0       	ldi	r24, 0x00	; 0
+ b9e:	03 c0       	rjmp	.+6      	; 0xba6 <Is_LegitMove+0x108>
+ ba0:	80 e0       	ldi	r24, 0x00	; 0
+ ba2:	01 c0       	rjmp	.+2      	; 0xba6 <Is_LegitMove+0x108>
+ ba4:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	return 1;
+}
+ ba6:	df 91       	pop	r29
+ ba8:	cf 91       	pop	r28
+ baa:	1f 91       	pop	r17
+ bac:	0f 91       	pop	r16
+ bae:	ff 90       	pop	r15
+ bb0:	ef 90       	pop	r14
+ bb2:	df 90       	pop	r13
+ bb4:	cf 90       	pop	r12
+ bb6:	bf 90       	pop	r11
+ bb8:	af 90       	pop	r10
+ bba:	9f 90       	pop	r9
+ bbc:	8f 90       	pop	r8
+ bbe:	08 95       	ret
+
+Disassembly of section .text.row_check:
+
+00001aa0 <row_check>:
+
+char row_check(char row)
+{
+    1aa0:	cf 93       	push	r28
+    1aa2:	df 93       	push	r29
+    1aa4:	d8 2f       	mov	r29, r24
+	for(char i = 0; i < 21; i++)	
+    1aa6:	c0 e0       	ldi	r28, 0x00	; 0
+    1aa8:	09 c0       	rjmp	.+18     	; 0x1abc <row_check+0x1c>
+	{
+		if(!Gdisplay_GetTile(Point(i,row)))
+    1aaa:	6d 2f       	mov	r22, r29
+    1aac:	8c 2f       	mov	r24, r28
+    1aae:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1ab2:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    1ab6:	88 23       	and	r24, r24
+    1ab8:	21 f0       	breq	.+8      	; 0x1ac2 <row_check+0x22>
+	return 1;
+}
+
+char row_check(char row)
+{
+	for(char i = 0; i < 21; i++)	
+    1aba:	cf 5f       	subi	r28, 0xFF	; 255
+    1abc:	c5 31       	cpi	r28, 0x15	; 21
+    1abe:	a8 f3       	brcs	.-22     	; 0x1aaa <row_check+0xa>
+	{
+		if(!Gdisplay_GetTile(Point(i,row)))
+			return 0;
+	}
+	return 1;
+    1ac0:	81 e0       	ldi	r24, 0x01	; 1
+}
+    1ac2:	df 91       	pop	r29
+    1ac4:	cf 91       	pop	r28
+    1ac6:	08 95       	ret
+
+Disassembly of section .text.Full_Row_Check:
+
+00001086 <Full_Row_Check>:
+
+void Full_Row_Check()
+{
+    1086:	ef 92       	push	r14
+    1088:	ff 92       	push	r15
+    108a:	1f 93       	push	r17
+    108c:	cf 93       	push	r28
+    108e:	df 93       	push	r29
+	int full_rows = 0;
+    1090:	e1 2c       	mov	r14, r1
+    1092:	f1 2c       	mov	r15, r1
+	rr:
+	for(char i = 11; i > 0; i--)
+    1094:	db e0       	ldi	r29, 0x0B	; 11
+    1096:	50 c0       	rjmp	.+160    	; 0x1138 <Full_Row_Check+0xb2>
+	{
+		if(row_check(i))
+    1098:	8d 2f       	mov	r24, r29
+    109a:	0e 94 50 0d 	call	0x1aa0	; 0x1aa0 <row_check>
+    109e:	88 23       	and	r24, r24
+    10a0:	09 f4       	brne	.+2      	; 0x10a4 <Full_Row_Check+0x1e>
+    10a2:	49 c0       	rjmp	.+146    	; 0x1136 <Full_Row_Check+0xb0>
+		{
+			full_rows++;
+    10a4:	2f ef       	ldi	r18, 0xFF	; 255
+    10a6:	e2 1a       	sub	r14, r18
+    10a8:	f2 0a       	sbc	r15, r18
+			Score += Row_Score*full_rows;
+    10aa:	22 e3       	ldi	r18, 0x32	; 50
+    10ac:	2e 9d       	mul	r18, r14
+    10ae:	c0 01       	movw	r24, r0
+    10b0:	2f 9d       	mul	r18, r15
+    10b2:	90 0d       	add	r25, r0
+    10b4:	11 24       	eor	r1, r1
+    10b6:	20 91 d1 02 	lds	r18, 0x02D1	; 0x8002d1 <Score>
+    10ba:	30 91 d2 02 	lds	r19, 0x02D2	; 0x8002d2 <Score+0x1>
+    10be:	82 0f       	add	r24, r18
+    10c0:	93 1f       	adc	r25, r19
+    10c2:	90 93 d2 02 	sts	0x02D2, r25	; 0x8002d2 <Score+0x1>
+    10c6:	80 93 d1 02 	sts	0x02D1, r24	; 0x8002d1 <Score>
+			Clear_Row(i,0);
+    10ca:	60 e0       	ldi	r22, 0x00	; 0
+    10cc:	70 e0       	ldi	r23, 0x00	; 0
+    10ce:	8d 2f       	mov	r24, r29
+    10d0:	0e 94 86 0b 	call	0x170c	; 0x170c <Clear_Row>
+			for(char j = i; j > 0; j--)
+    10d4:	15 c0       	rjmp	.+42     	; 0x1100 <Full_Row_Check+0x7a>
+				for(char k = 0; k < 21; k++)
+				{
+					Gdisplay_SetTile(Point(k,j),Gdisplay_GetTile(Point(k,j-1)));
+    10d6:	6f ef       	ldi	r22, 0xFF	; 255
+    10d8:	6d 0f       	add	r22, r29
+    10da:	8c 2f       	mov	r24, r28
+    10dc:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    10e0:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    10e4:	18 2f       	mov	r17, r24
+    10e6:	6d 2f       	mov	r22, r29
+    10e8:	8c 2f       	mov	r24, r28
+    10ea:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    10ee:	61 2f       	mov	r22, r17
+    10f0:	0e 94 b1 0b 	call	0x1762	; 0x1762 <Gdisplay_SetTile>
+		{
+			full_rows++;
+			Score += Row_Score*full_rows;
+			Clear_Row(i,0);
+			for(char j = i; j > 0; j--)
+				for(char k = 0; k < 21; k++)
+    10f4:	cf 5f       	subi	r28, 0xFF	; 255
+    10f6:	01 c0       	rjmp	.+2      	; 0x10fa <Full_Row_Check+0x74>
+    10f8:	c0 e0       	ldi	r28, 0x00	; 0
+    10fa:	c5 31       	cpi	r28, 0x15	; 21
+    10fc:	60 f3       	brcs	.-40     	; 0x10d6 <Full_Row_Check+0x50>
+		if(row_check(i))
+		{
+			full_rows++;
+			Score += Row_Score*full_rows;
+			Clear_Row(i,0);
+			for(char j = i; j > 0; j--)
+    10fe:	d1 50       	subi	r29, 0x01	; 1
+    1100:	d1 11       	cpse	r29, r1
+    1102:	fa cf       	rjmp	.-12     	; 0x10f8 <Full_Row_Check+0x72>
+    1104:	c0 e0       	ldi	r28, 0x00	; 0
+    1106:	07 c0       	rjmp	.+14     	; 0x1116 <Full_Row_Check+0x90>
+				for(char k = 0; k < 21; k++)
+				{
+					Gdisplay_SetTile(Point(k,j),Gdisplay_GetTile(Point(k,j-1)));
+				}
+			for(char j = 0; j < 21; j++)
+				Gdisplay_ClearTile(Point(j,0));
+    1108:	60 e0       	ldi	r22, 0x00	; 0
+    110a:	8c 2f       	mov	r24, r28
+    110c:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1110:	0e 94 e1 0c 	call	0x19c2	; 0x19c2 <Gdisplay_ClearTile>
+			for(char j = i; j > 0; j--)
+				for(char k = 0; k < 21; k++)
+				{
+					Gdisplay_SetTile(Point(k,j),Gdisplay_GetTile(Point(k,j-1)));
+				}
+			for(char j = 0; j < 21; j++)
+    1114:	cf 5f       	subi	r28, 0xFF	; 255
+    1116:	c5 31       	cpi	r28, 0x15	; 21
+    1118:	b8 f3       	brcs	.-18     	; 0x1108 <Full_Row_Check+0x82>
+				Gdisplay_ClearTile(Point(j,0));
+			Update_Tiles();
+    111a:	0e 94 58 0b 	call	0x16b0	; 0x16b0 <Update_Tiles>
+			GLCD_Update();
+    111e:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+    1122:	8f ef       	ldi	r24, 0xFF	; 255
+    1124:	94 e3       	ldi	r25, 0x34	; 52
+    1126:	2c e0       	ldi	r18, 0x0C	; 12
+    1128:	81 50       	subi	r24, 0x01	; 1
+    112a:	90 40       	sbci	r25, 0x00	; 0
+    112c:	20 40       	sbci	r18, 0x00	; 0
+    112e:	e1 f7       	brne	.-8      	; 0x1128 <Full_Row_Check+0xa2>
+    1130:	00 c0       	rjmp	.+0      	; 0x1132 <Full_Row_Check+0xac>
+    1132:	00 00       	nop
+    1134:	af cf       	rjmp	.-162    	; 0x1094 <Full_Row_Check+0xe>
+
+void Full_Row_Check()
+{
+	int full_rows = 0;
+	rr:
+	for(char i = 11; i > 0; i--)
+    1136:	d1 50       	subi	r29, 0x01	; 1
+    1138:	d1 11       	cpse	r29, r1
+    113a:	ae cf       	rjmp	.-164    	; 0x1098 <Full_Row_Check+0x12>
+			GLCD_Update();
+			_delay_ms(500);
+			goto rr;
+		}
+	}
+}
+    113c:	df 91       	pop	r29
+    113e:	cf 91       	pop	r28
+    1140:	1f 91       	pop	r17
+    1142:	ff 90       	pop	r15
+    1144:	ef 90       	pop	r14
+    1146:	08 95       	ret
+
+Disassembly of section .text.Lose_Check:
+
+0000151a <Lose_Check>:
+
+char Lose_Check()
+{
+	if(Gdisplay_GetTile(curTTile.gpos) != 0)
+    151a:	80 91 bf 02 	lds	r24, 0x02BF	; 0x8002bf <curTTile>
+    151e:	90 91 c0 02 	lds	r25, 0x02C0	; 0x8002c0 <curTTile+0x1>
+    1522:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    1526:	81 11       	cpse	r24, r1
+    1528:	26 c0       	rjmp	.+76     	; 0x1576 <Lose_Check+0x5c>
+		return 1;
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t2lpos)) != 0)
+    152a:	ef eb       	ldi	r30, 0xBF	; 191
+    152c:	f2 e0       	ldi	r31, 0x02	; 2
+    152e:	62 81       	ldd	r22, Z+2	; 0x02
+    1530:	73 81       	ldd	r23, Z+3	; 0x03
+    1532:	80 81       	ld	r24, Z
+    1534:	91 81       	ldd	r25, Z+1	; 0x01
+    1536:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    153a:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    153e:	81 11       	cpse	r24, r1
+    1540:	1c c0       	rjmp	.+56     	; 0x157a <Lose_Check+0x60>
+		return 1;
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t3lpos)) != 0)
+    1542:	ef eb       	ldi	r30, 0xBF	; 191
+    1544:	f2 e0       	ldi	r31, 0x02	; 2
+    1546:	64 81       	ldd	r22, Z+4	; 0x04
+    1548:	75 81       	ldd	r23, Z+5	; 0x05
+    154a:	80 81       	ld	r24, Z
+    154c:	91 81       	ldd	r25, Z+1	; 0x01
+    154e:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    1552:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    1556:	81 11       	cpse	r24, r1
+    1558:	12 c0       	rjmp	.+36     	; 0x157e <Lose_Check+0x64>
+		return 1;
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t4lpos)) != 0)
+    155a:	ef eb       	ldi	r30, 0xBF	; 191
+    155c:	f2 e0       	ldi	r31, 0x02	; 2
+    155e:	66 81       	ldd	r22, Z+6	; 0x06
+    1560:	77 81       	ldd	r23, Z+7	; 0x07
+    1562:	80 81       	ld	r24, Z
+    1564:	91 81       	ldd	r25, Z+1	; 0x01
+    1566:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+    156a:	0e 94 4e 0c 	call	0x189c	; 0x189c <Gdisplay_GetTile>
+    156e:	88 23       	and	r24, r24
+    1570:	39 f0       	breq	.+14     	; 0x1580 <Lose_Check+0x66>
+		return 1;
+    1572:	81 e0       	ldi	r24, 0x01	; 1
+    1574:	08 95       	ret
+}
+
+char Lose_Check()
+{
+	if(Gdisplay_GetTile(curTTile.gpos) != 0)
+		return 1;
+    1576:	81 e0       	ldi	r24, 0x01	; 1
+    1578:	08 95       	ret
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t2lpos)) != 0)
+		return 1;
+    157a:	81 e0       	ldi	r24, 0x01	; 1
+    157c:	08 95       	ret
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t3lpos)) != 0)
+		return 1;
+    157e:	81 e0       	ldi	r24, 0x01	; 1
+	else if(Gdisplay_GetTile(Add_Point(curTTile.gpos,curTTile.t4lpos)) != 0)
+		return 1;
+	return 0;
+}
+    1580:	08 95       	ret
+
+Disassembly of section .text.PlaceT:
+
+00000bc0 <PlaceT>:
+
+void PlaceT()
+{
+ bc0:	0f 93       	push	r16
+ bc2:	1f 93       	push	r17
+ bc4:	cf 93       	push	r28
+ bc6:	df 93       	push	r29
+	Draw_Tile(curTTile.gpos,Normal_Tile);
+ bc8:	cf eb       	ldi	r28, 0xBF	; 191
+ bca:	d2 e0       	ldi	r29, 0x02	; 2
+ bcc:	61 e0       	ldi	r22, 0x01	; 1
+ bce:	88 81       	ld	r24, Y
+ bd0:	99 81       	ldd	r25, Y+1	; 0x01
+ bd2:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.t2lpos,curTTile.gpos),Normal_Tile);
+ bd6:	68 81       	ld	r22, Y
+ bd8:	79 81       	ldd	r23, Y+1	; 0x01
+ bda:	8a 81       	ldd	r24, Y+2	; 0x02
+ bdc:	9b 81       	ldd	r25, Y+3	; 0x03
+ bde:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ be2:	61 e0       	ldi	r22, 0x01	; 1
+ be4:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.t3lpos,curTTile.gpos),Normal_Tile);
+ be8:	68 81       	ld	r22, Y
+ bea:	79 81       	ldd	r23, Y+1	; 0x01
+ bec:	8c 81       	ldd	r24, Y+4	; 0x04
+ bee:	9d 81       	ldd	r25, Y+5	; 0x05
+ bf0:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ bf4:	61 e0       	ldi	r22, 0x01	; 1
+ bf6:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Draw_Tile(Add_Point(curTTile.t4lpos,curTTile.gpos),Normal_Tile);
+ bfa:	68 81       	ld	r22, Y
+ bfc:	79 81       	ldd	r23, Y+1	; 0x01
+ bfe:	8e 81       	ldd	r24, Y+6	; 0x06
+ c00:	9f 81       	ldd	r25, Y+7	; 0x07
+ c02:	0e 94 07 0e 	call	0x1c0e	; 0x1c0e <Add_Point>
+ c06:	61 e0       	ldi	r22, 0x01	; 1
+ c08:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	Full_Row_Check();
+ c0c:	0e 94 43 08 	call	0x1086	; 0x1086 <Full_Row_Check>
+	srand(j);
+ c10:	80 91 d6 02 	lds	r24, 0x02D6	; 0x8002d6 <j>
+ c14:	90 e0       	ldi	r25, 0x00	; 0
+ c16:	0e 94 fd 0d 	call	0x1bfa	; 0x1bfa <srand>
+	for(int i = 0; i < (rand()%(rand()%1000)); i++)
+ c1a:	c0 e0       	ldi	r28, 0x00	; 0
+ c1c:	d0 e0       	ldi	r29, 0x00	; 0
+ c1e:	03 c0       	rjmp	.+6      	; 0xc26 <PlaceT+0x66>
+	{
+		rand();
+ c20:	0e 94 01 0d 	call	0x1a02	; 0x1a02 <rand>
+	Draw_Tile(Add_Point(curTTile.t2lpos,curTTile.gpos),Normal_Tile);
+	Draw_Tile(Add_Point(curTTile.t3lpos,curTTile.gpos),Normal_Tile);
+	Draw_Tile(Add_Point(curTTile.t4lpos,curTTile.gpos),Normal_Tile);
+	Full_Row_Check();
+	srand(j);
+	for(int i = 0; i < (rand()%(rand()%1000)); i++)
+ c24:	21 96       	adiw	r28, 0x01	; 1
+ c26:	0e 94 01 0d 	call	0x1a02	; 0x1a02 <rand>
+ c2a:	8c 01       	movw	r16, r24
+ c2c:	0e 94 01 0d 	call	0x1a02	; 0x1a02 <rand>
+ c30:	68 ee       	ldi	r22, 0xE8	; 232
+ c32:	73 e0       	ldi	r23, 0x03	; 3
+ c34:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ c38:	bc 01       	movw	r22, r24
+ c3a:	c8 01       	movw	r24, r16
+ c3c:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ c40:	c8 17       	cp	r28, r24
+ c42:	d9 07       	cpc	r29, r25
+ c44:	6c f3       	brlt	.-38     	; 0xc20 <PlaceT+0x60>
+	{
+		rand();
+	}
+	curTTile = tets[rand()%5];
+ c46:	0e 94 01 0d 	call	0x1a02	; 0x1a02 <rand>
+ c4a:	65 e0       	ldi	r22, 0x05	; 5
+ c4c:	70 e0       	ldi	r23, 0x00	; 0
+ c4e:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ c52:	fc 01       	movw	r30, r24
+ c54:	ee 0f       	add	r30, r30
+ c56:	ff 1f       	adc	r31, r31
+ c58:	ee 0f       	add	r30, r30
+ c5a:	ff 1f       	adc	r31, r31
+ c5c:	ee 0f       	add	r30, r30
+ c5e:	ff 1f       	adc	r31, r31
+ c60:	e0 5a       	subi	r30, 0xA0	; 160
+ c62:	ff 4f       	sbci	r31, 0xFF	; 255
+ c64:	88 e0       	ldi	r24, 0x08	; 8
+ c66:	af eb       	ldi	r26, 0xBF	; 191
+ c68:	b2 e0       	ldi	r27, 0x02	; 2
+ c6a:	01 90       	ld	r0, Z+
+ c6c:	0d 92       	st	X+, r0
+ c6e:	8a 95       	dec	r24
+ c70:	e1 f7       	brne	.-8      	; 0xc6a <PlaceT+0xaa>
+	if(Lose_Check())
+ c72:	0e 94 8d 0a 	call	0x151a	; 0x151a <Lose_Check>
+ c76:	81 11       	cpse	r24, r1
+	{
+		Game = 0;
+ c78:	10 92 d3 02 	sts	0x02D3, r1	; 0x8002d3 <Game>
+	}
+	Tetrominoes_Placed++;
+ c7c:	80 91 cb 02 	lds	r24, 0x02CB	; 0x8002cb <Tetrominoes_Placed>
+ c80:	90 91 cc 02 	lds	r25, 0x02CC	; 0x8002cc <Tetrominoes_Placed+0x1>
+ c84:	01 96       	adiw	r24, 0x01	; 1
+ c86:	90 93 cc 02 	sts	0x02CC, r25	; 0x8002cc <Tetrominoes_Placed+0x1>
+ c8a:	80 93 cb 02 	sts	0x02CB, r24	; 0x8002cb <Tetrominoes_Placed>
+	if(Tetrominoes_Placed % iiThresh_Decrement_Interval == 0 && iithresh > min_iithresh)
+ c8e:	65 e0       	ldi	r22, 0x05	; 5
+ c90:	70 e0       	ldi	r23, 0x00	; 0
+ c92:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ c96:	89 2b       	or	r24, r25
+ c98:	c9 f4       	brne	.+50     	; 0xccc <PlaceT+0x10c>
+ c9a:	80 91 cd 02 	lds	r24, 0x02CD	; 0x8002cd <iithresh>
+ c9e:	90 91 ce 02 	lds	r25, 0x02CE	; 0x8002ce <iithresh+0x1>
+ ca2:	8d 3d       	cpi	r24, 0xDD	; 221
+ ca4:	25 e0       	ldi	r18, 0x05	; 5
+ ca6:	92 07       	cpc	r25, r18
+ ca8:	8c f0       	brlt	.+34     	; 0xccc <PlaceT+0x10c>
+	{
+		if(iithresh - iithresh_Decrement_Amount >= min_iithresh)
+ caa:	84 56       	subi	r24, 0x64	; 100
+ cac:	91 09       	sbc	r25, r1
+ cae:	8c 3d       	cpi	r24, 0xDC	; 220
+ cb0:	25 e0       	ldi	r18, 0x05	; 5
+ cb2:	92 07       	cpc	r25, r18
+ cb4:	2c f0       	brlt	.+10     	; 0xcc0 <PlaceT+0x100>
+			iithresh -= iithresh_Decrement_Amount;
+ cb6:	90 93 ce 02 	sts	0x02CE, r25	; 0x8002ce <iithresh+0x1>
+ cba:	80 93 cd 02 	sts	0x02CD, r24	; 0x8002cd <iithresh>
+ cbe:	06 c0       	rjmp	.+12     	; 0xccc <PlaceT+0x10c>
+		else
+			iithresh = min_iithresh;
+ cc0:	8c ed       	ldi	r24, 0xDC	; 220
+ cc2:	95 e0       	ldi	r25, 0x05	; 5
+ cc4:	90 93 ce 02 	sts	0x02CE, r25	; 0x8002ce <iithresh+0x1>
+ cc8:	80 93 cd 02 	sts	0x02CD, r24	; 0x8002cd <iithresh>
+	}
+}
+ ccc:	df 91       	pop	r29
+ cce:	cf 91       	pop	r28
+ cd0:	1f 91       	pop	r17
+ cd2:	0f 91       	pop	r16
+ cd4:	08 95       	ret
+
+Disassembly of section .text.GameLoop:
+
+0000041c <GameLoop>:
+
+void GameLoop()
+{
+ 41c:	cf 92       	push	r12
+ 41e:	df 92       	push	r13
+ 420:	ef 92       	push	r14
+ 422:	ff 92       	push	r15
+ 424:	0f 93       	push	r16
+ 426:	1f 93       	push	r17
+ 428:	cf 93       	push	r28
+ 42a:	df 93       	push	r29
+ 42c:	cd b7       	in	r28, 0x3d	; 61
+ 42e:	de b7       	in	r29, 0x3e	; 62
+		_delay_ms(1000);
+		return;
+	}
+	Draw_TTile();
+	GLCD_Update();
+}	
+ 430:	ed b6       	in	r14, 0x3d	; 61
+ 432:	fe b6       	in	r15, 0x3e	; 62
+	}
+}
+
+void GameLoop()
+{
+	if(!Game)
+ 434:	80 91 d3 02 	lds	r24, 0x02D3	; 0x8002d3 <Game>
+ 438:	88 23       	and	r24, r24
+ 43a:	09 f4       	brne	.+2      	; 0x43e <GameLoop+0x22>
+ 43c:	d9 c1       	rjmp	.+946    	; 0x7f0 <__stack+0x391>
+		return;
+	if(Up_Pressed && !(inputFlag & (1<<Up_Index)))
+ 43e:	98 99       	sbic	0x13, 0	; 19
+ 440:	12 c0       	rjmp	.+36     	; 0x466 <__stack+0x7>
+ 442:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 446:	80 fd       	sbrc	r24, 0
+ 448:	0e c0       	rjmp	.+28     	; 0x466 <__stack+0x7>
+	{	
+	Rotate_TTile();
+ 44a:	0e 94 ea 06 	call	0xdd4	; 0xdd4 <Rotate_TTile>
+	inputFlag |= (1<<Up_Index);
+ 44e:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 452:	81 60       	ori	r24, 0x01	; 1
+ 454:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+ 458:	8f e3       	ldi	r24, 0x3F	; 63
+ 45a:	9c e9       	ldi	r25, 0x9C	; 156
+ 45c:	01 97       	sbiw	r24, 0x01	; 1
+ 45e:	f1 f7       	brne	.-4      	; 0x45c <GameLoop+0x40>
+ 460:	00 c0       	rjmp	.+0      	; 0x462 <__stack+0x3>
+ 462:	00 00       	nop
+ 464:	07 c0       	rjmp	.+14     	; 0x474 <__stack+0x15>
+	_delay_ms(20);
+	}
+	else if(!Up_Pressed)
+ 466:	98 9b       	sbis	0x13, 0	; 19
+ 468:	05 c0       	rjmp	.+10     	; 0x474 <__stack+0x15>
+	{
+		inputFlag &= ~(1<<Up_Index);
+ 46a:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 46e:	8e 7f       	andi	r24, 0xFE	; 254
+ 470:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+	}
+	if(Left_Pressed && !(inputFlag & (1<<Left_Index)))
+ 474:	9b 99       	sbic	0x13, 3	; 19
+ 476:	3e c0       	rjmp	.+124    	; 0x4f4 <__stack+0x95>
+ 478:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 47c:	83 fd       	sbrc	r24, 3
+ 47e:	3a c0       	rjmp	.+116    	; 0x4f4 <__stack+0x95>
+	{
+		if(Shift_Pressed)
+ 480:	9c 99       	sbic	0x13, 4	; 19
+ 482:	1e c0       	rjmp	.+60     	; 0x4c0 <__stack+0x61>
+		{
+			if(Is_LegitMove(Point(-2,0)))
+ 484:	60 e0       	ldi	r22, 0x00	; 0
+ 486:	8e ef       	ldi	r24, 0xFE	; 254
+ 488:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 48c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 490:	88 23       	and	r24, r24
+ 492:	39 f0       	breq	.+14     	; 0x4a2 <__stack+0x43>
+				Move_TTile(Point(-2,0));
+ 494:	60 e0       	ldi	r22, 0x00	; 0
+ 496:	8e ef       	ldi	r24, 0xFE	; 254
+ 498:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 49c:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 4a0:	1d c0       	rjmp	.+58     	; 0x4dc <__stack+0x7d>
+			else
+			{
+				if(Is_LegitMove(Point(-1,0)))
+ 4a2:	60 e0       	ldi	r22, 0x00	; 0
+ 4a4:	8f ef       	ldi	r24, 0xFF	; 255
+ 4a6:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 4aa:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 4ae:	88 23       	and	r24, r24
+ 4b0:	a9 f0       	breq	.+42     	; 0x4dc <__stack+0x7d>
+					Move_TTile(Point(-1,0));
+ 4b2:	60 e0       	ldi	r22, 0x00	; 0
+ 4b4:	8f ef       	ldi	r24, 0xFF	; 255
+ 4b6:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 4ba:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 4be:	0e c0       	rjmp	.+28     	; 0x4dc <__stack+0x7d>
+			}
+		}
+		else
+		{
+			if(Is_LegitMove(Point(-1,0)))
+ 4c0:	60 e0       	ldi	r22, 0x00	; 0
+ 4c2:	8f ef       	ldi	r24, 0xFF	; 255
+ 4c4:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 4c8:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 4cc:	88 23       	and	r24, r24
+ 4ce:	31 f0       	breq	.+12     	; 0x4dc <__stack+0x7d>
+				Move_TTile(Point(-1,0));
+ 4d0:	60 e0       	ldi	r22, 0x00	; 0
+ 4d2:	8f ef       	ldi	r24, 0xFF	; 255
+ 4d4:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 4d8:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+		}
+		inputFlag |= (1<<Left_Index);
+ 4dc:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 4e0:	88 60       	ori	r24, 0x08	; 8
+ 4e2:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+ 4e6:	8f e3       	ldi	r24, 0x3F	; 63
+ 4e8:	9c e9       	ldi	r25, 0x9C	; 156
+ 4ea:	01 97       	sbiw	r24, 0x01	; 1
+ 4ec:	f1 f7       	brne	.-4      	; 0x4ea <__stack+0x8b>
+ 4ee:	00 c0       	rjmp	.+0      	; 0x4f0 <__stack+0x91>
+ 4f0:	00 00       	nop
+ 4f2:	07 c0       	rjmp	.+14     	; 0x502 <__stack+0xa3>
+		_delay_ms(20);
+	}
+	else if(!Left_Pressed)
+ 4f4:	9b 9b       	sbis	0x13, 3	; 19
+ 4f6:	05 c0       	rjmp	.+10     	; 0x502 <__stack+0xa3>
+	{
+		inputFlag &= ~(1<<Left_Index);
+ 4f8:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 4fc:	87 7f       	andi	r24, 0xF7	; 247
+ 4fe:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+	}
+	if(Right_Pressed && !(inputFlag & (1<<Right_Index)))
+ 502:	99 99       	sbic	0x13, 1	; 19
+ 504:	3e c0       	rjmp	.+124    	; 0x582 <__stack+0x123>
+ 506:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 50a:	81 fd       	sbrc	r24, 1
+ 50c:	3a c0       	rjmp	.+116    	; 0x582 <__stack+0x123>
+	{
+		if(Shift_Pressed)
+ 50e:	9c 99       	sbic	0x13, 4	; 19
+ 510:	1e c0       	rjmp	.+60     	; 0x54e <__stack+0xef>
+		{
+			if(Is_LegitMove(Point(2,0)))
+ 512:	60 e0       	ldi	r22, 0x00	; 0
+ 514:	82 e0       	ldi	r24, 0x02	; 2
+ 516:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 51a:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 51e:	88 23       	and	r24, r24
+ 520:	39 f0       	breq	.+14     	; 0x530 <__stack+0xd1>
+			Move_TTile(Point(2,0));
+ 522:	60 e0       	ldi	r22, 0x00	; 0
+ 524:	82 e0       	ldi	r24, 0x02	; 2
+ 526:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 52a:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 52e:	1d c0       	rjmp	.+58     	; 0x56a <__stack+0x10b>
+			else
+			{
+				if(Is_LegitMove(Point(1,0)))
+ 530:	60 e0       	ldi	r22, 0x00	; 0
+ 532:	81 e0       	ldi	r24, 0x01	; 1
+ 534:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 538:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 53c:	88 23       	and	r24, r24
+ 53e:	a9 f0       	breq	.+42     	; 0x56a <__stack+0x10b>
+					Move_TTile(Point(1,0));
+ 540:	60 e0       	ldi	r22, 0x00	; 0
+ 542:	81 e0       	ldi	r24, 0x01	; 1
+ 544:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 548:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 54c:	0e c0       	rjmp	.+28     	; 0x56a <__stack+0x10b>
+			}
+		}
+		else
+		{
+			if(Is_LegitMove(Point(1,0)))
+ 54e:	60 e0       	ldi	r22, 0x00	; 0
+ 550:	81 e0       	ldi	r24, 0x01	; 1
+ 552:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 556:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 55a:	88 23       	and	r24, r24
+ 55c:	31 f0       	breq	.+12     	; 0x56a <__stack+0x10b>
+			Move_TTile(Point(1,0));
+ 55e:	60 e0       	ldi	r22, 0x00	; 0
+ 560:	81 e0       	ldi	r24, 0x01	; 1
+ 562:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 566:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+		}
+		inputFlag |= (1<<Right_Index);
+ 56a:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 56e:	82 60       	ori	r24, 0x02	; 2
+ 570:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+ 574:	8f e3       	ldi	r24, 0x3F	; 63
+ 576:	9c e9       	ldi	r25, 0x9C	; 156
+ 578:	01 97       	sbiw	r24, 0x01	; 1
+ 57a:	f1 f7       	brne	.-4      	; 0x578 <__stack+0x119>
+ 57c:	00 c0       	rjmp	.+0      	; 0x57e <__stack+0x11f>
+ 57e:	00 00       	nop
+ 580:	07 c0       	rjmp	.+14     	; 0x590 <__stack+0x131>
+		_delay_ms(20);
+	}
+	else if(!Right_Pressed)
+ 582:	99 9b       	sbis	0x13, 1	; 19
+ 584:	05 c0       	rjmp	.+10     	; 0x590 <__stack+0x131>
+	{
+		inputFlag &= ~(1<<Right_Index);
+ 586:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 58a:	8d 7f       	andi	r24, 0xFD	; 253
+ 58c:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+	}
+	if(Down_Pressed && !(inputFlag & (1<<Down_Index)))
+ 590:	9a 99       	sbic	0x13, 2	; 19
+ 592:	2a c0       	rjmp	.+84     	; 0x5e8 <__stack+0x189>
+ 594:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 598:	82 ff       	sbrs	r24, 2
+ 59a:	10 c0       	rjmp	.+32     	; 0x5bc <__stack+0x15d>
+ 59c:	25 c0       	rjmp	.+74     	; 0x5e8 <__stack+0x189>
+	{
+		while(Is_LegitMove(Point(0,1)))
+		{
+			Move_TTile(Point(0,1));
+ 59e:	61 e0       	ldi	r22, 0x01	; 1
+ 5a0:	80 e0       	ldi	r24, 0x00	; 0
+ 5a2:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 5a6:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 5aa:	9f ef       	ldi	r25, 0xFF	; 255
+ 5ac:	29 ef       	ldi	r18, 0xF9	; 249
+ 5ae:	30 e0       	ldi	r19, 0x00	; 0
+ 5b0:	91 50       	subi	r25, 0x01	; 1
+ 5b2:	20 40       	sbci	r18, 0x00	; 0
+ 5b4:	30 40       	sbci	r19, 0x00	; 0
+ 5b6:	e1 f7       	brne	.-8      	; 0x5b0 <__stack+0x151>
+ 5b8:	00 c0       	rjmp	.+0      	; 0x5ba <__stack+0x15b>
+ 5ba:	00 00       	nop
+	{
+		inputFlag &= ~(1<<Right_Index);
+	}
+	if(Down_Pressed && !(inputFlag & (1<<Down_Index)))
+	{
+		while(Is_LegitMove(Point(0,1)))
+ 5bc:	61 e0       	ldi	r22, 0x01	; 1
+ 5be:	80 e0       	ldi	r24, 0x00	; 0
+ 5c0:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 5c4:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 5c8:	81 11       	cpse	r24, r1
+ 5ca:	e9 cf       	rjmp	.-46     	; 0x59e <__stack+0x13f>
+		{
+			Move_TTile(Point(0,1));
+			_delay_ms(40);
+		}
+		PlaceT();
+ 5cc:	0e 94 e0 05 	call	0xbc0	; 0xbc0 <PlaceT>
+		inputFlag |= (1<<Down_Index);
+ 5d0:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 5d4:	84 60       	ori	r24, 0x04	; 4
+ 5d6:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+ 5da:	8f e3       	ldi	r24, 0x3F	; 63
+ 5dc:	9c e9       	ldi	r25, 0x9C	; 156
+ 5de:	01 97       	sbiw	r24, 0x01	; 1
+ 5e0:	f1 f7       	brne	.-4      	; 0x5de <__stack+0x17f>
+ 5e2:	00 c0       	rjmp	.+0      	; 0x5e4 <__stack+0x185>
+ 5e4:	00 00       	nop
+ 5e6:	26 c0       	rjmp	.+76     	; 0x634 <__stack+0x1d5>
+		_delay_ms(20);
+	}
+	else if(g) // applied if the Down button isn't pressed
+ 5e8:	80 91 d5 02 	lds	r24, 0x02D5	; 0x8002d5 <g>
+ 5ec:	88 23       	and	r24, r24
+ 5ee:	d9 f0       	breq	.+54     	; 0x626 <__stack+0x1c7>
+	{
+		if(Is_LegitMove(Point(0,1)))
+ 5f0:	61 e0       	ldi	r22, 0x01	; 1
+ 5f2:	80 e0       	ldi	r24, 0x00	; 0
+ 5f4:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 5f8:	0e 94 4f 05 	call	0xa9e	; 0xa9e <Is_LegitMove>
+ 5fc:	88 23       	and	r24, r24
+ 5fe:	39 f0       	breq	.+14     	; 0x60e <__stack+0x1af>
+			Move_TTile(Point(0,1));
+ 600:	61 e0       	ldi	r22, 0x01	; 1
+ 602:	80 e0       	ldi	r24, 0x00	; 0
+ 604:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 608:	0e 94 3b 0d 	call	0x1a76	; 0x1a76 <Move_TTile>
+ 60c:	02 c0       	rjmp	.+4      	; 0x612 <__stack+0x1b3>
+		else
+			PlaceT();
+ 60e:	0e 94 e0 05 	call	0xbc0	; 0xbc0 <PlaceT>
+		g = 0;
+ 612:	10 92 d5 02 	sts	0x02D5, r1	; 0x8002d5 <g>
+		if(!Down_Pressed)
+ 616:	9a 9b       	sbis	0x13, 2	; 19
+ 618:	0d c0       	rjmp	.+26     	; 0x634 <__stack+0x1d5>
+			inputFlag &= ~(1<<Down_Index);
+ 61a:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 61e:	8b 7f       	andi	r24, 0xFB	; 251
+ 620:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+ 624:	07 c0       	rjmp	.+14     	; 0x634 <__stack+0x1d5>
+	}
+	else if(!Down_Pressed)
+ 626:	9a 9b       	sbis	0x13, 2	; 19
+ 628:	05 c0       	rjmp	.+10     	; 0x634 <__stack+0x1d5>
+	{
+		inputFlag &= ~(1<<Down_Index);
+ 62a:	80 91 d4 02 	lds	r24, 0x02D4	; 0x8002d4 <inputFlag>
+ 62e:	8b 7f       	andi	r24, 0xFB	; 251
+ 630:	80 93 d4 02 	sts	0x02D4, r24	; 0x8002d4 <inputFlag>
+	}
+	if(!Game)
+ 634:	80 91 d3 02 	lds	r24, 0x02D3	; 0x8002d3 <Game>
+ 638:	88 23       	and	r24, r24
+ 63a:	d9 f0       	breq	.+54     	; 0x672 <__stack+0x213>
+ 63c:	d5 c0       	rjmp	.+426    	; 0x7e8 <__stack+0x389>
+	{
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+			{
+				Fill_Tile(Point(j,i));
+ 63e:	6c 2d       	mov	r22, r12
+ 640:	80 2f       	mov	r24, r16
+ 642:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 646:	0e 94 99 0c 	call	0x1932	; 0x1932 <Fill_Tile>
+				GLCD_Update();
+ 64a:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 64e:	87 ec       	ldi	r24, 0xC7	; 199
+ 650:	90 e0       	ldi	r25, 0x00	; 0
+ 652:	01 97       	sbiw	r24, 0x01	; 1
+ 654:	f1 f7       	brne	.-4      	; 0x652 <__stack+0x1f3>
+ 656:	00 c0       	rjmp	.+0      	; 0x658 <__stack+0x1f9>
+ 658:	00 00       	nop
+		inputFlag &= ~(1<<Down_Index);
+	}
+	if(!Game)
+	{
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+ 65a:	0f 5f       	subi	r16, 0xFF	; 255
+ 65c:	1f 4f       	sbci	r17, 0xFF	; 255
+ 65e:	02 c0       	rjmp	.+4      	; 0x664 <__stack+0x205>
+ 660:	00 e0       	ldi	r16, 0x00	; 0
+ 662:	10 e0       	ldi	r17, 0x00	; 0
+ 664:	05 31       	cpi	r16, 0x15	; 21
+ 666:	11 05       	cpc	r17, r1
+ 668:	54 f3       	brlt	.-44     	; 0x63e <__stack+0x1df>
+	{
+		inputFlag &= ~(1<<Down_Index);
+	}
+	if(!Game)
+	{
+		for(int i = 0; i < 12; i++)
+ 66a:	9f ef       	ldi	r25, 0xFF	; 255
+ 66c:	c9 1a       	sub	r12, r25
+ 66e:	d9 0a       	sbc	r13, r25
+ 670:	02 c0       	rjmp	.+4      	; 0x676 <__stack+0x217>
+ 672:	c1 2c       	mov	r12, r1
+ 674:	d1 2c       	mov	r13, r1
+ 676:	2c e0       	ldi	r18, 0x0C	; 12
+ 678:	c2 16       	cp	r12, r18
+ 67a:	d1 04       	cpc	r13, r1
+ 67c:	8c f3       	brlt	.-30     	; 0x660 <__stack+0x201>
+ 67e:	c1 2c       	mov	r12, r1
+ 680:	d1 2c       	mov	r13, r1
+ 682:	19 c0       	rjmp	.+50     	; 0x6b6 <__stack+0x257>
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+			{
+				Clear_Tile(Point(j,i));
+ 684:	6c 2d       	mov	r22, r12
+ 686:	80 2f       	mov	r24, r16
+ 688:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 68c:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+				GLCD_Update();
+ 690:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+ 694:	87 ec       	ldi	r24, 0xC7	; 199
+ 696:	90 e0       	ldi	r25, 0x00	; 0
+ 698:	01 97       	sbiw	r24, 0x01	; 1
+ 69a:	f1 f7       	brne	.-4      	; 0x698 <__stack+0x239>
+ 69c:	00 c0       	rjmp	.+0      	; 0x69e <__stack+0x23f>
+ 69e:	00 00       	nop
+				Fill_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+ 6a0:	0f 5f       	subi	r16, 0xFF	; 255
+ 6a2:	1f 4f       	sbci	r17, 0xFF	; 255
+ 6a4:	02 c0       	rjmp	.+4      	; 0x6aa <__stack+0x24b>
+ 6a6:	00 e0       	ldi	r16, 0x00	; 0
+ 6a8:	10 e0       	ldi	r17, 0x00	; 0
+ 6aa:	05 31       	cpi	r16, 0x15	; 21
+ 6ac:	11 05       	cpc	r17, r1
+ 6ae:	54 f3       	brlt	.-44     	; 0x684 <__stack+0x225>
+			{
+				Fill_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+ 6b0:	9f ef       	ldi	r25, 0xFF	; 255
+ 6b2:	c9 1a       	sub	r12, r25
+ 6b4:	d9 0a       	sbc	r13, r25
+ 6b6:	2c e0       	ldi	r18, 0x0C	; 12
+ 6b8:	c2 16       	cp	r12, r18
+ 6ba:	d1 04       	cpc	r13, r1
+ 6bc:	a4 f3       	brlt	.-24     	; 0x6a6 <__stack+0x247>
+			{
+				Clear_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}	
+		Show_Game_Image(Game_Over_img);
+ 6be:	61 ef       	ldi	r22, 0xF1	; 241
+ 6c0:	73 e0       	ldi	r23, 0x03	; 3
+ 6c2:	80 e0       	ldi	r24, 0x00	; 0
+ 6c4:	0e 94 07 0a 	call	0x140e	; 0x140e <Show_Game_Image>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 6c8:	3f ef       	ldi	r19, 0xFF	; 255
+ 6ca:	83 ed       	ldi	r24, 0xD3	; 211
+ 6cc:	90 e3       	ldi	r25, 0x30	; 48
+ 6ce:	31 50       	subi	r19, 0x01	; 1
+ 6d0:	80 40       	sbci	r24, 0x00	; 0
+ 6d2:	90 40       	sbci	r25, 0x00	; 0
+ 6d4:	e1 f7       	brne	.-8      	; 0x6ce <__stack+0x26f>
+ 6d6:	00 c0       	rjmp	.+0      	; 0x6d8 <__stack+0x279>
+ 6d8:	00 00       	nop
+		_delay_ms(2000);
+		for(int i = 0; i < 12; i++)
+ 6da:	c1 2c       	mov	r12, r1
+ 6dc:	d1 2c       	mov	r13, r1
+ 6de:	19 c0       	rjmp	.+50     	; 0x712 <__stack+0x2b3>
+			for(int j = 0; j < 21; j++)
+			{
+				Fill_Tile(Point(j,i));
+ 6e0:	6c 2d       	mov	r22, r12
+ 6e2:	80 2f       	mov	r24, r16
+ 6e4:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 6e8:	0e 94 99 0c 	call	0x1932	; 0x1932 <Fill_Tile>
+				GLCD_Update();
+ 6ec:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 6f0:	87 ec       	ldi	r24, 0xC7	; 199
+ 6f2:	90 e0       	ldi	r25, 0x00	; 0
+ 6f4:	01 97       	sbiw	r24, 0x01	; 1
+ 6f6:	f1 f7       	brne	.-4      	; 0x6f4 <__stack+0x295>
+ 6f8:	00 c0       	rjmp	.+0      	; 0x6fa <__stack+0x29b>
+ 6fa:	00 00       	nop
+				_delay_us(100);
+			}	
+		Show_Game_Image(Game_Over_img);
+		_delay_ms(2000);
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+ 6fc:	0f 5f       	subi	r16, 0xFF	; 255
+ 6fe:	1f 4f       	sbci	r17, 0xFF	; 255
+ 700:	02 c0       	rjmp	.+4      	; 0x706 <__stack+0x2a7>
+ 702:	00 e0       	ldi	r16, 0x00	; 0
+ 704:	10 e0       	ldi	r17, 0x00	; 0
+ 706:	05 31       	cpi	r16, 0x15	; 21
+ 708:	11 05       	cpc	r17, r1
+ 70a:	54 f3       	brlt	.-44     	; 0x6e0 <__stack+0x281>
+				GLCD_Update();
+				_delay_us(100);
+			}	
+		Show_Game_Image(Game_Over_img);
+		_delay_ms(2000);
+		for(int i = 0; i < 12; i++)
+ 70c:	9f ef       	ldi	r25, 0xFF	; 255
+ 70e:	c9 1a       	sub	r12, r25
+ 710:	d9 0a       	sbc	r13, r25
+ 712:	2c e0       	ldi	r18, 0x0C	; 12
+ 714:	c2 16       	cp	r12, r18
+ 716:	d1 04       	cpc	r13, r1
+ 718:	a4 f3       	brlt	.-24     	; 0x702 <__stack+0x2a3>
+ 71a:	c1 2c       	mov	r12, r1
+ 71c:	d1 2c       	mov	r13, r1
+ 71e:	19 c0       	rjmp	.+50     	; 0x752 <__stack+0x2f3>
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+			{
+				Clear_Tile(Point(j,i));
+ 720:	6c 2d       	mov	r22, r12
+ 722:	80 2f       	mov	r24, r16
+ 724:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 728:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+				GLCD_Update();
+ 72c:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+ 730:	87 ec       	ldi	r24, 0xC7	; 199
+ 732:	90 e0       	ldi	r25, 0x00	; 0
+ 734:	01 97       	sbiw	r24, 0x01	; 1
+ 736:	f1 f7       	brne	.-4      	; 0x734 <__stack+0x2d5>
+ 738:	00 c0       	rjmp	.+0      	; 0x73a <__stack+0x2db>
+ 73a:	00 00       	nop
+				Fill_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+			for(int j = 0; j < 21; j++)
+ 73c:	0f 5f       	subi	r16, 0xFF	; 255
+ 73e:	1f 4f       	sbci	r17, 0xFF	; 255
+ 740:	02 c0       	rjmp	.+4      	; 0x746 <__stack+0x2e7>
+ 742:	00 e0       	ldi	r16, 0x00	; 0
+ 744:	10 e0       	ldi	r17, 0x00	; 0
+ 746:	05 31       	cpi	r16, 0x15	; 21
+ 748:	11 05       	cpc	r17, r1
+ 74a:	54 f3       	brlt	.-44     	; 0x720 <__stack+0x2c1>
+			{
+				Fill_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}
+		for(int i = 0; i < 12; i++)
+ 74c:	9f ef       	ldi	r25, 0xFF	; 255
+ 74e:	c9 1a       	sub	r12, r25
+ 750:	d9 0a       	sbc	r13, r25
+ 752:	2c e0       	ldi	r18, 0x0C	; 12
+ 754:	c2 16       	cp	r12, r18
+ 756:	d1 04       	cpc	r13, r1
+ 758:	a4 f3       	brlt	.-24     	; 0x742 <__stack+0x2e3>
+			{
+				Clear_Tile(Point(j,i));
+				GLCD_Update();
+				_delay_us(100);
+			}
+		char c[digit_counter(Score)];
+ 75a:	80 91 d1 02 	lds	r24, 0x02D1	; 0x8002d1 <Score>
+ 75e:	90 91 d2 02 	lds	r25, 0x02D2	; 0x8002d2 <Score+0x1>
+ 762:	0e 94 8c 0d 	call	0x1b18	; 0x1b18 <digit_counter>
+ 766:	cd b6       	in	r12, 0x3d	; 61
+ 768:	de b6       	in	r13, 0x3e	; 62
+ 76a:	2d b7       	in	r18, 0x3d	; 61
+ 76c:	3e b7       	in	r19, 0x3e	; 62
+ 76e:	28 1b       	sub	r18, r24
+ 770:	31 09       	sbc	r19, r1
+ 772:	0f b6       	in	r0, 0x3f	; 63
+ 774:	f8 94       	cli
+ 776:	3e bf       	out	0x3e, r19	; 62
+ 778:	0f be       	out	0x3f, r0	; 63
+ 77a:	2d bf       	out	0x3d, r18	; 61
+ 77c:	0d b7       	in	r16, 0x3d	; 61
+ 77e:	1e b7       	in	r17, 0x3e	; 62
+ 780:	0f 5f       	subi	r16, 0xFF	; 255
+ 782:	1f 4f       	sbci	r17, 0xFF	; 255
+		itoa(Score,c);
+ 784:	b8 01       	movw	r22, r16
+ 786:	80 91 d1 02 	lds	r24, 0x02D1	; 0x8002d1 <Score>
+ 78a:	90 91 d2 02 	lds	r25, 0x02D2	; 0x8002d2 <Score+0x1>
+ 78e:	0e 94 64 07 	call	0xec8	; 0xec8 <itoa>
+		GLCD_Puts(Point(0,10),"SCORE:");
+ 792:	6a e0       	ldi	r22, 0x0A	; 10
+ 794:	80 e0       	ldi	r24, 0x00	; 0
+ 796:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 79a:	44 e7       	ldi	r20, 0x74	; 116
+ 79c:	53 e0       	ldi	r21, 0x03	; 3
+ 79e:	60 e0       	ldi	r22, 0x00	; 0
+ 7a0:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+		GLCD_Puts(Point(45,10),c);
+ 7a4:	6a e0       	ldi	r22, 0x0A	; 10
+ 7a6:	8d e2       	ldi	r24, 0x2D	; 45
+ 7a8:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 7ac:	a8 01       	movw	r20, r16
+ 7ae:	60 e8       	ldi	r22, 0x80	; 128
+ 7b0:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 7b4:	3f ef       	ldi	r19, 0xFF	; 255
+ 7b6:	83 ed       	ldi	r24, 0xD3	; 211
+ 7b8:	90 e3       	ldi	r25, 0x30	; 48
+ 7ba:	31 50       	subi	r19, 0x01	; 1
+ 7bc:	80 40       	sbci	r24, 0x00	; 0
+ 7be:	90 40       	sbci	r25, 0x00	; 0
+ 7c0:	e1 f7       	brne	.-8      	; 0x7ba <__stack+0x35b>
+ 7c2:	00 c0       	rjmp	.+0      	; 0x7c4 <__stack+0x365>
+ 7c4:	00 00       	nop
+		_delay_ms(2000);
+		GLCD_Clear();
+ 7c6:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <GLCD_Clear>
+ 7ca:	2f ef       	ldi	r18, 0xFF	; 255
+ 7cc:	39 e6       	ldi	r19, 0x69	; 105
+ 7ce:	88 e1       	ldi	r24, 0x18	; 24
+ 7d0:	21 50       	subi	r18, 0x01	; 1
+ 7d2:	30 40       	sbci	r19, 0x00	; 0
+ 7d4:	80 40       	sbci	r24, 0x00	; 0
+ 7d6:	e1 f7       	brne	.-8      	; 0x7d0 <__stack+0x371>
+ 7d8:	00 c0       	rjmp	.+0      	; 0x7da <__stack+0x37b>
+ 7da:	00 00       	nop
+ 7dc:	0f b6       	in	r0, 0x3f	; 63
+ 7de:	f8 94       	cli
+ 7e0:	de be       	out	0x3e, r13	; 62
+ 7e2:	0f be       	out	0x3f, r0	; 63
+ 7e4:	cd be       	out	0x3d, r12	; 61
+ 7e6:	04 c0       	rjmp	.+8      	; 0x7f0 <__stack+0x391>
+		_delay_ms(1000);
+		return;
+	}
+	Draw_TTile();
+ 7e8:	0e 94 01 0c 	call	0x1802	; 0x1802 <Draw_TTile>
+	GLCD_Update();
+ 7ec:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+}	
+ 7f0:	0f b6       	in	r0, 0x3f	; 63
+ 7f2:	f8 94       	cli
+ 7f4:	fe be       	out	0x3e, r15	; 62
+ 7f6:	0f be       	out	0x3f, r0	; 63
+ 7f8:	ed be       	out	0x3d, r14	; 61
+ 7fa:	df 91       	pop	r29
+ 7fc:	cf 91       	pop	r28
+ 7fe:	1f 91       	pop	r17
+ 800:	0f 91       	pop	r16
+ 802:	ff 90       	pop	r15
+ 804:	ef 90       	pop	r14
+ 806:	df 90       	pop	r13
+ 808:	cf 90       	pop	r12
+ 80a:	08 95       	ret
+
+Disassembly of section .text.G_Init:
+
+000015e8 <G_Init>:
+
+void G_Init()
+{
+    15e8:	cf 93       	push	r28
+    15ea:	df 93       	push	r29
+	for(char i = 0; i < 21; i++)
+    15ec:	c0 e0       	ldi	r28, 0x00	; 0
+    15ee:	08 c0       	rjmp	.+16     	; 0x1600 <G_Init+0x18>
+		Draw_Tile(Point(i,11),Normal_Tile);
+    15f0:	6b e0       	ldi	r22, 0x0B	; 11
+    15f2:	8c 2f       	mov	r24, r28
+    15f4:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    15f8:	61 e0       	ldi	r22, 0x01	; 1
+    15fa:	0e 94 5d 09 	call	0x12ba	; 0x12ba <Draw_Tile>
+	GLCD_Update();
+}	
+
+void G_Init()
+{
+	for(char i = 0; i < 21; i++)
+    15fe:	cf 5f       	subi	r28, 0xFF	; 255
+    1600:	c5 31       	cpi	r28, 0x15	; 21
+    1602:	b0 f3       	brcs	.-20     	; 0x15f0 <G_Init+0x8>
+		Draw_Tile(Point(i,11),Normal_Tile);
+	GLCD_Update();
+    1604:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+    1608:	2f ef       	ldi	r18, 0xFF	; 255
+    160a:	89 e6       	ldi	r24, 0x69	; 105
+    160c:	98 e1       	ldi	r25, 0x18	; 24
+    160e:	21 50       	subi	r18, 0x01	; 1
+    1610:	80 40       	sbci	r24, 0x00	; 0
+    1612:	90 40       	sbci	r25, 0x00	; 0
+    1614:	e1 f7       	brne	.-8      	; 0x160e <G_Init+0x26>
+    1616:	00 c0       	rjmp	.+0      	; 0x1618 <G_Init+0x30>
+    1618:	00 00       	nop
+	_delay_ms(1000);
+	Clear_Row(11,0);
+    161a:	60 e0       	ldi	r22, 0x00	; 0
+    161c:	70 e0       	ldi	r23, 0x00	; 0
+    161e:	8b e0       	ldi	r24, 0x0B	; 11
+    1620:	0e 94 86 0b 	call	0x170c	; 0x170c <Clear_Row>
+	for(char i = 0; i < 21; i++)
+    1624:	d0 e0       	ldi	r29, 0x00	; 0
+    1626:	0c c0       	rjmp	.+24     	; 0x1640 <G_Init+0x58>
+		for(char j = 0; j < 12; j++)
+			Clear_Tile(Point(i,j));
+    1628:	6c 2f       	mov	r22, r28
+    162a:	8d 2f       	mov	r24, r29
+    162c:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+    1630:	0e 94 da 0b 	call	0x17b4	; 0x17b4 <Clear_Tile>
+		Draw_Tile(Point(i,11),Normal_Tile);
+	GLCD_Update();
+	_delay_ms(1000);
+	Clear_Row(11,0);
+	for(char i = 0; i < 21; i++)
+		for(char j = 0; j < 12; j++)
+    1634:	cf 5f       	subi	r28, 0xFF	; 255
+    1636:	01 c0       	rjmp	.+2      	; 0x163a <G_Init+0x52>
+    1638:	c0 e0       	ldi	r28, 0x00	; 0
+    163a:	cc 30       	cpi	r28, 0x0C	; 12
+    163c:	a8 f3       	brcs	.-22     	; 0x1628 <G_Init+0x40>
+	for(char i = 0; i < 21; i++)
+		Draw_Tile(Point(i,11),Normal_Tile);
+	GLCD_Update();
+	_delay_ms(1000);
+	Clear_Row(11,0);
+	for(char i = 0; i < 21; i++)
+    163e:	df 5f       	subi	r29, 0xFF	; 255
+    1640:	d5 31       	cpi	r29, 0x15	; 21
+    1642:	d0 f3       	brcs	.-12     	; 0x1638 <G_Init+0x50>
+		for(char j = 0; j < 12; j++)
+			Clear_Tile(Point(i,j));
+	GLCD_Update();
+    1644:	0e 94 c1 0a 	call	0x1582	; 0x1582 <GLCD_Update>
+}
+    1648:	df 91       	pop	r29
+    164a:	cf 91       	pop	r28
+    164c:	08 95       	ret
+
+Disassembly of section .text.main:
+
+0000080c <main>:
+
+int main(void)
+{
+	DDRA = 0xFF;
+ 80c:	8f ef       	ldi	r24, 0xFF	; 255
+ 80e:	8a bb       	out	0x1a, r24	; 26
+	DDRB = 0x07;
+ 810:	97 e0       	ldi	r25, 0x07	; 7
+ 812:	97 bb       	out	0x17, r25	; 23
+	PORTC = 0xFF;
+ 814:	85 bb       	out	0x15, r24	; 21
+	TTs_init();
+ 816:	0e 94 6b 06 	call	0xcd6	; 0xcd6 <TTs_init>
+	curTTile = tets[4];
+ 81a:	88 e0       	ldi	r24, 0x08	; 8
+ 81c:	e0 e8       	ldi	r30, 0x80	; 128
+ 81e:	f0 e0       	ldi	r31, 0x00	; 0
+ 820:	af eb       	ldi	r26, 0xBF	; 191
+ 822:	b2 e0       	ldi	r27, 0x02	; 2
+ 824:	01 90       	ld	r0, Z+
+ 826:	0d 92       	st	X+, r0
+ 828:	8a 95       	dec	r24
+ 82a:	e1 f7       	brne	.-8      	; 0x824 <main+0x18>
+ 82c:	8f e9       	ldi	r24, 0x9F	; 159
+ 82e:	9f e0       	ldi	r25, 0x0F	; 15
+ 830:	01 97       	sbiw	r24, 0x01	; 1
+ 832:	f1 f7       	brne	.-4      	; 0x830 <main+0x24>
+ 834:	00 c0       	rjmp	.+0      	; 0x836 <main+0x2a>
+ 836:	00 00       	nop
+	
+	_delay_ms(2);
+	GLCD_Init();
+ 838:	0e 94 27 0b 	call	0x164e	; 0x164e <GLCD_Init>
+	GLCD_Clear();
+ 83c:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <GLCD_Clear>
+	
+	TCCR0 = 0x02;
+ 840:	82 e0       	ldi	r24, 0x02	; 2
+ 842:	83 bf       	out	0x33, r24	; 51
+	TIMSK = 0x01;
+ 844:	81 e0       	ldi	r24, 0x01	; 1
+ 846:	89 bf       	out	0x39, r24	; 57
+	sei();
+ 848:	78 94       	sei
+	rrrrr:
+	Game = 1;
+ 84a:	81 e0       	ldi	r24, 0x01	; 1
+ 84c:	80 93 d3 02 	sts	0x02D3, r24	; 0x8002d3 <Game>
+	G_Init();
+ 850:	0e 94 f4 0a 	call	0x15e8	; 0x15e8 <G_Init>
+	for(int i = 0; i < 84; i++)
+ 854:	00 e0       	ldi	r16, 0x00	; 0
+ 856:	10 e0       	ldi	r17, 0x00	; 0
+ 858:	1e c0       	rjmp	.+60     	; 0x896 <main+0x8a>
+		for(int j = 0; j < 48; j++)
+		{
+			if((j+i) % 6 == 0)
+ 85a:	c8 01       	movw	r24, r16
+ 85c:	8c 0f       	add	r24, r28
+ 85e:	9d 1f       	adc	r25, r29
+ 860:	66 e0       	ldi	r22, 0x06	; 6
+ 862:	70 e0       	ldi	r23, 0x00	; 0
+ 864:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ 868:	89 2b       	or	r24, r25
+ 86a:	31 f4       	brne	.+12     	; 0x878 <main+0x6c>
+				GLCD_SetPixel(Point(i,j));
+ 86c:	6c 2f       	mov	r22, r28
+ 86e:	80 2f       	mov	r24, r16
+ 870:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 874:	0e 94 01 09 	call	0x1202	; 0x1202 <GLCD_SetPixel>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 878:	87 ec       	ldi	r24, 0xC7	; 199
+ 87a:	90 e0       	ldi	r25, 0x00	; 0
+ 87c:	01 97       	sbiw	r24, 0x01	; 1
+ 87e:	f1 f7       	brne	.-4      	; 0x87c <main+0x70>
+ 880:	00 c0       	rjmp	.+0      	; 0x882 <main+0x76>
+ 882:	00 00       	nop
+	sei();
+	rrrrr:
+	Game = 1;
+	G_Init();
+	for(int i = 0; i < 84; i++)
+		for(int j = 0; j < 48; j++)
+ 884:	21 96       	adiw	r28, 0x01	; 1
+ 886:	02 c0       	rjmp	.+4      	; 0x88c <main+0x80>
+ 888:	c0 e0       	ldi	r28, 0x00	; 0
+ 88a:	d0 e0       	ldi	r29, 0x00	; 0
+ 88c:	c0 33       	cpi	r28, 0x30	; 48
+ 88e:	d1 05       	cpc	r29, r1
+ 890:	24 f3       	brlt	.-56     	; 0x85a <main+0x4e>
+	TIMSK = 0x01;
+	sei();
+	rrrrr:
+	Game = 1;
+	G_Init();
+	for(int i = 0; i < 84; i++)
+ 892:	0f 5f       	subi	r16, 0xFF	; 255
+ 894:	1f 4f       	sbci	r17, 0xFF	; 255
+ 896:	04 35       	cpi	r16, 0x54	; 84
+ 898:	11 05       	cpc	r17, r1
+ 89a:	b4 f3       	brlt	.-20     	; 0x888 <main+0x7c>
+ 89c:	00 e0       	ldi	r16, 0x00	; 0
+ 89e:	10 e0       	ldi	r17, 0x00	; 0
+ 8a0:	1e c0       	rjmp	.+60     	; 0x8de <main+0xd2>
+			_delay_us(100);
+		}
+	for(int i = 0; i < 84; i++)
+		for(int j = 0; j < 48; j++)
+		{
+			if((j+i) % 6 == 0)
+ 8a2:	c8 01       	movw	r24, r16
+ 8a4:	8c 0f       	add	r24, r28
+ 8a6:	9d 1f       	adc	r25, r29
+ 8a8:	66 e0       	ldi	r22, 0x06	; 6
+ 8aa:	70 e0       	ldi	r23, 0x00	; 0
+ 8ac:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+ 8b0:	89 2b       	or	r24, r25
+ 8b2:	31 f4       	brne	.+12     	; 0x8c0 <main+0xb4>
+				GLCD_ClearPixel(Point(i,j));
+ 8b4:	6c 2f       	mov	r22, r28
+ 8b6:	80 2f       	mov	r24, r16
+ 8b8:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 8bc:	0e 94 a4 08 	call	0x1148	; 0x1148 <GLCD_ClearPixel>
+ 8c0:	87 ec       	ldi	r24, 0xC7	; 199
+ 8c2:	90 e0       	ldi	r25, 0x00	; 0
+ 8c4:	01 97       	sbiw	r24, 0x01	; 1
+ 8c6:	f1 f7       	brne	.-4      	; 0x8c4 <main+0xb8>
+ 8c8:	00 c0       	rjmp	.+0      	; 0x8ca <main+0xbe>
+ 8ca:	00 00       	nop
+			if((j+i) % 6 == 0)
+				GLCD_SetPixel(Point(i,j));
+			_delay_us(100);
+		}
+	for(int i = 0; i < 84; i++)
+		for(int j = 0; j < 48; j++)
+ 8cc:	21 96       	adiw	r28, 0x01	; 1
+ 8ce:	02 c0       	rjmp	.+4      	; 0x8d4 <main+0xc8>
+ 8d0:	c0 e0       	ldi	r28, 0x00	; 0
+ 8d2:	d0 e0       	ldi	r29, 0x00	; 0
+ 8d4:	c0 33       	cpi	r28, 0x30	; 48
+ 8d6:	d1 05       	cpc	r29, r1
+ 8d8:	24 f3       	brlt	.-56     	; 0x8a2 <main+0x96>
+		{
+			if((j+i) % 6 == 0)
+				GLCD_SetPixel(Point(i,j));
+			_delay_us(100);
+		}
+	for(int i = 0; i < 84; i++)
+ 8da:	0f 5f       	subi	r16, 0xFF	; 255
+ 8dc:	1f 4f       	sbci	r17, 0xFF	; 255
+ 8de:	04 35       	cpi	r16, 0x54	; 84
+ 8e0:	11 05       	cpc	r17, r1
+ 8e2:	b4 f3       	brlt	.-20     	; 0x8d0 <main+0xc4>
+		{
+			if((j+i) % 6 == 0)
+				GLCD_ClearPixel(Point(i,j));
+			_delay_us(100);
+		}
+	GLCD_Puts(Point(0,20),"Hello World!");
+ 8e4:	64 e1       	ldi	r22, 0x14	; 20
+ 8e6:	80 e0       	ldi	r24, 0x00	; 0
+ 8e8:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 8ec:	4b e7       	ldi	r20, 0x7B	; 123
+ 8ee:	53 e0       	ldi	r21, 0x03	; 3
+ 8f0:	60 e0       	ldi	r22, 0x00	; 0
+ 8f2:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 8f6:	9f ef       	ldi	r25, 0xFF	; 255
+ 8f8:	23 ed       	ldi	r18, 0xD3	; 211
+ 8fa:	80 e3       	ldi	r24, 0x30	; 48
+ 8fc:	91 50       	subi	r25, 0x01	; 1
+ 8fe:	20 40       	sbci	r18, 0x00	; 0
+ 900:	80 40       	sbci	r24, 0x00	; 0
+ 902:	e1 f7       	brne	.-8      	; 0x8fc <main+0xf0>
+ 904:	00 c0       	rjmp	.+0      	; 0x906 <main+0xfa>
+ 906:	00 00       	nop
+	_delay_ms(2000);
+	Show_Game_Image(MM_img);
+ 908:	67 ec       	ldi	r22, 0xC7	; 199
+ 90a:	73 e0       	ldi	r23, 0x03	; 3
+ 90c:	80 e0       	ldi	r24, 0x00	; 0
+ 90e:	0e 94 07 0a 	call	0x140e	; 0x140e <Show_Game_Image>
+ 912:	9f ef       	ldi	r25, 0xFF	; 255
+ 914:	29 e6       	ldi	r18, 0x69	; 105
+ 916:	88 e1       	ldi	r24, 0x18	; 24
+ 918:	91 50       	subi	r25, 0x01	; 1
+ 91a:	20 40       	sbci	r18, 0x00	; 0
+ 91c:	80 40       	sbci	r24, 0x00	; 0
+ 91e:	e1 f7       	brne	.-8      	; 0x918 <main+0x10c>
+ 920:	00 c0       	rjmp	.+0      	; 0x922 <main+0x116>
+ 922:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(0,15)," PRESS LEFT ");
+ 924:	6f e0       	ldi	r22, 0x0F	; 15
+ 926:	80 e0       	ldi	r24, 0x00	; 0
+ 928:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 92c:	48 e8       	ldi	r20, 0x88	; 136
+ 92e:	53 e0       	ldi	r21, 0x03	; 3
+ 930:	60 e0       	ldi	r22, 0x00	; 0
+ 932:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+	GLCD_Puts(Point(13,23)," TO PLAY ");
+ 936:	67 e1       	ldi	r22, 0x17	; 23
+ 938:	8d e0       	ldi	r24, 0x0D	; 13
+ 93a:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 93e:	45 e9       	ldi	r20, 0x95	; 149
+ 940:	53 e0       	ldi	r21, 0x03	; 3
+ 942:	60 e0       	ldi	r22, 0x00	; 0
+ 944:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+	while(!Left_Pressed);
+ 948:	9b 99       	sbic	0x13, 3	; 19
+ 94a:	fe cf       	rjmp	.-4      	; 0x948 <main+0x13c>
+ 94c:	00 e0       	ldi	r16, 0x00	; 0
+ 94e:	10 e0       	ldi	r17, 0x00	; 0
+ 950:	15 c0       	rjmp	.+42     	; 0x97c <main+0x170>
+	for(int i = 0; i < 84; i++)
+		for(int j = 0; j < 48; j++)
+		{
+			GLCD_ClearPixel(Point(i,j));
+ 952:	6c 2f       	mov	r22, r28
+ 954:	80 2f       	mov	r24, r16
+ 956:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 95a:	0e 94 a4 08 	call	0x1148	; 0x1148 <GLCD_ClearPixel>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 95e:	87 ec       	ldi	r24, 0xC7	; 199
+ 960:	90 e0       	ldi	r25, 0x00	; 0
+ 962:	01 97       	sbiw	r24, 0x01	; 1
+ 964:	f1 f7       	brne	.-4      	; 0x962 <main+0x156>
+ 966:	00 c0       	rjmp	.+0      	; 0x968 <main+0x15c>
+ 968:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(0,15)," PRESS LEFT ");
+	GLCD_Puts(Point(13,23)," TO PLAY ");
+	while(!Left_Pressed);
+	for(int i = 0; i < 84; i++)
+		for(int j = 0; j < 48; j++)
+ 96a:	21 96       	adiw	r28, 0x01	; 1
+ 96c:	02 c0       	rjmp	.+4      	; 0x972 <main+0x166>
+ 96e:	c0 e0       	ldi	r28, 0x00	; 0
+ 970:	d0 e0       	ldi	r29, 0x00	; 0
+ 972:	c0 33       	cpi	r28, 0x30	; 48
+ 974:	d1 05       	cpc	r29, r1
+ 976:	6c f3       	brlt	.-38     	; 0x952 <main+0x146>
+	Show_Game_Image(MM_img);
+	_delay_ms(1000);
+	GLCD_Puts(Point(0,15)," PRESS LEFT ");
+	GLCD_Puts(Point(13,23)," TO PLAY ");
+	while(!Left_Pressed);
+	for(int i = 0; i < 84; i++)
+ 978:	0f 5f       	subi	r16, 0xFF	; 255
+ 97a:	1f 4f       	sbci	r17, 0xFF	; 255
+ 97c:	04 35       	cpi	r16, 0x54	; 84
+ 97e:	11 05       	cpc	r17, r1
+ 980:	b4 f3       	brlt	.-20     	; 0x96e <main+0x162>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 982:	9f e7       	ldi	r25, 0x7F	; 127
+ 984:	2a e1       	ldi	r18, 0x1A	; 26
+ 986:	86 e0       	ldi	r24, 0x06	; 6
+ 988:	91 50       	subi	r25, 0x01	; 1
+ 98a:	20 40       	sbci	r18, 0x00	; 0
+ 98c:	80 40       	sbci	r24, 0x00	; 0
+ 98e:	e1 f7       	brne	.-8      	; 0x988 <main+0x17c>
+ 990:	00 c0       	rjmp	.+0      	; 0x992 <main+0x186>
+ 992:	00 00       	nop
+		{
+			GLCD_ClearPixel(Point(i,j));
+			_delay_us(100);
+		}
+	_delay_ms(250);
+	GLCD_Puts(Point(0,20),"GET READY!!!");
+ 994:	64 e1       	ldi	r22, 0x14	; 20
+ 996:	80 e0       	ldi	r24, 0x00	; 0
+ 998:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 99c:	4f e9       	ldi	r20, 0x9F	; 159
+ 99e:	53 e0       	ldi	r21, 0x03	; 3
+ 9a0:	60 e0       	ldi	r22, 0x00	; 0
+ 9a2:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ 9a6:	9f e7       	ldi	r25, 0x7F	; 127
+ 9a8:	2f e4       	ldi	r18, 0x4F	; 79
+ 9aa:	82 e1       	ldi	r24, 0x12	; 18
+ 9ac:	91 50       	subi	r25, 0x01	; 1
+ 9ae:	20 40       	sbci	r18, 0x00	; 0
+ 9b0:	80 40       	sbci	r24, 0x00	; 0
+ 9b2:	e1 f7       	brne	.-8      	; 0x9ac <main+0x1a0>
+ 9b4:	00 c0       	rjmp	.+0      	; 0x9b6 <main+0x1aa>
+ 9b6:	00 00       	nop
+	_delay_ms(750);
+	GLCD_Puts(Point(0,20),"            ");
+ 9b8:	64 e1       	ldi	r22, 0x14	; 20
+ 9ba:	80 e0       	ldi	r24, 0x00	; 0
+ 9bc:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 9c0:	4c ea       	ldi	r20, 0xAC	; 172
+ 9c2:	53 e0       	ldi	r21, 0x03	; 3
+ 9c4:	60 e0       	ldi	r22, 0x00	; 0
+ 9c6:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ 9ca:	9f e7       	ldi	r25, 0x7F	; 127
+ 9cc:	2a e1       	ldi	r18, 0x1A	; 26
+ 9ce:	86 e0       	ldi	r24, 0x06	; 6
+ 9d0:	91 50       	subi	r25, 0x01	; 1
+ 9d2:	20 40       	sbci	r18, 0x00	; 0
+ 9d4:	80 40       	sbci	r24, 0x00	; 0
+ 9d6:	e1 f7       	brne	.-8      	; 0x9d0 <main+0x1c4>
+ 9d8:	00 c0       	rjmp	.+0      	; 0x9da <main+0x1ce>
+ 9da:	00 00       	nop
+	_delay_ms(250);
+	GLCD_Puts(Point(20,20),"3");
+ 9dc:	64 e1       	ldi	r22, 0x14	; 20
+ 9de:	84 e1       	ldi	r24, 0x14	; 20
+ 9e0:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ 9e4:	49 eb       	ldi	r20, 0xB9	; 185
+ 9e6:	53 e0       	ldi	r21, 0x03	; 3
+ 9e8:	60 e0       	ldi	r22, 0x00	; 0
+ 9ea:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ 9ee:	9f ef       	ldi	r25, 0xFF	; 255
+ 9f0:	29 e6       	ldi	r18, 0x69	; 105
+ 9f2:	88 e1       	ldi	r24, 0x18	; 24
+ 9f4:	91 50       	subi	r25, 0x01	; 1
+ 9f6:	20 40       	sbci	r18, 0x00	; 0
+ 9f8:	80 40       	sbci	r24, 0x00	; 0
+ 9fa:	e1 f7       	brne	.-8      	; 0x9f4 <main+0x1e8>
+ 9fc:	00 c0       	rjmp	.+0      	; 0x9fe <main+0x1f2>
+ 9fe:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(20,20),"2");
+ a00:	64 e1       	ldi	r22, 0x14	; 20
+ a02:	84 e1       	ldi	r24, 0x14	; 20
+ a04:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ a08:	4b eb       	ldi	r20, 0xBB	; 187
+ a0a:	53 e0       	ldi	r21, 0x03	; 3
+ a0c:	60 e0       	ldi	r22, 0x00	; 0
+ a0e:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ a12:	9f ef       	ldi	r25, 0xFF	; 255
+ a14:	29 e6       	ldi	r18, 0x69	; 105
+ a16:	88 e1       	ldi	r24, 0x18	; 24
+ a18:	91 50       	subi	r25, 0x01	; 1
+ a1a:	20 40       	sbci	r18, 0x00	; 0
+ a1c:	80 40       	sbci	r24, 0x00	; 0
+ a1e:	e1 f7       	brne	.-8      	; 0xa18 <main+0x20c>
+ a20:	00 c0       	rjmp	.+0      	; 0xa22 <main+0x216>
+ a22:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(20,20),"1");
+ a24:	64 e1       	ldi	r22, 0x14	; 20
+ a26:	84 e1       	ldi	r24, 0x14	; 20
+ a28:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ a2c:	4d eb       	ldi	r20, 0xBD	; 189
+ a2e:	53 e0       	ldi	r21, 0x03	; 3
+ a30:	60 e0       	ldi	r22, 0x00	; 0
+ a32:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ a36:	9f ef       	ldi	r25, 0xFF	; 255
+ a38:	29 e6       	ldi	r18, 0x69	; 105
+ a3a:	88 e1       	ldi	r24, 0x18	; 24
+ a3c:	91 50       	subi	r25, 0x01	; 1
+ a3e:	20 40       	sbci	r18, 0x00	; 0
+ a40:	80 40       	sbci	r24, 0x00	; 0
+ a42:	e1 f7       	brne	.-8      	; 0xa3c <main+0x230>
+ a44:	00 c0       	rjmp	.+0      	; 0xa46 <main+0x23a>
+ a46:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(20,20),"GO!");
+ a48:	64 e1       	ldi	r22, 0x14	; 20
+ a4a:	84 e1       	ldi	r24, 0x14	; 20
+ a4c:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ a50:	4f eb       	ldi	r20, 0xBF	; 191
+ a52:	53 e0       	ldi	r21, 0x03	; 3
+ a54:	60 e0       	ldi	r22, 0x00	; 0
+ a56:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ a5a:	9f ef       	ldi	r25, 0xFF	; 255
+ a5c:	29 e6       	ldi	r18, 0x69	; 105
+ a5e:	88 e1       	ldi	r24, 0x18	; 24
+ a60:	91 50       	subi	r25, 0x01	; 1
+ a62:	20 40       	sbci	r18, 0x00	; 0
+ a64:	80 40       	sbci	r24, 0x00	; 0
+ a66:	e1 f7       	brne	.-8      	; 0xa60 <main+0x254>
+ a68:	00 c0       	rjmp	.+0      	; 0xa6a <main+0x25e>
+ a6a:	00 00       	nop
+	_delay_ms(1000);
+	GLCD_Puts(Point(20,20),"   ");
+ a6c:	64 e1       	ldi	r22, 0x14	; 20
+ a6e:	84 e1       	ldi	r24, 0x14	; 20
+ a70:	0e 94 21 0e 	call	0x1c42	; 0x1c42 <Point>
+ a74:	43 ec       	ldi	r20, 0xC3	; 195
+ a76:	53 e0       	ldi	r21, 0x03	; 3
+ a78:	60 e0       	ldi	r22, 0x00	; 0
+ a7a:	0e 94 50 0a 	call	0x14a0	; 0x14a0 <GLCD_Puts>
+ a7e:	9f ef       	ldi	r25, 0xFF	; 255
+ a80:	24 e3       	ldi	r18, 0x34	; 52
+ a82:	8c e0       	ldi	r24, 0x0C	; 12
+ a84:	91 50       	subi	r25, 0x01	; 1
+ a86:	20 40       	sbci	r18, 0x00	; 0
+ a88:	80 40       	sbci	r24, 0x00	; 0
+ a8a:	e1 f7       	brne	.-8      	; 0xa84 <main+0x278>
+ a8c:	00 c0       	rjmp	.+0      	; 0xa8e <main+0x282>
+ a8e:	00 00       	nop
+	_delay_ms(500);
+	while(1)
+    {
+		GameLoop();
+ a90:	0e 94 0e 02 	call	0x41c	; 0x41c <GameLoop>
+		if(!Game)
+ a94:	80 91 d3 02 	lds	r24, 0x02D3	; 0x8002d3 <Game>
+ a98:	81 11       	cpse	r24, r1
+ a9a:	fa cf       	rjmp	.-12     	; 0xa90 <main+0x284>
+ a9c:	d6 ce       	rjmp	.-596    	; 0x84a <main+0x3e>
+
+Disassembly of section .text.__vector_9:
+
+00001372 <__vector_9>:
+			goto rrrrr;
+    }
+}
+
+ISR(TIMER0_OVF_vect)
+{
+    1372:	1f 92       	push	r1
+    1374:	0f 92       	push	r0
+    1376:	0f b6       	in	r0, 0x3f	; 63
+    1378:	0f 92       	push	r0
+    137a:	11 24       	eor	r1, r1
+    137c:	2f 93       	push	r18
+    137e:	3f 93       	push	r19
+    1380:	4f 93       	push	r20
+    1382:	5f 93       	push	r21
+    1384:	6f 93       	push	r22
+    1386:	7f 93       	push	r23
+    1388:	8f 93       	push	r24
+    138a:	9f 93       	push	r25
+    138c:	af 93       	push	r26
+    138e:	bf 93       	push	r27
+    1390:	ef 93       	push	r30
+    1392:	ff 93       	push	r31
+	ii++;
+    1394:	80 91 cf 02 	lds	r24, 0x02CF	; 0x8002cf <ii>
+    1398:	90 91 d0 02 	lds	r25, 0x02D0	; 0x8002d0 <ii+0x1>
+    139c:	01 96       	adiw	r24, 0x01	; 1
+    139e:	90 93 d0 02 	sts	0x02D0, r25	; 0x8002d0 <ii+0x1>
+    13a2:	80 93 cf 02 	sts	0x02CF, r24	; 0x8002cf <ii>
+	if(ii == iithresh)
+    13a6:	20 91 cd 02 	lds	r18, 0x02CD	; 0x8002cd <iithresh>
+    13aa:	30 91 ce 02 	lds	r19, 0x02CE	; 0x8002ce <iithresh+0x1>
+    13ae:	82 17       	cp	r24, r18
+    13b0:	93 07       	cpc	r25, r19
+    13b2:	e1 f4       	brne	.+56     	; 0x13ec <__vector_9+0x7a>
+	{
+		ii=0;
+    13b4:	10 92 d0 02 	sts	0x02D0, r1	; 0x8002d0 <ii+0x1>
+    13b8:	10 92 cf 02 	sts	0x02CF, r1	; 0x8002cf <ii>
+		g=1;
+    13bc:	81 e0       	ldi	r24, 0x01	; 1
+    13be:	80 93 d5 02 	sts	0x02D5, r24	; 0x8002d5 <g>
+		srand(j);
+    13c2:	80 91 d6 02 	lds	r24, 0x02D6	; 0x8002d6 <j>
+    13c6:	90 e0       	ldi	r25, 0x00	; 0
+    13c8:	0e 94 fd 0d 	call	0x1bfa	; 0x1bfa <srand>
+		j+= rand()%5+1;
+    13cc:	0e 94 01 0d 	call	0x1a02	; 0x1a02 <rand>
+    13d0:	65 e0       	ldi	r22, 0x05	; 5
+    13d2:	70 e0       	ldi	r23, 0x00	; 0
+    13d4:	0e 94 64 0d 	call	0x1ac8	; 0x1ac8 <__divmodhi4>
+    13d8:	01 96       	adiw	r24, 0x01	; 1
+    13da:	90 91 d6 02 	lds	r25, 0x02D6	; 0x8002d6 <j>
+    13de:	89 0f       	add	r24, r25
+    13e0:	80 93 d6 02 	sts	0x02D6, r24	; 0x8002d6 <j>
+		if(j == 200)
+    13e4:	88 3c       	cpi	r24, 0xC8	; 200
+    13e6:	11 f4       	brne	.+4      	; 0x13ec <__vector_9+0x7a>
+		 j = 0;
+    13e8:	10 92 d6 02 	sts	0x02D6, r1	; 0x8002d6 <j>
+	}
+    13ec:	ff 91       	pop	r31
+    13ee:	ef 91       	pop	r30
+    13f0:	bf 91       	pop	r27
+    13f2:	af 91       	pop	r26
+    13f4:	9f 91       	pop	r25
+    13f6:	8f 91       	pop	r24
+    13f8:	7f 91       	pop	r23
+    13fa:	6f 91       	pop	r22
+    13fc:	5f 91       	pop	r21
+    13fe:	4f 91       	pop	r20
+    1400:	3f 91       	pop	r19
+    1402:	2f 91       	pop	r18
+    1404:	0f 90       	pop	r0
+    1406:	0f be       	out	0x3f, r0	; 63
+    1408:	0f 90       	pop	r0
+    140a:	1f 90       	pop	r1
+    140c:	18 95       	reti
+
+Disassembly of section .text.libgcc.div:
+
+00001ac8 <__divmodhi4>:
+    1ac8:	97 fb       	bst	r25, 7
+    1aca:	07 2e       	mov	r0, r23
+    1acc:	16 f4       	brtc	.+4      	; 0x1ad2 <__divmodhi4+0xa>
+    1ace:	00 94       	com	r0
+    1ad0:	07 d0       	rcall	.+14     	; 0x1ae0 <__divmodhi4_neg1>
+    1ad2:	77 fd       	sbrc	r23, 7
+    1ad4:	09 d0       	rcall	.+18     	; 0x1ae8 <__divmodhi4_neg2>
+    1ad6:	0e 94 78 0d 	call	0x1af0	; 0x1af0 <__udivmodhi4>
+    1ada:	07 fc       	sbrc	r0, 7
+    1adc:	05 d0       	rcall	.+10     	; 0x1ae8 <__divmodhi4_neg2>
+    1ade:	3e f4       	brtc	.+14     	; 0x1aee <__divmodhi4_exit>
+
+00001ae0 <__divmodhi4_neg1>:
+    1ae0:	90 95       	com	r25
+    1ae2:	81 95       	neg	r24
+    1ae4:	9f 4f       	sbci	r25, 0xFF	; 255
+    1ae6:	08 95       	ret
+
+00001ae8 <__divmodhi4_neg2>:
+    1ae8:	70 95       	com	r23
+    1aea:	61 95       	neg	r22
+    1aec:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00001aee <__divmodhi4_exit>:
+    1aee:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+00001af0 <__udivmodhi4>:
+    1af0:	aa 1b       	sub	r26, r26
+    1af2:	bb 1b       	sub	r27, r27
+    1af4:	51 e1       	ldi	r21, 0x11	; 17
+    1af6:	07 c0       	rjmp	.+14     	; 0x1b06 <__udivmodhi4_ep>
+
+00001af8 <__udivmodhi4_loop>:
+    1af8:	aa 1f       	adc	r26, r26
+    1afa:	bb 1f       	adc	r27, r27
+    1afc:	a6 17       	cp	r26, r22
+    1afe:	b7 07       	cpc	r27, r23
+    1b00:	10 f0       	brcs	.+4      	; 0x1b06 <__udivmodhi4_ep>
+    1b02:	a6 1b       	sub	r26, r22
+    1b04:	b7 0b       	sbc	r27, r23
+
+00001b06 <__udivmodhi4_ep>:
+    1b06:	88 1f       	adc	r24, r24
+    1b08:	99 1f       	adc	r25, r25
+    1b0a:	5a 95       	dec	r21
+    1b0c:	a9 f7       	brne	.-22     	; 0x1af8 <__udivmodhi4_loop>
+    1b0e:	80 95       	com	r24
+    1b10:	90 95       	com	r25
+    1b12:	bc 01       	movw	r22, r24
+    1b14:	cd 01       	movw	r24, r26
+    1b16:	08 95       	ret
+
+Disassembly of section .text.__dummy_fini:
+
+00001c4a <_fini>:
+    1c4a:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+00001c4c <__funcs_on_exit>:
+    1c4c:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+00001c4e <__simulator_exit>:
+    1c4e:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+00001bce <exit>:
+    1bce:	ec 01       	movw	r28, r24
+    1bd0:	0e 94 26 0e 	call	0x1c4c	; 0x1c4c <__funcs_on_exit>
+    1bd4:	0e 94 25 0e 	call	0x1c4a	; 0x1c4a <_fini>
+    1bd8:	ce 01       	movw	r24, r28
+    1bda:	0e 94 27 0e 	call	0x1c4e	; 0x1c4e <__simulator_exit>
+    1bde:	ce 01       	movw	r24, r28
+    1be0:	0e 94 23 0e 	call	0x1c46	; 0x1c46 <_Exit>
+
+Disassembly of section .text.srand:
+
+00001bfa <srand>:
+    1bfa:	01 97       	sbiw	r24, 0x01	; 1
+    1bfc:	a0 e0       	ldi	r26, 0x00	; 0
+    1bfe:	b0 e0       	ldi	r27, 0x00	; 0
+    1c00:	e7 ec       	ldi	r30, 0xC7	; 199
+    1c02:	f2 e0       	ldi	r31, 0x02	; 2
+    1c04:	80 83       	st	Z, r24
+    1c06:	91 83       	std	Z+1, r25	; 0x01
+    1c08:	a2 83       	std	Z+2, r26	; 0x02
+    1c0a:	b3 83       	std	Z+3, r27	; 0x03
+    1c0c:	08 95       	ret
+
+Disassembly of section .text.rand:
+
+00001a02 <rand>:
+    1a02:	e7 ec       	ldi	r30, 0xC7	; 199
+    1a04:	f2 e0       	ldi	r31, 0x02	; 2
+    1a06:	20 81       	ld	r18, Z
+    1a08:	31 81       	ldd	r19, Z+1	; 0x01
+    1a0a:	42 81       	ldd	r20, Z+2	; 0x02
+    1a0c:	53 81       	ldd	r21, Z+3	; 0x03
+    1a0e:	6d e2       	ldi	r22, 0x2D	; 45
+    1a10:	7f e7       	ldi	r23, 0x7F	; 127
+    1a12:	85 e9       	ldi	r24, 0x95	; 149
+    1a14:	9c e4       	ldi	r25, 0x4C	; 76
+    1a16:	0e 94 b1 0d 	call	0x1b62	; 0x1b62 <__mulsi3>
+    1a1a:	dc 01       	movw	r26, r24
+    1a1c:	cb 01       	movw	r24, r22
+    1a1e:	01 96       	adiw	r24, 0x01	; 1
+    1a20:	a1 1d       	adc	r26, r1
+    1a22:	b1 1d       	adc	r27, r1
+    1a24:	e7 ec       	ldi	r30, 0xC7	; 199
+    1a26:	f2 e0       	ldi	r31, 0x02	; 2
+    1a28:	80 83       	st	Z, r24
+    1a2a:	91 83       	std	Z+1, r25	; 0x01
+    1a2c:	a2 83       	std	Z+2, r26	; 0x02
+    1a2e:	b3 83       	std	Z+3, r27	; 0x03
+    1a30:	f1 e1       	ldi	r31, 0x11	; 17
+    1a32:	b6 95       	lsr	r27
+    1a34:	a7 95       	ror	r26
+    1a36:	97 95       	ror	r25
+    1a38:	87 95       	ror	r24
+    1a3a:	fa 95       	dec	r31
+    1a3c:	d1 f7       	brne	.-12     	; 0x1a32 <rand+0x30>
+    1a3e:	08 95       	ret
+
+Disassembly of section .text._Exit:
+
+00001c46 <_Exit>:
+    1c46:	0e 94 61 00 	call	0xc2	; 0xc2 <_exit>
+
+Disassembly of section .text.libgcc.mul:
+
+00001b62 <__mulsi3>:
+    1b62:	db 01       	movw	r26, r22
+    1b64:	8f 93       	push	r24
+    1b66:	9f 93       	push	r25
+    1b68:	0e 94 f2 0d 	call	0x1be4	; 0x1be4 <__muluhisi3>
+    1b6c:	bf 91       	pop	r27
+    1b6e:	af 91       	pop	r26
+    1b70:	a2 9f       	mul	r26, r18
+    1b72:	80 0d       	add	r24, r0
+    1b74:	91 1d       	adc	r25, r1
+    1b76:	a3 9f       	mul	r26, r19
+    1b78:	90 0d       	add	r25, r0
+    1b7a:	b2 9f       	mul	r27, r18
+    1b7c:	90 0d       	add	r25, r0
+    1b7e:	11 24       	eor	r1, r1
+    1b80:	08 95       	ret
+
+Disassembly of section .text.libgcc.mul:
+
+00001be4 <__muluhisi3>:
+    1be4:	0e 94 c1 0d 	call	0x1b82	; 0x1b82 <__umulhisi3>
+    1be8:	a5 9f       	mul	r26, r21
+    1bea:	90 0d       	add	r25, r0
+    1bec:	b4 9f       	mul	r27, r20
+    1bee:	90 0d       	add	r25, r0
+    1bf0:	a4 9f       	mul	r26, r20
+    1bf2:	80 0d       	add	r24, r0
+    1bf4:	91 1d       	adc	r25, r1
+    1bf6:	11 24       	eor	r1, r1
+    1bf8:	08 95       	ret
+
+Disassembly of section .text.libgcc.mul:
+
+00001b82 <__umulhisi3>:
+    1b82:	a2 9f       	mul	r26, r18
+    1b84:	b0 01       	movw	r22, r0
+    1b86:	b3 9f       	mul	r27, r19
+    1b88:	c0 01       	movw	r24, r0
+    1b8a:	a3 9f       	mul	r26, r19
+    1b8c:	70 0d       	add	r23, r0
+    1b8e:	81 1d       	adc	r24, r1
+    1b90:	11 24       	eor	r1, r1
+    1b92:	91 1d       	adc	r25, r1
+    1b94:	b2 9f       	mul	r27, r18
+    1b96:	70 0d       	add	r23, r0
+    1b98:	81 1d       	adc	r24, r1
+    1b9a:	11 24       	eor	r1, r1
+    1b9c:	91 1d       	adc	r25, r1
+    1b9e:	08 95       	ret
